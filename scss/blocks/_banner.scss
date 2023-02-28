@@ -1,0 +1,80 @@
+.banner {
+
+    &__container {
+        max-width: 1920px;
+
+        // * {
+        //     outline: 1px solid palevioletred;
+        // }
+    }
+
+    &__slider {}
+
+    &__wrapper {}
+
+    &__slide {
+        min-height: 85vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        &_one {
+            background-image: url('../images/block2_slider/banner1_purple.png');
+        }
+
+        &_two {
+            background-image: url('../images/block2_slider/banner2_blue.png');
+        }
+
+        &_three {
+            background-image: url('../images/block2_slider/banner3_red.png');
+        }
+
+        &_four {
+            background-image: url('../images/block2_slider/banner4_violet.png');
+        }
+
+        &_five {
+            background-image: url('../images/block2_slider/banner5_girl.png');
+        }
+    }
+
+    &__info {
+        width: fit-content;
+        margin-left: 47%;
+        padding: 45px;
+        border-radius: 4px 0 4px 4px;
+        background-color: #FFFFFF58;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__button-more {}
+
+    &__pagination {}
+
+    &__nav-button {
+        // width: 50px;
+        // height: 50px;
+        // border-radius: 25px;
+        width: calc(100vw * 0.026);
+        height: calc(100vw * 0.026);
+        border: none;
+        border-radius: calc(100vw * 0.026 / 2);
+
+        img {
+            // margin: 0 auto;
+            max-width: 80%;
+        }
+
+        &_prev {
+            background-color: #EA142E20;
+        }
+
+        &_next {
+            background-color: #EA142E;
+        }
+    }
+
+}
