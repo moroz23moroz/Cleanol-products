@@ -7,7 +7,7 @@
     &_bg-grey {
         max-height: 537px;
         min-height: 537px;
-        background-color: $bg-grey;
+        background-color: $bg-color-light;
 
         &__image {
             max-height: 423px;
@@ -24,7 +24,7 @@
         grid-template-columns: 1fr 1fr;
         max-height: 670px;
         min-height: 670px;
-        background-color: $bg-red;
+        background-color: $bg-color-main;
     }
 
     &_bg-white {
@@ -36,7 +36,7 @@
         max-height: 662px;
         min-height: 662px;
         max-width: 706px;
-        background-color: $bg-white;
+        background-color: $bg-color-white;
     }
 }
 
@@ -58,6 +58,7 @@
 
     &__item {
         padding-bottom: 15px;
+        color: $text-color-main;
 
         &_bold {
             font-weight: 700;
@@ -65,7 +66,7 @@
 
         &_red {
             font-weight: 700;
-            color: $red;
+            color: $text-color-title;
         }
     }
 }
@@ -89,7 +90,8 @@
         margin-bottom: 10px;
         margin-left: 2em;
         font-size: 18px;
-        color: $white;
+        color: $text-color-white;
+        //стилизовать точки, используя кружочки с знаками вопроса
         list-style-type: none;
     }
 }
@@ -107,13 +109,13 @@
     font-size: 18px;
 
     &_red {
-        background-color: $bg-red;
-        color: $white;
+        background-color: $bg-color-main;
+        color: $text-color-white;
     }
 
     &_white {
-        background-color: $bg-white;
-        color: $red;
+        background-color: $bg-color-white;
+        color: $text-color-title;
     }
 }
 
