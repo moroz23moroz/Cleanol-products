@@ -2,8 +2,11 @@
 @import 'global';
 @import 'fonts';
 @import 'vars';
+@import 'mixins';
 
 
-@import "./blocks/service";
-@import "./blocks/contacts";
-@import './blocks/footer';
+@import './blocks/banner';
+@import './blocks/products';
+// @import './blocks/service';
+// @import './blocks/contacts';
+// @import './blocks/footer';
