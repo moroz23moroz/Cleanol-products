@@ -48,7 +48,7 @@
     }
 
     &__title {
-        color: $red;
+        color: $text-color-title;
     }
 }
 
@@ -116,6 +116,16 @@
     &_white {
         background-color: $bg-color-white;
         color: $text-color-title;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url(../../images/arrows/white_arrow.svg);
+            width: 26px;
+            height: 14px;
+            right: 25px;
+            bottom: 15px;
+        }
     }
 }
 
@@ -132,7 +142,7 @@
     margin-left: 120px;
 
     &__input {
-        background-color: $bg-red;
+        background-color: $bg-color-main;
         border: none;
 
         // &__input:active {
@@ -146,7 +156,7 @@
     flex-direction: column;
     border: solid 2px rgba(255, 255, 255, 0.48);
     border-radius: 4px;
-    color: $white;
+    color: $text-color-white;
 
     &_sm {
         max-width: 298px;
