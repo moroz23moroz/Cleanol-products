@@ -40,24 +40,30 @@
     }
 }
 
-.block-header {
+.header-container {
 
     &__icon,
     &__title {
         display: inline-block;
+        margin-top: 62px;
     }
 
     &__title {
+        margin-left: 29px;
+        font-size: 40px;
+        font-weight: 600;
         color: $text-color-title;
     }
 }
 
-.service-content {
-    // margin: 147px 44px 61px 52px;
+.content-container {
+    max-width: 610px;
+    margin: 46px 44px 40px 52px;
     font-size: 18px;
+    line-height: 24px;
 
     &__item {
-        padding-bottom: 15px;
+        margin-bottom: 15px;
         color: $text-color-main;
 
         &_bold {
@@ -71,7 +77,12 @@
     }
 }
 
-.service-list {
+.block-list {
+    &__title,
+    &_bg-white {
+        margin-bottom: 15px;
+    }
+
     &_bg-red {
         display: grid;
         grid-template-columns: 1fr 5fr;
@@ -107,6 +118,7 @@
     text-transform: uppercase;
     text-align: left;
     font-size: 18px;
+    font-weight: 400;
 
     &_red {
         background-color: $bg-color-main;
@@ -116,20 +128,12 @@
     &_white {
         background-color: $bg-color-white;
         color: $text-color-title;
-
-        &::after {
-            position: absolute;
-            content: '';
-            background-image: url(../../images/arrows/white_arrow.svg);
-            width: 26px;
-            height: 14px;
-            right: 25px;
-            bottom: 15px;
-        }
+    }
+    &__arrow_white{
+        display: inline-block;
+        margin-left: 11px;
     }
 }
-
-
 
 .service-form {
     display: grid;
