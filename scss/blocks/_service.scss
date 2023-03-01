@@ -3,6 +3,7 @@
     max-width: 1920px;
     margin: 0 auto;
     font-family: $main-font;
+    font-weight: 400;
 
     &_bg-grey {
         max-height: 537px;
@@ -29,7 +30,6 @@
 
     &_bg-white {
         position: absolute;
-        // display: none; //hide for work
         top: 0;
         left: 245px;
         z-index: 1;
@@ -78,36 +78,56 @@
 }
 
 .block-list {
-    &__title,
-    &_bg-white {
+    margin-bottom: 15px;
+
+    &__title {
         margin-bottom: 15px;
     }
+}
 
-    &_bg-red {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        max-width: 502px;
-        max-height: 244px;
-        margin-top: 213px;
-        margin-left: 300px;
-    }
+.content-container_left {
+    max-width: 502px;
+    margin-top: 213px;
+    margin-left: 300px;
 
-    &__icon {
-        margin: auto;
-    }
+    // border: 1px solid blue;
 
-    &__item_bg-red {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 2em;
-        font-size: 18px;
+    &__item {
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 27px;
         color: $text-color-white;
-        //стилизовать точки, используя кружочки с знаками вопроса
-        list-style-type: none;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/block-8_icons/icon_small_question_mark.svg');
+            width: 33px;
+            height: 33px;
+            top: 10px;
+            left: -100px;
+        }
+    }
+
+    &__item_lg {
+        margin-top: 55px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/block-8_icons/icon_phone.svg');
+            width: 66px;
+            height: 66px;
+            top: 0px;
+            left: -116px;
+        }
     }
 }
 
 .block-btn {
+    position: relative;
     max-width: 200px;
     min-width: 200px;
     max-height: 51px;
@@ -118,20 +138,35 @@
     text-transform: uppercase;
     text-align: left;
     font-size: 18px;
-    font-weight: 400;
 
     &_red {
         background-color: $bg-color-main;
         color: $text-color-white;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/arrows/white_arrow.svg');
+            width: 32px;
+            height: 10px;
+            top: 20.5px;
+            right: 22px;
+        }
     }
 
     &_white {
         background-color: $bg-color-white;
         color: $text-color-title;
-    }
-    &__arrow_white{
-        display: inline-block;
-        margin-left: 11px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/arrows/red_arrow.svg');
+            min-width: 32px;
+            height: 10px;
+            top: 20.5px;
+            right: 22px;
+        }
     }
 }
 
