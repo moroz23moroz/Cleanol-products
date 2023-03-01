@@ -50,11 +50,11 @@
                             цену?</span>
                         Наши любезные менеджеры проконсультируют вас
                         по всем нюансам сервисного обслуживания и его стоимости</p>
-                    <button class="block-btn block-btn_red">Позвонить </button>
+                    <button class="block-btn block-btn_red" onclick="">Позвонить </button>
                 </div>
             </div>
 
-            <!-- feedback-form -->
+            <!-- bg-red -->
             <div class="service service_bg-red">
                 <div class="content-container content-container_left">
                     <p class="content-container_left__item">Вам важны стабильные поставки
@@ -66,34 +66,35 @@
                     <p class="content-container_left__item">Важно приятное, любезное
                         общение со
                         специалистом?</p>
-                    <p class="content-container_left__item content-container_left__item_lg">Всегда рады вашему звонку по
-                        телефону <br> <span>365-80-70</span> МТС | А1</p>
+                    <p class="content-container_left__item content-container_left__item_sp">Всегда рады вашему звонку по
+                        телефону <br><span class="content-container__item_bold content-container__item_lg">365-80-70</span> МТС | А1</p>
                 </div>
 
-
+                <!-- feedback form -->
                 <div class="content-container content-container_right">
-                    <form class="service-form">
+                    <form class="feedback-form">
                         <div class="input-container input-container_sm">
-                            <label class="input-container__name ">Имя</label>
-                            <input type="text" class="block-service-form__input" id="name">
+                            <label class="input-name">Имя</label>
+                            <input type="text" class="input-field" id="name" name="name" placeholder="Алексей">
                         </div>
                         <div class="input-container input-container_sm">
-                            <label class="input-container__name">Мобильный телефон</label>
-                            <input type="phone" class="block-service-form__input" id="phone">
+                            <label class="input-name">Мобильный телефон</label>
+                            <input type="phone" class="input-field" id="phone" name="phone_number" placeholder="+375">
                         </div>
                         <div class="input-container input-container_sm">
-                            <label class="input-container__name">Электронная почта</label>
-                            <input type="mail" class="block-service-form__input" id="email">
+                            <label class="input-name">Электронная почта</label>
+                            <input type="mail" class="input-field" id="email" name="email" placeholder="name@mail.by">
                         </div>
                         <div class="input-container input-container_sm">
-                            <label class="input-container__name">Город</label>
-                            <input type="text" class="block-service-form__input" id="location">
+                            <label class="input-name">Город</label>
+                            <input type="text" class="input-field" id="city" name="city" placeholder="Минск">
                         </div>
                         <div class="input-container input-container_lg">
-                            <label class="input-container__name">Сообщение</label>
-                            <textarea name="" id="" cols="30" rows="10" class="block-service-form__textarea"></textarea>
+                            <label class="input-name">Сообщение</label>
+                            <textarea id="message" cols="30" rows="10" class="input-field" name="message"
+                                placeholder="Интересует покупка средства Cleanol «Optimal», 5 кг"></textarea>
                         </div>
-                        <button class="block-btn block-btn_white" type="submit">Позвонить</button>
+                        <button class="block-btn block-btn_white" type="submit" onclick="">Позвонить</button>
                     </form>
                 </div>
             </div>
@@ -129,44 +130,7 @@
                 </div>
             </div>
 
-            <div class="form">
-                <div class="container__low">
-                    <div class="form__inner">
-                        <div class="form__text">
-                            <h3 class="form__title">
-                                Оставьте заявку на бесплатную консультацию специалиста
-                            </h3>
-                            <p class="form__subtitle">
-                                Наш менеджер ответит на все ваши вопросы и проконсультирует по нюансам эксплуатации
-                                робот-мойки
-                            </p>
-                        </div>
-                        <!-- feedback form -->
-                        <form class="form__main" id="form-main">
-                            <div class="form__row">
-                                <input type="hidden" name="title" value="block from site">
-                                <input class="form__main-input" type="text" name="name" placeholder="Имя" required
-                                    id="form-name">
-                                <input class="form__main-input" type="tel" name="tel" placeholder="Телефон" required
-                                    id="form-tel">
-                            </div>
-                            <div class="form__row">
-                                <input class="form__main-input" type="email" name="email" placeholder="e-mail" required
-                                    id="form-email">
-                                <input class="form__main-input" type="text" name="city" placeholder="Город" required
-                                    id="form-city">
-                            </div>
-                            <textarea class="form__main-input-text" name="message" placeholder="Сообщение"
-                                id="form-message"></textarea>
-                            <div class="btn-row">
-                                <button class="block-btn block-btn_white" type="submit" onclick="">Позвонить</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-            </div>
+        </div>
     </main>
 </body>
 
