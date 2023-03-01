@@ -648,3 +648,49 @@ body {
     margin-top: -30px;
   }
 }/*# sourceMappingURL=style.css.map */
+.banner__container {
+  max-width: 1920px;
+}
+.banner__slide {
+  min-height: 85vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.banner__slide_one {
+  background-image: url("../images/block2_slider/banner1_purple.png");
+}
+.banner__slide_two {
+  background-image: url("../images/block2_slider/banner2_blue.png");
+}
+.banner__slide_three {
+  background-image: url("../images/block2_slider/banner3_red.png");
+}
+.banner__slide_four {
+  background-image: url("../images/block2_slider/banner4_violet.png");
+}
+.banner__slide_five {
+  background-image: url("../images/block2_slider/banner5_girl.png");
+}
+.banner__info {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 47%;
+  padding: 45px;
+  border-radius: 4px 0 4px 4px;
+  background-color: rgba(255, 255, 255, 0.3450980392);
+}
+.banner__nav-button {
+  width: 2.6vw;
+  height: 2.6vw;
+  border: none;
+  border-radius: 1.3vw;
+}
+.banner__nav-button img {
+  max-width: 80%;
+}
+.banner__nav-button_prev {
+  background-color: rgba(234, 20, 46, 0.1254901961);
+}
+.banner__nav-button_next {
+  background-color: #EA142E;
+}
