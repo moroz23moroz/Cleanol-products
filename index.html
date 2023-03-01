@@ -13,7 +13,7 @@
 
     <main class="main">
         <!-- block service -->
-        <div class="service">
+        <div class="service" id="service">
             <!-- bg-grey -->
             <div class="service service_bg-grey">
                 <img src="./images/self_service.png" alt="self-service auto cleaner" class="service_bg-grey__image">
@@ -67,8 +67,7 @@
                         общение со
                         специалистом?</p>
                     <p class="content-container_left__item content-container_left__item_sp">Всегда рады вашему звонку по
-                        телефону <br><span
-                            class="content-container__item_bold">365-80-70</span> МТС | А1
+                        телефону <br><span class="content-container__item_bold">365-80-70</span> МТС | А1
                     </p>
                 </div>
 
@@ -101,41 +100,71 @@
                 </div>
             </div>
             <!-- block service -->
+        </div>
+        <!-- block service -->
 
-            <div class="contacts">
-                <div class="contacts contacts_left">
-                    <div class="header-container header-container_contacts">
-                        <img src="./images/logo_swoosh.svg" alt="" class="header-container__icon">
-                        <h2 class="header-container__title">Наши контакты</h2>
-                    </div>
-
-                    <div class="contacts-inner">
-                        <div class="contacts-inner contacts-inner_left">
-                            <img src="./images/block-9_icons/icon_map.svg" alt="map icon"
-                                class="content-container__icon">
-                            <p class="content-container__item_bold">г. Минск, ул. Толбухина
-                                2а, к.
-                                320</p>
-                            <p class="content-container__item">Мы работаем с 08:00 до
-                                20:00</p>
-                        </div>
-
-                        <div class="contacts-inner contacts-inner_right">
-                            <img src="./images/block-9_icons/icon_chat.svg" alt="message icon"
-                                class="content-container__icon">
-                            <p class="content-container__item_bold">info@cleanol.by</p>
-                            <p class="content-container__item">Для ваших вопросов</p>
-                        </div>
-                    </div>
+        <!-- block contacts -->
+        <div class="contacts" id="contacts">
+            <div class="contacts contacts_left">
+                <div class="header-container header-container_contacts">
+                    <img src="./images/logo_swoosh.svg" alt="" class="header-container__icon">
+                    <h2 class="header-container__title">Наши контакты</h2>
                 </div>
 
-                <div class="contacts contacts_right">
-                    <img src="./images/block-9_icons/map.png" alt="map" class="block-contacts-map__image">
+                <div class="contacts-inner">
+                    <div class="contacts-inner contacts-inner_left">
+                        <img src="./images/block-9_icons/icon_map.svg" alt="map icon" class="content-container__icon">
+                        <p class="content-container__item_bold">г. Минск, ул. Толбухина
+                            2а, к.
+                            320</p>
+                        <p class="content-container__item content-container__item_tiny">Мы работаем с 08:00 до
+                            20:00</p>
+                    </div>
+
+                    <div class="contacts-inner contacts-inner_right">
+                        <img src="./images/block-9_icons/icon_chat.svg" alt="message icon"
+                            class="content-container__icon">
+                        <p class="content-container__item_bold">info@cleanol.by</p>
+                        <p class="content-container__item content-container__item_tiny">Для ваших вопросов</p>
+                    </div>
                 </div>
             </div>
 
+            <div class="contacts contacts_right">
+                <img src="./images/block-9_icons/map.png" alt="map" class="block-contacts-map__image">
+            </div>
         </div>
+        <!-- block contacts -->
     </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="./images/logo.svg" alt="" class="footer-logo__image">
+            <p class="footer-logo__text">Официальный представитель в Беларуси</p>
+        </div>
+
+        <div class="footer-menu">
+            <a class="footer-menu__link" href="#">О компании Cleanol</a>
+            <a class="footer-menu__link" href="#">О нас</a>
+            <a class="footer-menu__link" href="#">Автошампуни</a>
+            <a class="footer-menu__link" href="#">Воски</a>
+            <a class="footer-menu__link" href="#">Специальные средства</a>
+            <a class="footer-menu__link" href="#service">Сервис</a>
+            <a class="footer-menu__link" href="#contacts">Контакты</a>
+        </div>
+
+        <div class="footer-contacts">
+            <div class="footer-contacts footer-contacts_top">
+                <p class="content-container__item"><span class="content-container__item_bold content-container__item_red">365-80-70</span> МТС | А1</p>
+                <p class="content-container__item">info@cleanol.by</p>
+            </div>
+
+            <div class="footer-contacts footer-contacts_bottom">
+                <p class="content-container__item content-container__item_red">220012, Республика Беларусь, г. Минск, ул. Толбухина 2а, к. 320</p>
+                <p class="content-container__item content-container__item_tiny">Время работы: пн-пт с 9 до 18</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

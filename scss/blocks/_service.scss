@@ -63,11 +63,11 @@
 .content-container {
     max-width: 610px;
     margin: 46px 44px 40px 52px;
-    font-size: 18px;
     line-height: 24px;
 
     &__item {
         margin-bottom: 15px;
+        font-size: 18px;
         color: $text-color-main;
 
         &_bold {
@@ -76,6 +76,11 @@
 
         &_red {
             color: $text-color-title;
+        }
+
+        &_tiny {
+            font-size: 14px;
+            color: $text-color-light;
         }
     }
 

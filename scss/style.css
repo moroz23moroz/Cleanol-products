@@ -133,11 +133,11 @@ body {
 .content-container {
   max-width: 610px;
   margin: 46px 44px 40px 52px;
-  font-size: 18px;
   line-height: 24px;
 }
 .content-container__item {
   margin-bottom: 15px;
+  font-size: 18px;
   color: #000000;
 }
 .content-container__item_bold {
@@ -145,6 +145,10 @@ body {
 }
 .content-container__item_red {
   color: #D71635;
+}
+.content-container__item_tiny {
+  font-size: 14px;
+  color: #878787;
 }
 .content-container__icon {
   max-height: 44px;
@@ -543,8 +547,6 @@ body {
 }
 .contacts-inner_left .content-container__item {
   margin-top: 10px;
-  font-size: 14px;
-  color: #878787;
 }
 
 .contacts-inner_right .content-container__item_bold {
@@ -552,38 +554,15 @@ body {
 }
 .contacts-inner_right .content-container__item {
   margin-top: 10px;
-  font-size: 14px;
-  color: #878787;
-}
-
-.container__low {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-@media screen and (max-width: 1310px) {
-  .container__low {
-    max-width: 1000px;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .container__low {
-    max-width: 700px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .container__low {
-    max-width: 500px;
-  }
 }
 
 .footer {
-  position: absolute;
-  color: #000000;
-  height: 300px;
-  width: 100%;
-  bottom: 0;
-  z-index: 4;
+  display: flex;
+  max-width: 1920px;
+  min-height: 320px;
+  margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 1080px) {
@@ -601,140 +580,71 @@ body {
   }
 }
 
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 65px;
-  margin-top: 75px;
-}
-@media screen and (max-width: 910px) {
-  .footer__inner {
-    margin-top: 30px;
-    height: 315px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: end;
-  }
-}
-@media screen and (max-width: 700px) {
-  .footer__inner {
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-}
-
-.footer__logo {
+.footer-logo {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  max-height: 115px;
+  margin-top: 91px;
+  margin-bottom: 116px;
+  margin-left: 245px;
+}
+.footer-logo__image {
+  max-width: 208px;
+  margin-bottom: 20px;
+}
+.footer-logo__text {
+  max-width: 245px;
+  color: #525252;
 }
 @media screen and (max-width: 910px) {
-  .footer__logo {
+  .footer-logo {
     width: 232px;
     align-items: center;
   }
 }
 
-.footer__copy {
-  display: none;
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 202px;
+  margin-top: 75px;
+  margin-left: 250px;
 }
-@media screen and (max-width: 910px) {
-  .footer__copy {
-    display: inline-block;
-  }
-}
-
-.footer__menu {
-  width: 460px;
+.footer-menu__link {
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
 }
 @media screen and (max-width: 1080px) {
-  .footer__menu {
+  .footer-menu {
     width: auto;
   }
 }
 
-.footer__menu-list {
+.footer-contacts {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 100px;
-  margin: 0;
-  padding: 0;
+  margin-left: 166px;
 }
-@media screen and (max-width: 1080px) {
-  .footer__menu-list {
-    height: auto;
-    flex-wrap: nowrap;
-  }
+.footer-contacts_top {
+  margin-top: 75px;
 }
-@media screen and (max-width: 700px) {
-  .footer__menu-list {
-    gap: 5px;
-  }
+.footer-contacts_bottom {
+  max-width: 368px;
+  margin-top: 45px;
 }
-
-.footer__menu-item {
-  padding-right: 50px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 1.5;
-}
-@media screen and (max-width: 700px) {
-  .footer__menu-item {
-    padding-right: 0;
-  }
-}
-
-.footer__contacts {
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.footer-contacts .content-container__item_bold {
+  font-size: 30px;
 }
 @media screen and (max-width: 910px) {
-  .footer__contacts {
+  .footer-contacts {
     justify-content: flex-end;
   }
 }
 @media screen and (max-width: 700px) {
-  .footer__contacts {
+  .footer-contacts {
     justify-content: center;
     align-items: center;
     margin-top: -30px;
   }
-}
-
-.footer__row {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.footer__contacts p {
-  display: block;
-  margin: 0;
-}
-
-.footer__logo p {
-  display: block;
-  margin: 0;
-}
-@media screen and (max-width: 910px) {
-  .footer__logo p {
-    display: none;
-  }
-}
-
-.footer__phone {
-  font-family: "RF Dewi Extended";
-}
-
-.footer__adress {
-  padding-bottom: 5px;
-}
-
-.footer__email {
-  width: 100px;
 }/*# sourceMappingURL=style.css.map */
