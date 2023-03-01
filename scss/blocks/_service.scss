@@ -74,12 +74,7 @@
             font-weight: 700;
         }
 
-        &_lg {
-            font-size: 30px;
-        }
-
         &_red {
-            font-weight: 700;
             color: $text-color-title;
         }
     }
@@ -136,6 +131,10 @@
             top: 0px;
             left: -116px;
         }
+    }
+
+    & .content-container__item_bold {
+        font-size: 30px;
     }
 }
 

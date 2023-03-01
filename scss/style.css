@@ -143,11 +143,7 @@ body {
 .content-container__item_bold {
   font-weight: 700;
 }
-.content-container__item_lg {
-  font-size: 30px;
-}
 .content-container__item_red {
-  font-weight: 700;
   color: #D71635;
 }
 .content-container__icon {
@@ -197,6 +193,9 @@ body {
   height: 66px;
   top: 0px;
   left: -116px;
+}
+.content-container_left .content-container__item_bold {
+  font-size: 30px;
 }
 
 .content-container_right {
