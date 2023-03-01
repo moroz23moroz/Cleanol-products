@@ -80,9 +80,19 @@ body {
 
 .banner__container {
   max-width: 1920px;
+  font-family: "Rubik", sans-serif;
+}
+.banner__container * {
+  outline: 1px solid palevioletred;
+}
+.banner__slider {
+  max-height: 700px;
+  position: relative;
 }
 .banner__slide {
-  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20%;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -102,12 +112,48 @@ body {
   background-image: url("../images/block2_slider/banner5_girl.png");
 }
 .banner__info {
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 717px;
   margin-left: 47%;
   padding: 45px;
   border-radius: 4px 0 4px 4px;
   background-color: rgba(255, 255, 255, 0.3450980392);
+}
+.banner__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 39px;
+}
+.banner__text {
+  margin: 20px auto;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 42px;
+}
+.banner__button-more {
+  max-width: 234px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #D71635;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.banner__button-more img {
+  display: inline;
+}
+.banner__navigation {
+  position: absolute;
+  z-index: 1;
+  left: 47%;
+  top: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 717px;
 }
 .banner__nav-button {
   width: 2.6vw;
@@ -123,4 +169,16 @@ body {
 }
 .banner__nav-button_next {
   background-color: #EA142E;
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: blue;
+  opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+  background-color: red;
+  opacity: 1;
 }

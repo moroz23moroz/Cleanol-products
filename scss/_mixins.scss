@@ -1,0 +1,22 @@
+@mixin button-main ($max-width, $padding, $font-size) {
+    max-width: $max-width;
+    padding: $padding;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: $main-font;
+    font-size: $font-size;
+    font-weight: 400;
+    text-align: center;
+
+    background-color: $bg-color-main;
+    color: $text-color-white;
+    cursor: pointer;
+}
+
+@mixin font-style ($font-weight, $font-size, $line-height) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}

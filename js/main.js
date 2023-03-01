@@ -3,8 +3,9 @@ new Swiper('.banner__slider', {
         nextEl: '.banner__nav-button_next',
         prevEl: '.banner__nav-button_prev'
     },
-    scrollbar: {
+    pagination: {
         el: '.banner__pagination',
-        draggable: true 
+        clickable: true 
     }
+    
 });
