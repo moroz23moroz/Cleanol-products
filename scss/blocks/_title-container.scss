@@ -1,0 +1,31 @@
+.title-container {
+    margin-left: 245px;
+    &_contacts {
+        margin-top: 21px;
+        margin-left: 245px;
+    }
+
+    &__icon,
+    &__title {
+        display: inline-block;
+        margin-top: 62px;
+    }
+
+    &__title {
+        margin-left: 29px;
+        font-family: $main-font;
+        font-size: 40px;
+        font-weight: 600;
+        color: $text-color-title;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}
+
+//нужен модификатор для контейнера с заголовком в белом абсолютном квадрате

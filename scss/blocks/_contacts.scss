@@ -12,7 +12,8 @@
     }
 
     &_right {
-        min-width: 898px;
+        max-width: 898px;
+        max-height: 387px;
     }
 }
 
@@ -63,3 +64,12 @@
         margin-top: 10px;
     }
 }
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}

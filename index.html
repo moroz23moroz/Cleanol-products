@@ -144,11 +144,13 @@
                     </p>
                     <div class="block-list">
                         <p class="block-list__title">Осуществляем ремонт:</p>
-                        <li class="block-list__item">аппаратов высокого давления</li>
-                        <li class="block-list__item">пылесосов</li>
-                        <li class="block-list__item">турбосушек</li>
-                        <li class="block-list__item">пеногенераторов</li>
-                        <li class="block-list__item">ремонт и изготовления шлангов, пенокомплектов</li>
+                        <ul>
+                            <li class="block-list__item">аппаратов высокого давления</li>
+                            <li class="block-list__item">пылесосов</li>
+                            <li class="block-list__item">турбосушек</li>
+                            <li class="block-list__item">пеногенераторов</li>
+                            <li class="block-list__item">ремонт и изготовления шлангов, пенокомплектов</li>
+                        </ul>
                     </div>
                     <p class="content-container__item"><span
                             class="content-container__item_bold content-container__item_red">Хотите узнать
@@ -236,6 +238,7 @@
             </div>
 
             <div class="contacts contacts_right">
+                <div id="map" class="contacts_right__map"></div>
                 <img src="./images/block-9_icons/map.png" alt="map" class="block-contacts-map__image">
             </div>
         </div>
@@ -274,6 +277,10 @@
     </footer>
     <!-- footer -->
 
+    <!-- внимание - в API карты - временный ключ! -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

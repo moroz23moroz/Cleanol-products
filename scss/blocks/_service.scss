@@ -40,58 +40,6 @@
     }
 }
 
-.title-container {
-
-    &_contacts {
-        margin-top: 21px;
-        margin-left: 245px;
-    }
-
-    &__icon,
-    &__title {
-        display: inline-block;
-        margin-top: 62px;
-    }
-
-    &__title {
-        margin-left: 29px;
-        font-family: $main-font;
-        font-size: 40px;
-        font-weight: 600;
-        color: $text-color-title;
-    }
-}
-
-.content-container {
-    max-width: 610px;
-    margin: 46px 44px 40px 52px;
-    line-height: 24px;
-
-    &__item {
-        margin-bottom: 15px;
-        font-size: 18px;
-        color: $text-color-main;
-
-        &_bold {
-            font-weight: 700;
-        }
-
-        &_red {
-            color: $text-color-title;
-        }
-
-        &_tiny {
-            font-size: 14px;
-            color: $text-color-light;
-        }
-    }
-
-    &__icon {
-        max-height: 44px;
-        margin-bottom: 21px;
-    }
-}
-
 .block-list {
     margin-bottom: 15px;
 
@@ -100,179 +48,59 @@
     }
 }
 
-.content-container_left {
-    max-width: 502px;
-    margin-top: 213px;
-    margin-left: 300px;
-    line-height: 27px;
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .service {
+        // position: relative;
+        // max-width: 1920px;
+        // margin: 0 auto;
+        // font-family: $main-font;
+        // font-weight: 400;
 
-    &__item {
-        position: relative;
-        margin-top: 15px;
+        &_bg-grey {
+            // max-height: 537px;
+            // min-height: 537px;
+            // background-color: $bg-color-light;
+
+            &__image {
+                max-height: 400px;
+                // margin-top: 57px;
+                margin-right: 306px;
+                // margin-bottom: 57px;
+                margin-left: 850px;
+            }
+        }
+
+        &_bg-red {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-height: 670px;
+            min-height: 670px;
+            background-color: $bg-color-main;
+        }
+
+        &_bg-white {
+            position: absolute;
+            top: 0;
+            left: 120px;
+            z-index: 1;
+            max-height: 700px;
+            min-height: 700px;
+            max-width: 650px;
+            // background-color: $bg-color-white;
+        }
+    }
+
+    .block-list {
         margin-bottom: 15px;
-        font-size: 20px;
-        color: $text-color-white;
 
-        &::before {
-            position: absolute;
-            content: '';
-            background-image: url('../../images/block-8_icons/icon_small_question_mark.svg');
-            width: 33px;
-            height: 33px;
-            top: 10px;
-            left: -100px;
-        }
-    }
-
-    &__item_sp {
-        margin-top: 55px;
-        font-weight: 300;
-        line-height: 30px;
-
-        &::before {
-            position: absolute;
-            content: '';
-            background-image: url('../../images/block-8_icons/icon_phone.svg');
-            width: 66px;
-            height: 66px;
-            top: 0px;
-            left: -116px;
-        }
-    }
-
-    & .content-container__item_bold {
-        font-size: 30px;
-    }
-}
-
-.content-container_right {
-    max-width: 615px;
-    margin-top: 213px;
-    margin-left: 119px;
-}
-
-.feedback-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
-    justify-content: space-between;
-    max-width: 615px;
-    max-height: 360px;
-
-    &__input {
-        background-color: $bg-color-main;
-        border: none;
-    }
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    border: solid 2px rgba(255, 255, 255, 0.48);
-    border-radius: 4px;
-    color: $text-color-white;
-
-    &_sm {
-        max-width: 298px;
-        min-height: 66px;
-    }
-
-    &_lg {
-        max-width: 605px;
-        min-height: 128px;
-        grid-column: 1/3;
-    }
-
-    &_sm,
-    &_lg {
-        margin-top: 6px;
-    }
-
-    &_sm {
-        margin-bottom: 6px;
-    }
-
-    &_lg {
-        margin-bottom: 17px;
-    }
-}
-
-.input-name {
-    margin-left: 17px;
-    margin-right: 17px;
-    font-size: 12px;
-}
-
-.input-field {
-    margin-left: 17px;
-    margin-right: 17px;
-    color: $text-color-white;
-    background-color: $bg-color-main;
-    border: none;
-
-    &::placeholder {
-        font-size: 16px;
-        color: $text-color-white;
-    }
-}
-
-.block-btn {
-    position: relative;
-    max-width: 200px;
-    min-width: 200px;
-    max-height: 51px;
-    min-height: 51px;
-    padding-left: 23px;
-    border: 0;
-    border-radius: 4px;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 18px;
-
-    &_red {
-        background-color: $bg-color-main;
-        color: $text-color-white;
-
-        &::after {
-            position: absolute;
-            content: '';
-            background-image: url('../../images/arrows/white_arrow.svg');
-            width: 32px;
-            height: 10px;
-            top: 20.5px;
-            right: 22px;
-        }
-    }
-
-    &_white {
-        background-color: $bg-color-white;
-        color: $text-color-title;
-
-        &::after {
-            position: absolute;
-            content: '';
-            background-image: url('../../images/arrows/red_arrow.svg');
-            min-width: 32px;
-            height: 10px;
-            top: 20.5px;
-            right: 22px;
-        }
-    }
-
-    &_centered {
-        max-width: 242px;
-        min-width: 242px;
-        margin-right: 594px;
-        margin-left: 594px;
-
-        &::after {
-            position: absolute;
-            content: '';
-            background-image: url('../../images/arrows/double_arrow_white.svg');
-            min-width: 75px;
-            height: 10px;
-            top: 20.5px;
-            right: 22px;
+        &__title {
+            margin-bottom: 15px;
         }
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}
