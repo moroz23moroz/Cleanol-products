@@ -1,0 +1,28 @@
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1430px;
+    min-height: 936px;
+    margin: 128px auto 35px;
+
+    &__item {
+        max-width: 700px;
+
+        &_r-top {
+            justify-self: flex-end;
+        }
+
+        &_l-bot {
+            align-self: flex-end;
+        }
+
+        &_r-bot {
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+
+    }
+}

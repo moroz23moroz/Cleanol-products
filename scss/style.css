@@ -125,8 +125,32 @@ body {
   background-color: #EA142E;
 }
 
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1430px;
+  min-height: 936px;
+  margin: 128px auto 35px;
+}
+.photos__item {
+  max-width: 700px;
+}
+.photos__item_r-top {
+  justify-self: flex-end;
+}
+.photos__item_l-bot {
+  align-self: flex-end;
+}
+.photos__item_r-bot {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
 .convinience {
-  max-width: 1920px;
+  max-width: 1430px;
   margin: 0 auto;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -139,7 +163,7 @@ body {
 .card-wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1430px;
+  max-width: 100%;
   margin: 66px auto 54px;
 }
 
@@ -413,8 +437,8 @@ body {
 .block-btn_centered {
   max-width: 242px;
   min-width: 242px;
-  margin-right: 839px;
-  margin-left: 839px;
+  margin-right: 594px;
+  margin-left: 594px;
 }
 .block-btn_centered::after {
   position: absolute;
