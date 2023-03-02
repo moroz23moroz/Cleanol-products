@@ -40,7 +40,8 @@
     }
 }
 
-.header-container {
+.title-container {
+
     &_contacts {
         margin-top: 21px;
         margin-left: 245px;
@@ -54,6 +55,7 @@
 
     &__title {
         margin-left: 29px;
+        font-family: $main-font;
         font-size: 40px;
         font-weight: 600;
         color: $text-color-title;
@@ -251,6 +253,23 @@
             content: '';
             background-image: url('../../images/arrows/red_arrow.svg');
             min-width: 32px;
+            height: 10px;
+            top: 20.5px;
+            right: 22px;
+        }
+    }
+
+    &_centered {
+        max-width: 242px;
+        min-width: 242px;
+        margin-right: 839px;
+        margin-left: 839px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/arrows/double_arrow_white.svg');
+            min-width: 75px;
             height: 10px;
             top: 20.5px;
             right: 22px;

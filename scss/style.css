@@ -78,6 +78,107 @@ body {
   padding: 0 15px;
 }
 
+.banner__container {
+  max-width: 1920px;
+}
+.banner__slide {
+  min-height: 85vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.banner__slide_one {
+  background-image: url("../images/block2_slider/banner1_purple.png");
+}
+.banner__slide_two {
+  background-image: url("../images/block2_slider/banner2_blue.png");
+}
+.banner__slide_three {
+  background-image: url("../images/block2_slider/banner3_red.png");
+}
+.banner__slide_four {
+  background-image: url("../images/block2_slider/banner4_violet.png");
+}
+.banner__slide_five {
+  background-image: url("../images/block2_slider/banner5_girl.png");
+}
+.banner__info {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 47%;
+  padding: 45px;
+  border-radius: 4px 0 4px 4px;
+  background-color: rgba(255, 255, 255, 0.3450980392);
+}
+.banner__nav-button {
+  width: 2.6vw;
+  height: 2.6vw;
+  border: none;
+  border-radius: 1.3vw;
+}
+.banner__nav-button img {
+  max-width: 80%;
+}
+.banner__nav-button_prev {
+  background-color: rgba(234, 20, 46, 0.1254901961);
+}
+.banner__nav-button_next {
+  background-color: #EA142E;
+}
+
+.convinience {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.title-container {
+  margin-left: 245px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1430px;
+  margin: 66px auto 54px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 337px;
+  min-width: 337px;
+  max-height: 328px;
+  min-height: 328px;
+  padding: 21px 19px 48px 19px;
+  background-color: #EEF3FD;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+}
+.card-item__button {
+  align-self: flex-start;
+  max-width: 160px;
+  min-width: 160px;
+  max-height: 44px;
+  min-height: 44px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D71635;
+  background-color: rgba(215, 22, 53, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+.card-item__image {
+  max-height: 82px;
+}
+.card-item__slogan {
+  font-size: 24px;
+  text-align: center;
+}
+
 .service {
   position: relative;
   max-width: 1920px;
@@ -115,16 +216,17 @@ body {
   background-color: #FFFFFF;
 }
 
-.header-container_contacts {
+.title-container_contacts {
   margin-top: 21px;
   margin-left: 245px;
 }
-.header-container__icon, .header-container__title {
+.title-container__icon, .title-container__title {
   display: inline-block;
   margin-top: 62px;
 }
-.header-container__title {
+.title-container__title {
   margin-left: 29px;
+  font-family: "Rubik", sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #D71635;
@@ -304,6 +406,21 @@ body {
   content: "";
   background-image: url("../../images/arrows/red_arrow.svg");
   min-width: 32px;
+  height: 10px;
+  top: 20.5px;
+  right: 22px;
+}
+.block-btn_centered {
+  max-width: 242px;
+  min-width: 242px;
+  margin-right: 839px;
+  margin-left: 839px;
+}
+.block-btn_centered::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/arrows/double_arrow_white.svg");
+  min-width: 75px;
   height: 10px;
   top: 20.5px;
   right: 22px;
@@ -648,49 +765,3 @@ body {
     margin-top: -30px;
   }
 }/*# sourceMappingURL=style.css.map */
-.banner__container {
-  max-width: 1920px;
-}
-.banner__slide {
-  min-height: 85vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.banner__slide_one {
-  background-image: url("../images/block2_slider/banner1_purple.png");
-}
-.banner__slide_two {
-  background-image: url("../images/block2_slider/banner2_blue.png");
-}
-.banner__slide_three {
-  background-image: url("../images/block2_slider/banner3_red.png");
-}
-.banner__slide_four {
-  background-image: url("../images/block2_slider/banner4_violet.png");
-}
-.banner__slide_five {
-  background-image: url("../images/block2_slider/banner5_girl.png");
-}
-.banner__info {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: 47%;
-  padding: 45px;
-  border-radius: 4px 0 4px 4px;
-  background-color: rgba(255, 255, 255, 0.3450980392);
-}
-.banner__nav-button {
-  width: 2.6vw;
-  height: 2.6vw;
-  border: none;
-  border-radius: 1.3vw;
-}
-.banner__nav-button img {
-  max-width: 80%;
-}
-.banner__nav-button_prev {
-  background-color: rgba(234, 20, 46, 0.1254901961);
-}
-.banner__nav-button_next {
-  background-color: #EA142E;
-}
