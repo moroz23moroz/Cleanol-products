@@ -1,0 +1,86 @@
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+
+    &__inner {
+        padding: 20px 0 10px 0;
+        gap: 20px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__high {
+        justify-content: end;
+        gap: 20px;
+    }
+
+    &__phone-row {
+        justify-content: space-around;
+        gap: 10px;
+        font-size: 24px;
+        width: 240px;
+    }
+
+    &__email a,
+    &__info {
+        font-size: 15px;
+        line-height: 16px;
+        color: #878787;
+    }
+
+    &__phone a {
+        width: 700px;
+        color: #D71635;
+    }
+
+    &__email a {
+        text-decoration: underline;
+    }
+
+    &__desc {
+        text-transform: uppercase;
+    }
+
+    &__desc span {
+        padding-left: 10px;
+    }
+
+    &__low {
+        gap: 20px;
+    }
+
+    &__description {
+        width: 203px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #525252;
+    }
+
+    &__menu-list {
+        gap: 10px;
+    }
+
+    &__menu-link {
+        text-transform: uppercase;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: black;
+    }
+
+    &__menu-link span {
+        color: #C5C5C5;
+        padding-left: 10px;
+    }
+}

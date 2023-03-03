@@ -59,6 +59,8 @@ body {
 }
 
 .wrapper {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -73,9 +75,80 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__inner {
+  padding: 20px 0 10px 0;
+  gap: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+}
+.header__high {
+  justify-content: end;
+  gap: 20px;
+}
+.header__phone-row {
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 24px;
+  width: 240px;
+}
+.header__email a, .header__info {
+  font-size: 15px;
+  line-height: 16px;
+  color: #878787;
+}
+.header__phone a {
+  width: 700px;
+  color: #D71635;
+}
+.header__email a {
+  text-decoration: underline;
+}
+.header__desc {
+  text-transform: uppercase;
+}
+.header__desc span {
+  padding-left: 10px;
+}
+.header__low {
+  gap: 20px;
+}
+.header__description {
+  width: 203px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #525252;
+}
+.header__menu-list {
+  gap: 10px;
+}
+.header__menu-link {
+  text-transform: uppercase;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+}
+.header__menu-link span {
+  color: #C5C5C5;
+  padding-left: 10px;
 }
 
 .banner__container {
