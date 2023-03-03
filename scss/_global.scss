@@ -4,6 +4,8 @@ body {
 }
 
 .wrapper {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -18,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1460px;
     margin: 0 auto;
     padding: 0 15px;
 }
