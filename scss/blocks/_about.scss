@@ -85,9 +85,12 @@
     }
 
     &__description {
-        padding: 145px 45px 80px 45px;
         background: rgba(0, 109, 182, 0.08);
         border-radius: 4px;
+    }
+
+    &__description-wrapper {
+        padding: 145px 45px 80px 45px;
     }
 
     &__desc-inner {
