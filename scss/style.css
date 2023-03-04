@@ -56,6 +56,12 @@ a {
 html,
 body {
   height: 100%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .wrapper {
@@ -196,6 +202,134 @@ body {
 }
 .banner__nav-button_next {
   background-color: #EA142E;
+}
+
+.about__info {
+  background-color: #EFF0F2;
+}
+.about__info-text span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.about__card {
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
+  width: 706px;
+  height: 592px;
+  padding: 70px 45px 55px 45px;
+  margin-bottom: -65px;
+}
+.about__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 39px;
+  color: #D71635;
+  padding-left: 135px;
+  padding-bottom: 0;
+  margin-bottom: 45px;
+  position: relative;
+}
+.about__title::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/vector.png);
+  width: 110px;
+  height: 26px;
+  left: 0;
+  bottom: 0;
+}
+.about__info-inner {
+  gap: 75px;
+}
+.about__col {
+  gap: 20px;
+}
+.about__wrapper {
+  position: relative;
+}
+.about__logo {
+  height: 84px;
+}
+.about__background {
+  height: 405px;
+}
+.about__background img {
+  height: 100%;
+  border-radius: 4px;
+}
+.about__background-desc {
+  position: absolute;
+  width: 485px;
+  height: 112px;
+  color: white;
+  background-color: #D71635;
+  padding: 22px;
+  left: 0;
+  bottom: 0;
+  border-radius: 4px;
+}
+.about__background-desc span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.about__description {
+  padding: 145px 45px 80px 45px;
+  background: rgba(0, 109, 182, 0.08);
+  border-radius: 4px;
+}
+.about__desc-inner {
+  gap: 90px;
+}
+.about__desc-row {
+  gap: 40px;
+  width: 550px;
+}
+.about__desc-col {
+  gap: 70px;
+}
+.about__desc-col:nth-child(2) {
+  gap: 45px;
+}
+.about__desc-text {
+  width: 540px;
+}
+.about__desc {
+  font-weight: 500;
+  font-size: 18px;
+  width: 265px;
+}
+.about__desc-title {
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #D71635;
+}
+.about__block {
+  padding: 15px 50px 15px 65px;
+  height: 82px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 4px;
+}
+.about__block p {
+  display: block;
+}
+.about__block-inner, .about__block-col {
+  gap: 15px;
+}
+.about__btn {
+  height: 82px;
+  color: white;
+  background-color: #D71635;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.title span {
+  color: #D71635;
 }
 
 .photos {
