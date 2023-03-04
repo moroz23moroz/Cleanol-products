@@ -182,3 +182,18 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: red;
   opacity: 1;
 }
+
+.products {
+  font-family: "Rubik", sans-serif;
+}
+.products__visible-wrapper {
+  width: 80%;
+  display: flex;
+}
+.products__product-card {
+  width: 20%;
+}
+.products__product-card img {
+  width: 100%;
+  max-width: 342px;
+}
