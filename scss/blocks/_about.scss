@@ -1,0 +1,155 @@
+.about {
+
+    &__info {
+        background-color: #EFF0F2;
+    }
+
+    &__info-text span {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &__card {
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 0px 0px 4px 4px;
+        width: 706px;
+        height: 592px;
+        padding: 70px 45px 55px 45px;
+        margin-bottom: -65px;
+    }
+
+    &__title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 39px;
+        color: #D71635;
+        padding-left: 135px;
+        padding-bottom: 0;
+        margin-bottom: 45px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../images/vector.png);
+            width: 110px;
+            height: 26px;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    &__info-inner {
+        gap: 75px;
+    }
+
+    &__col {
+        gap: 20px;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__logo {
+        height: 84px;
+    }
+
+    &__background {
+        height: 405px;
+
+        & img {
+            height: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    &__background-desc {
+        position: absolute;
+        width: 485px;
+        height: 112px;
+        color: white;
+        background-color: #D71635;
+        padding: 22px;
+        left: 0;
+        bottom: 0;
+        border-radius: 4px;
+
+        & span {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+
+    &__description {
+        padding: 145px 45px 80px 45px;
+        background: rgba(0, 109, 182, 0.08);
+        border-radius: 4px;
+    }
+
+    &__desc-inner {
+        gap: 90px;
+    }
+
+    &__desc-row {
+        gap: 40px;
+        width: 550px;
+    }
+
+    &__desc-col {
+        gap: 70px;
+
+        &:nth-child(2) {
+            gap: 45px;
+        }
+    }
+
+    &__desc-text {
+        width: 540px;
+    }
+
+    &__desc {
+        font-weight: 500;
+        font-size: 18px;
+        width: 265px;
+    }
+
+    &__desc-title {
+        font-weight: 600;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #D71635;
+    }
+
+    &__block {
+        padding: 15px 50px 15px 65px;
+        height: 82px;
+        justify-content: center;
+        background-color: white;
+        border-radius: 4px;
+
+        & p {
+            display: block;
+        }
+    }
+
+    &__block-inner,
+    &__block-col {
+        gap: 15px;
+    }
+
+    &__btn {
+        height: 82px;
+        color: white;
+        background-color: #D71635;
+        border-radius: 4px;
+        border: transparent;
+    }
+}
+
+.title span {
+    color: #D71635;
+}
