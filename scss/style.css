@@ -276,9 +276,11 @@ body {
   font-size: 18px;
 }
 .about__description {
-  padding: 145px 45px 80px 45px;
   background: rgba(0, 109, 182, 0.08);
   border-radius: 4px;
+}
+.about__description-wrapper {
+  padding: 145px 45px 80px 45px;
 }
 .about__desc-inner {
   gap: 90px;
