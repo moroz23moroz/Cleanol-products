@@ -1,6 +1,10 @@
 .products {
     font-family: $main-font;
 
+    // * {
+    //     border: 1px solid purple;
+    // }
+
     &__title {}
 
     &__shampoo {}
@@ -9,7 +13,10 @@
 
     &__visible-wrapper {
         width: 80%;
+        max-width: 1432px;
+        margin: 0 auto;
         display: flex;
+        justify-content: space-around;
     }
 
     &__collapsible {}
@@ -20,24 +27,54 @@
 
     &__product-card {
         width: 20%;
-
-        img {
-            width: 100%;
-            max-width: 342px;
-        }
+        outline: 1.3px solid $bg-color-light;
     }
 
-    &__card-title {}
+    &__card-img {
+        width: 100%;
+        max-width: 342px;
+        padding: 10px 50px;
+        border-bottom: 1.3px solid $bg-color-light;
+    }
 
-    &__card-info {}
+    &__card-content {
+        padding: 20px;
+    }
+
+    &__card-title {
+        @include font-style (500, $big-text-font-size, 37.5px);
+    }
+
+    &__card-info {
+        @include font-style (300, $small-text-font-size, 24px);
+    }
 
     &__ingredients {}
 
-    &__card-subtitle {}
+    &__card-subtitle {
+        width: 100%;
+        @include font-style (500, $small-text-font-size, 24px);
+    }
 
-    &__size {}
+    &__size {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-    &__size-option {}
+    &__size-option {
+        width: 52px;
+        // max-width: 52px;
+        padding: 6px;
+        margin-right: 6px;
+        @include font-style (300, $small-text-font-size, 24px);
+        text-align: center;
+        background-color: $bg-color-light;
+    }
 
-    &__button-buy {}
+    &__button-buy {
+        @include button-main (118px, 15px, $button-font-size);
+        // @include font-style (400, $button-font-size, 24px);
+    }
 }
