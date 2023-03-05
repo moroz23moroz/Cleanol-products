@@ -38,7 +38,11 @@
     }
 
     &__card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         padding: 20px;
+        min-height: 700px;
     }
 
     &__card-title {

@@ -204,7 +204,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   border-bottom: 1.3px solid #EEF3FD;
 }
 .products__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 20px;
+  min-height: 700px;
 }
 .products__card-title {
   font-weight: 500;
