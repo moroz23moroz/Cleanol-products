@@ -4,7 +4,9 @@
 @import 'vars';
 @import 'mixins';
 
+@import './header';
 @import './blocks/banner';
+@import './blocks/about';
 @import './blocks/products';
 @import './blocks/block_5';
 @import './blocks/block_6';
