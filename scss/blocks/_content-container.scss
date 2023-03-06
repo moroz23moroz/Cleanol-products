@@ -78,3 +78,92 @@
     margin-top: 213px;
     margin-left: 119px;
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .content-container {
+        max-width: 530px;
+        margin: 31px 32px 75px 37px;
+        line-height: 24px;
+    
+        &__item {
+            margin-bottom: 10px;
+            font-size: 16px;
+            // color: $text-color-main;
+    
+            // &_bold {
+            //     font-weight: 700;
+            // }
+    
+            // &_red {
+            //     color: $text-color-title;
+            // }
+    
+            &_tiny {
+                font-size: 14px;
+                color: $text-color-light;
+            }
+        }
+    
+        &__icon {
+            max-height: 44px;
+            margin-bottom: 21px;
+        }
+    }
+    
+    .content-container_left {
+        max-width: 502px;
+        margin-top: 213px;
+        margin-left: 300px;
+        line-height: 27px;
+    
+        &__item {
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: $text-color-white;
+    
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/block-8_icons/icon_small_question_mark.svg');
+                width: 33px;
+                height: 33px;
+                top: 10px;
+                left: -100px;
+            }
+        }
+    
+        &__item_sp {
+            margin-top: 55px;
+            font-weight: 300;
+            line-height: 30px;
+    
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/block-8_icons/icon_phone.svg');
+                width: 66px;
+                height: 66px;
+                top: 0px;
+                left: -116px;
+            }
+        }
+    
+        & .content-container__item_bold {
+            font-size: 30px;
+        }
+    }
+    
+    .content-container_right {
+        max-width: 615px;
+        margin-top: 213px;
+        margin-left: 119px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}

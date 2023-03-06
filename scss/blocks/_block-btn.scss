@@ -58,3 +58,68 @@
         }
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .block-btn {
+        position: relative;
+        max-width: 183px;
+        min-width: 183px;
+        max-height: 51px;
+        min-height: 51px;
+        padding-left: 23px;
+        // border: 0;
+        // border-radius: 4px;
+        // text-transform: uppercase;
+        // text-align: left;
+        font-size: 16px;
+    
+        &_red {
+            // background-color: $bg-color-main;
+            // color: $text-color-white;
+    
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/white_arrow.svg');
+                width: 32px;
+                height: 10px;
+                top: 20.5px;
+                right: 20px;
+            }
+        }
+    
+        &_white {
+            // background-color: $bg-color-white;
+            // color: $text-color-title;
+    
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/red_arrow.svg');
+                min-width: 32px;
+                height: 10px;
+                top: 20.5px;
+                right: 20px;
+            }
+        }
+    
+        &_centered {
+            margin-right: 283px;
+            margin-left: 283px;
+    
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/white_arrow.svg');
+                min-width: 32px;
+                height: 10px;
+                top: 20.5px;
+                right: 20px;
+            }
+        }
+    }
+}
