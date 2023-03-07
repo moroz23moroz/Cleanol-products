@@ -52,15 +52,12 @@
         position: relative;
         max-width: 750px;
         margin: 0 auto;
-        // font-family: $main-font;
-        // font-weight: 400;
     
         &_bg-grey {
             // max-height: 1091px;
             min-height: 1091px;
             margin-top: 47px;
             padding-top: 647px;
-            // background-color: $bg-color-light;
     
             &__image {
                 max-height: 401px;
@@ -73,11 +70,11 @@
         }
     
         &_bg-red {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            max-height: 670px;
-            min-height: 670px;
-            background-color: $bg-color-main;
+            display: flex;
+            flex-wrap: wrap;
+            // grid-template-columns: 1fr 1fr;
+            max-height: 835px;
+            min-height: 835px;
         }
     
         &_bg-white {
@@ -88,7 +85,6 @@
             max-height: 622px;
             min-height: 622px;
             max-width: 610px;
-            // background-color: $bg-color-white;
         }
     }
 }
