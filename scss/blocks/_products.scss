@@ -2,7 +2,7 @@
     font-family: $main-font;
 
     // * {
-    //     border: 1px solid purple;
+    //     outline: 1px solid purple;
     // }
 
     &__title-group {
@@ -31,7 +31,7 @@
 
     &__visible-wrapper {
         width: 80%;
-        margin: 0 auto;
+        margin: 20px auto;
         display: flex;
         justify-content: space-around;
     }
@@ -80,10 +80,23 @@
         @include font-style (300, $small-text-font-size, 24px);
     }
 
+    &__button-read-more {
+        width: 60%;
+        padding: 0;
+        margin-bottom: 20px;
+        border: none;
+        @include font-style (300, $small-text-font-size, 16px);
+        font-style: italic;
+        text-align: left;
+        background-color: $bg-color-white;
+        color: $text-color-title;
+    }
+
     &__ingredients {}
 
     &__card-subtitle {
         width: 100%;
+        margin-top: 10px;
         @include font-style (500, $small-text-font-size, 24px);
         text-transform: uppercase;
     }

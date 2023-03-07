@@ -210,7 +210,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .products__visible-wrapper {
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   justify-content: space-around;
 }
@@ -251,8 +251,22 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-size: 16px;
   line-height: 24px;
 }
+.products__button-read-more {
+  width: 60%;
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: italic;
+  text-align: left;
+  background-color: #FFFFFF;
+  color: #D71635;
+}
 .products__card-subtitle {
   width: 100%;
+  margin-top: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;

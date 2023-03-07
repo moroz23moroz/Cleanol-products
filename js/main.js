@@ -13,6 +13,7 @@ new Swiper('.banner__slider', {
 // block products
 
 let collapsible = document.querySelector('.products__collapsible-wrapper');
+
 const getData = (block) => {
     fetch("../data/shampoo.json")
         .then(response => response.json())
@@ -24,7 +25,6 @@ const getData = (block) => {
                     break;
                 case 'collapsible':
                     displayCards(data, document.querySelector('.products__collapsible-wrapper'), 4, 8);
-                    console.log('wo');
                     break;
             }
         })
@@ -43,7 +43,7 @@ const displayCards = (data, container, indexStart, indexEnd) => {
         const pictureCard = document.createElement('img');
         const cardContent = document.createElement('div');
         const titleCard = document.createElement('h4');
-        const infoText = document.createElement('p');
+        const infoText = document.createElement('div');
         const ingredientsWrapper = document.createElement('div');
         const subtitleText = document.createElement('p');
         const listText = document.createElement('p');
@@ -100,23 +100,45 @@ const displayCards = (data, container, indexStart, indexEnd) => {
             size3.textContent = data[i].size3;
         }
 
+        if (data[i].about_more) {
+            infoText.textContent += '...';
+            const buttonReadMore = document.createElement('button');
+            buttonReadMore.classList.add('products__button-read-more');
+            buttonReadMore.innerText = 'Читать далее'
+            infoText.append(buttonReadMore);
+
+            buttonReadMore.addEventListener('click', () => {
+                const resultString = infoText.textContent.replace('...Читать далее', '');
+                infoText.textContent = `${resultString}${data[i].about_more}`;
+            });
+        }
+
         sizeWrapper.append(buyButton);
 
         container.append(productCard);
     }
 
+    if (indexStart === 4) {
+        showCollapsible(collapsible);
+    }
+}
+
+const showCollapsible = (collapsible) => {
     if (collapsible.style.maxHeight) {
         collapsible.style.maxHeight = null;
+        collapsible.style.overflow = 'hidden';
     } else {
-        collapsible.style.maxHeight = `${collapsible.scrollHeight}px`;
+        collapsible.style.maxHeight = `${collapsible.scrollHeight * 1.5}px`;
+        collapsible.style.overflow = 'visible';
     }
 }
 
 document.addEventListener("DOMContentLoaded", getData('visible'));
 document.querySelector('.products__button-more').addEventListener('click', () => {
     // document.querySelector('.products__button-more').textContent = 'Свернуть';
-    getData('collapsible')
+    getData('collapsible');
 });
+// document.querySelector('products__button-read-more').addEventListener('click', () => {});
 
 
 // <!-- <div class="products__product-card">
