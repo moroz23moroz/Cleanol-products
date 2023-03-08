@@ -798,6 +798,7 @@ body {
 }
 .content-container__item_bold {
   font-weight: 700;
+  color: #FFFFFF;
 }
 .content-container__item_red {
   color: #D71635;
