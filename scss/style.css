@@ -798,7 +798,6 @@ body {
 }
 .content-container__item_bold {
   font-weight: 700;
-  color: #FFFFFF;
 }
 .content-container__item_red {
   color: #D71635;
@@ -810,6 +809,10 @@ body {
 .content-container__icon {
   max-height: 44px;
   margin-bottom: 21px;
+}
+
+a.content-container__item_bold {
+  color: #FFFFFF;
 }
 
 .content-container_left {
