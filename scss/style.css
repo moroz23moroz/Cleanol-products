@@ -632,7 +632,7 @@ body {
   .service_bg-red__img {
     position: absolute;
     top: 11px;
-    left: 129px;
+    left: 0;
     z-index: -1;
   }
 }
