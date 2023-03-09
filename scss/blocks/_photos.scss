@@ -42,4 +42,16 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .photos {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        gap: 14px;
+        margin: 51px auto 0;
+    
+        &__item {
+            max-width: 340px;
+        }
+    }
+}

@@ -71,16 +71,10 @@
         max-height: 51px;
         min-height: 51px;
         padding-left: 23px;
-        // border: 0;
-        // border-radius: 4px;
-        // text-transform: uppercase;
-        // text-align: left;
         font-size: 16px;
     
         &_red {
-            // background-color: $bg-color-main;
-            // color: $text-color-white;
-    
+   
             &::after {
                 position: absolute;
                 content: '';
@@ -93,8 +87,6 @@
         }
     
         &_white {
-            // background-color: $bg-color-white;
-            // color: $text-color-title;
     
             &::after {
                 position: absolute;
@@ -118,6 +110,59 @@
                 min-width: 32px;
                 height: 10px;
                 top: 20.5px;
+                right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .block-btn {
+        position: relative;
+        max-width: 183px;
+        min-width: 183px;
+        max-height: 44px;
+        min-height: 44px;
+        padding-left: 23px;
+        font-size: 16px;
+    
+        &_red {
+   
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/white_arrow.svg');
+                width: 32px;
+                height: 10px;
+                top: 17px;
+                right: 20px;
+            }
+        }
+    
+        &_white {
+    
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/red_arrow.svg');
+                min-width: 32px;
+                height: 10px;
+                top: 17px;
+                right: 20px;
+            }
+        }
+    
+        &_centered {
+            margin-right: 104px;
+            margin-left: 104px;
+    
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/white_arrow.svg');
+                min-width: 32px;
+                height: 10px;
+                top: 17px;
                 right: 20px;
             }
         }

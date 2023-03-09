@@ -99,4 +99,44 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .convinience {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    
+    .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        max-width: 340px;
+        margin: 44px auto 24px;
+    }
+    
+    .card-item {
+        max-width: 340px;
+        min-width: 340px;
+        max-height: 126px;
+        min-height: 126px;
+        padding: 9px 8px 22px 8px;
+    
+        &__button {
+            align-self: flex-start;
+            max-width: 115px;
+            min-width: 115px;
+            max-height: 30px;
+            min-height: 30px;
+            font-size: 15px;
+        }
+    
+        &__image {
+            max-height: 46px;
+            margin-top: 18px;
+        }
+    
+        &__slogan {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
