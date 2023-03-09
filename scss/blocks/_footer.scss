@@ -24,6 +24,7 @@
 
     &__text {
         max-width: 245px;
+        font-size: 17px;
         color: $text-color-dark;
     }
 }
@@ -134,12 +135,18 @@
             max-width: 368px;
             margin-top: 50px;
             margin-left: 0;
+
+            & .content-container__item {
+
+                &_red {
+                    font-size: 18px;
+                }
+            }
         }
 
         & .content-container__item {
             // font-size: 20px;
             max-width: 368px;
-            font-size: 18px;
 
             &_bold {
                 font-size: 30px;
