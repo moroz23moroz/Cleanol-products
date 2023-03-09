@@ -30,4 +30,17 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .block-list {
+        margin-bottom: 10px;
+    
+        &__title {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    
+        &__item {
+            font-size: 16px;
+        }
+    }
+}
