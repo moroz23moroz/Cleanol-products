@@ -96,19 +96,10 @@ a.content-container__item_bold {
         &__item {
             margin-bottom: 10px;
             font-size: 16px;
-            // color: $text-color-main;
-
-            // &_bold {
-            //     font-weight: 700;
-            // }
-
-            // &_red {
-            //     color: $text-color-title;
-            // }
 
             &_tiny {
                 font-size: 14px;
-                // color: $text-color-light;
+                color: $text-color-light;
             }
         }
 
@@ -169,4 +160,73 @@ a.content-container__item_bold {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .content-container {
+        max-width: 340px;
+        margin: 30px 22px 26px 26px;
+        line-height: 24px;
+
+        &__item {
+            margin-bottom: 10px;
+            font-size: 16px;
+
+            // &_tiny {
+            //     font-size: 14px;
+            //     color: $text-color-light;
+            // }
+        }
+
+        &__icon {
+            max-height: 44px;
+            margin-bottom: 21px;
+        }
+    }
+
+    .content-container_left {
+        max-width: 250px;
+        margin-top: 26px;
+        margin-bottom: 0;
+        margin-left: 100px;
+        line-height: 27px;
+
+        &__item {
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 18px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/block-8_icons/icon_small_question_mark.svg');
+                width: 33px;
+                height: 33px;
+                top: 10px;
+                left: -60px;
+            }
+        }
+
+        &__item_sp {
+            margin-top: 26px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/block-8_icons/icon_phone.svg');
+                width: 66px;
+                height: 66px;
+                top: 0px;
+                left: -76px;
+            }
+        }
+
+        & .content-container__item_bold {
+            font-size: 25px;
+        }
+    }
+
+    .content-container_right {
+        min-width: 340px;
+        margin: 0 auto;
+    }
+}

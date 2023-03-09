@@ -21,11 +21,13 @@
     }
 
     &_bg-red {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-height: 670px;
         min-height: 670px;
         background-color: $bg-color-main;
+        z-index: 0;
     }
 
     &_bg-white {
@@ -40,10 +42,18 @@
     }
 }
 
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    
+.service_bg-red a {
+    color: $text-color-white;
 }
+
+.service_bg-red__img {
+    position: absolute;
+    top: 0;
+    left: 582px;
+    z-index: -1;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {}
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {}
 
@@ -52,13 +62,13 @@
         position: relative;
         max-width: 750px;
         margin: 0 auto;
-    
+
         &_bg-grey {
             // max-height: 1091px;
             min-height: 1091px;
             margin-top: 47px;
             padding-top: 647px;
-    
+
             &__image {
                 max-height: 401px;
                 // margin: auto;
@@ -68,15 +78,17 @@
                 margin-left: 50px;
             }
         }
-    
+
         &_bg-red {
+            position: relative;
             display: flex;
             flex-wrap: wrap;
             // grid-template-columns: 1fr 1fr;
             max-height: 835px;
             min-height: 835px;
+            z-index: 0;
         }
-    
+
         &_bg-white {
             position: absolute;
             top: 0;
@@ -87,6 +99,59 @@
             max-width: 610px;
         }
     }
+
+    .service_bg-red__img {
+        position: absolute;
+        top: 11px;
+        left: 189px;
+        z-index: -1;
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .service {
+        position: relative;
+        max-width: 390px;
+        margin: 0 auto;
+
+        &_bg-grey {
+            min-height: 1116px;
+            margin-top: 47px;
+            padding-top: 814px;
+
+            &__image {
+                max-width: 340px;
+                margin-right:auto ;
+                margin-bottom: 26px;
+                margin-left: auto;
+            }
+        }
+
+        &_bg-red {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            // grid-template-columns: 1fr 1fr;
+            max-height: 980px;
+            min-height: 980px;
+            z-index: 0;
+        }
+
+        &_bg-white {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            max-height: 814px;
+            min-height: 814px;
+            max-width: 390px;
+        }
+    }
+
+    .service_bg-red__img {
+        position: absolute;
+        top: 11px;
+        left: 0;
+        z-index: -1;
+    }
+}
