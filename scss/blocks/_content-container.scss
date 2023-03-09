@@ -92,15 +92,6 @@
         &__item {
             margin-bottom: 10px;
             font-size: 16px;
-            // color: $text-color-main;
-
-            // &_bold {
-            //     font-weight: 700;
-            // }
-
-            // &_red {
-            //     color: $text-color-title;
-            // }
 
             &_tiny {
                 font-size: 14px;
@@ -174,20 +165,11 @@
         &__item {
             margin-bottom: 10px;
             font-size: 16px;
-            // color: $text-color-main;
 
-            // &_bold {
-            //     font-weight: 700;
+            // &_tiny {
+            //     font-size: 14px;
+            //     color: $text-color-light;
             // }
-
-            // &_red {
-            //     color: $text-color-title;
-            // }
-
-            &_tiny {
-                font-size: 14px;
-                color: $text-color-light;
-            }
         }
 
         &__icon {
@@ -199,6 +181,7 @@
     .content-container_left {
         max-width: 250px;
         margin-top: 26px;
+        margin-bottom: 0;
         margin-left: 100px;
         line-height: 27px;
 
