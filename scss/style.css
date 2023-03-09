@@ -188,7 +188,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .products__title-group {
   display: flex;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 .products__title-group img {
@@ -202,30 +202,31 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: #D71635;
 }
 .products__subtitle {
-  width: 80%;
+  width: 85%;
   margin: 25px auto;
   font-weight: 500;
   font-size: 30px;
   line-height: 39px;
 }
 .products__visible-wrapper {
-  width: 80%;
+  width: 85%;
   margin: 20px auto;
   display: flex;
   justify-content: space-around;
 }
 .products__collapsible-wrapper {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in;
 }
 .products__product-card {
-  width: 25%;
-  margin-right: 20px;
+  width: 24%;
+  margin-right: 10px;
   outline: 1.3px solid #EEF3FD;
 }
 .products__card-img {

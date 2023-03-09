@@ -7,7 +7,7 @@
 
     &__title-group {
         display: flex;
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
 
         img {
@@ -24,22 +24,23 @@
     &__shampoo {}
 
     &__subtitle {
-        width: 80%;
+        width: 85%;
         margin: 25px auto;
         @include font-style (500, $subtitle-font-size, 39px);
     }
 
     &__visible-wrapper {
-        width: 80%;
+        width: 85%;
         margin: 20px auto;
         display: flex;
         justify-content: space-around;
     }
 
     &__collapsible-wrapper {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
 
         max-height: 0;
@@ -52,8 +53,8 @@
     &__special {}
 
     &__product-card {
-        width: 25%;
-        margin-right: 20px;
+        width: 24%;
+        margin-right: 10px;
         outline: 1.3px solid $bg-color-light;
     }
 

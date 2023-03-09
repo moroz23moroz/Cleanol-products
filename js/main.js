@@ -12,19 +12,23 @@ new Swiper('.banner__slider', {
 
 // block products
 
-let collapsible = document.querySelector('.products__collapsible-wrapper');
-
-const getData = (block) => {
-    fetch("../data/shampoo.json")
+const getData = (path, block) => {
+    fetch (`../data/${path}.json`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
             switch (block) {
                 case 'visible':
-                    displayCards(data, document.querySelector('.products__visible-wrapper'), 0, 4);
+                    displayCards(data, document.getElementById(`${path}-wrapper-visible`), 0, 4);
                     break;
-                case 'collapsible':
-                    displayCards(data, document.querySelector('.products__collapsible-wrapper'), 4, 8);
+                case 'shampoo-collapsible':
+                    displayCards(data, document.getElementById('shampoo-wrapper-collapsible'), 4, 8);
+                    break;
+                case 'wax-visible':
+                    displayCards(data, document.getElementById('wax-wrapper-visible'), 0, 3);
+                    break;
+                case 'special-collapsible':
+                    displayCards(data, document.getElementById('special-wrapper-collapsible'), 4, 12);
                     break;
             }
         })
@@ -34,7 +38,7 @@ const getData = (block) => {
 };
 
 const displayCards = (data, container, indexStart, indexEnd) => {
-    collapsible.innerHTML = '';
+    container.innerHTML = '';
 
     for (let i = indexStart; i < indexEnd; i++) {
 
@@ -119,24 +123,31 @@ const displayCards = (data, container, indexStart, indexEnd) => {
     }
 
     if (indexStart === 4) {
-        showCollapsible(collapsible);
+        showCollapsible(container);
     }
 }
 
-const showCollapsible = (collapsible) => {
-    if (collapsible.style.maxHeight) {
-        collapsible.style.maxHeight = null;
-        collapsible.style.overflow = 'hidden';
+const showCollapsible = (container) => {
+    if (container.style.maxHeight) {
+        container.style.maxHeight = null;
+        container.style.overflow = 'hidden';
     } else {
-        collapsible.style.maxHeight = `${collapsible.scrollHeight * 1.5}px`;
-        collapsible.style.overflow = 'visible';
+        container.style.maxHeight = `${container.scrollHeight * 1.5}px`;
+        container.style.overflow = 'visible';
     }
 }
 
-document.addEventListener("DOMContentLoaded", getData('visible'));
-document.querySelector('.products__button-more').addEventListener('click', () => {
-    // document.querySelector('.products__button-more').textContent = 'Свернуть';
-    getData('collapsible');
+document.addEventListener("DOMContentLoaded", getData('shampoo', 'visible'));
+document.addEventListener("DOMContentLoaded", getData('wax', 'wax-visible'));
+document.addEventListener("DOMContentLoaded", getData('special', 'visible'));
+
+document.getElementById('shampoo-button-more').addEventListener('click', () => {
+    document.getElementById('shampoo-button-more').style.display = 'none';
+    getData('shampoo','shampoo-collapsible');
+});
+document.getElementById('special-button-more').addEventListener('click', () => {
+    document.getElementById('special-button-more').style.display = 'none';
+    getData('special','special-collapsible');
 });
 // document.querySelector('products__button-read-more').addEventListener('click', () => {});
 
