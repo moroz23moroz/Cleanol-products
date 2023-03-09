@@ -69,4 +69,37 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {}
 
-@media screen and (min-width: 320px) and (max-width: 480px) {}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .feedback-form {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 2fr 1fr;
+        // justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        // max-height: 360px;
+        margin: 0 auto;
+    
+        // &__input {
+        //     background-color: $bg-color-main;
+        //     border: none;
+        // }
+    }
+    
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    
+        &_sm {
+            max-width: 340px;
+            min-height: 68px;
+        }
+    
+        &_lg {
+            max-width: 340px;
+            min-height: 130px;
+        }
+    }
+}

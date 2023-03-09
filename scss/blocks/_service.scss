@@ -132,8 +132,8 @@
             display: flex;
             flex-wrap: wrap;
             // grid-template-columns: 1fr 1fr;
-            max-height: 835px;
-            min-height: 835px;
+            max-height: 980px;
+            min-height: 980px;
             z-index: 0;
         }
 
@@ -151,7 +151,7 @@
     .service_bg-red__img {
         position: absolute;
         top: 11px;
-        left: 189px;
+        left: 129px;
         z-index: -1;
     }
 }
