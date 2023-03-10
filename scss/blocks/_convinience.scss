@@ -48,6 +48,7 @@
 
     &__slogan {
         font-size: 24px;
+        font-weight: 400;
         text-align: center;
     }
 }
@@ -114,6 +115,9 @@
     }
     
     .card-item {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
         max-width: 340px;
         min-width: 340px;
         max-height: 126px;
@@ -130,13 +134,20 @@
         }
     
         &__image {
+            grid-column: 1/2;
+            grid-row: 2/3;
             max-height: 46px;
             margin-top: 18px;
+            justify-self: center;
         }
     
         &__slogan {
+            margin-top: 20px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            align-self: center;
             font-size: 16px;
-            text-align: center;
+            text-align: start;
         }
     }
 }

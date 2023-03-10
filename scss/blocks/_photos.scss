@@ -14,23 +14,23 @@
         min-height: 453px;
 
         &_l-top {
-            background: url('../../images/block-5/photo-bg_1.png');
+            background: url('../../images/photos/photo-bg_1.png');
         }
 
         &_r-top {
             justify-self: flex-end;
-            background: url('../../images/block-5/photo-bg_2.png');
+            background: url('../../images/photos/photo-bg_2.png');
         }
 
         &_l-bot {
             align-self: flex-end;
-            background: url('../../images/block-5/photo-bg_3.png');
+            background: url('../../images/photos/photo-bg_3.png');
         }
 
         &_r-bot {
             justify-self: flex-end;
             align-self: flex-end;
-            background: url('../../images/block-5/photo-bg_4.png');
+            background: url('../../images/photos/photo-bg_4.png');
         }
     }
 }

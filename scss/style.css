@@ -350,20 +350,20 @@ body {
   min-height: 453px;
 }
 .photos__item_l-top {
-  background: url("../../images/block-5/photo-bg_1.png");
+  background: url("../../images/photos/photo-bg_1.png");
 }
 .photos__item_r-top {
   justify-self: flex-end;
-  background: url("../../images/block-5/photo-bg_2.png");
+  background: url("../../images/photos/photo-bg_2.png");
 }
 .photos__item_l-bot {
   align-self: flex-end;
-  background: url("../../images/block-5/photo-bg_3.png");
+  background: url("../../images/photos/photo-bg_3.png");
 }
 .photos__item_r-bot {
   justify-self: flex-end;
   align-self: flex-end;
-  background: url("../../images/block-5/photo-bg_4.png");
+  background: url("../../images/photos/photo-bg_4.png");
 }
 
 .photo-text {
@@ -465,6 +465,7 @@ body {
 }
 .card-item__slogan {
   font-size: 24px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -517,6 +518,9 @@ body {
     margin: 44px auto 24px;
   }
   .card-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
     max-width: 340px;
     min-width: 340px;
     max-height: 126px;
@@ -532,12 +536,19 @@ body {
     font-size: 15px;
   }
   .card-item__image {
+    grid-column: 1/2;
+    grid-row: 2/3;
     max-height: 46px;
     margin-top: 18px;
+    justify-self: center;
   }
   .card-item__slogan {
+    margin-top: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
     font-size: 16px;
-    text-align: center;
+    text-align: start;
   }
 }
 .service {
@@ -1058,7 +1069,7 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .title-container {
-    max-width: 284px;
+    max-width: 390px;
     line-height: 29px;
   }
   .title-container_contacts {
@@ -1067,14 +1078,19 @@ body {
   }
   .title-container__icon, .title-container__title {
     display: inline-block;
-    margin-top: 50px;
   }
   .title-container__icon {
+    margin-top: 0;
     margin-left: -22px;
   }
   .title-container__title {
+    max-width: 250px;
+    margin-top: 50px;
     margin-left: 21px;
     font-size: 30px;
+  }
+  .convinience .title-container__icon {
+    margin-bottom: 50px;
   }
 }
 .content-container {

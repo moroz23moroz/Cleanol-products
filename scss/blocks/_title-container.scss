@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .title-container {
-        max-width: 284px;
+        max-width: 390px;
         line-height: 29px;
 
         &_contacts {
@@ -58,16 +58,22 @@
         &__icon,
         &__title {
             display: inline-block;
-            margin-top: 50px;
         }
 
         &__icon {
+            margin-top: 0;
             margin-left: -22px;
         }
 
         &__title {
+            max-width: 250px;
+            margin-top: 50px;
             margin-left: 21px;
             font-size: 30px;
         }
+    }
+
+    .convinience .title-container__icon {
+        margin-bottom: 50px;
     }
 }
