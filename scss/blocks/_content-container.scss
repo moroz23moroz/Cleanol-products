@@ -87,7 +87,6 @@
     .content-container {
         max-width: 530px;
         margin: 31px 32px 40px 37px;
-        line-height: 24px;
 
         &__item {
             margin-bottom: 10px;
@@ -109,14 +108,12 @@
         max-width: 502px;
         margin-top: 47px;
         margin-left: 162px;
-        line-height: 27px;
 
         &__item {
             position: relative;
             margin-top: 15px;
             margin-bottom: 15px;
             font-size: 20px;
-            // color: $text-color-white;
 
             &::before {
                 position: absolute;
@@ -131,8 +128,6 @@
 
         &__item_sp {
             margin-top: 36px;
-            // font-weight: 300;
-            // line-height: 30px;
 
             &::before {
                 position: absolute;
@@ -144,10 +139,6 @@
                 left: -96px;
             }
         }
-
-        // & .content-container__item_bold {
-        //     font-size: 30px;
-        // }
     }
 
     .content-container_right {
@@ -165,11 +156,6 @@
         &__item {
             margin-bottom: 10px;
             font-size: 16px;
-
-            // &_tiny {
-            //     font-size: 14px;
-            //     color: $text-color-light;
-            // }
         }
 
         &__icon {

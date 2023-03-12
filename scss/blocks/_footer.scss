@@ -60,7 +60,6 @@
     }
 
     & .content-container__item {
-        // font-size: 20px;
 
         &_bold {
             font-size: 30px;
@@ -80,9 +79,6 @@
         min-width: 750px;
         max-height: 383px;
         margin: 330px auto 0;
-        // font-family: $main-font;
-        // font-weight: 400;
-        // background-color: $bg-color-white;
     }
 
     .footer-logo {
@@ -102,7 +98,6 @@
         &__text {
             min-width: 250px;
             margin-left: 42px;
-            // color: $text-color-dark;
         }
     }
 
@@ -113,12 +108,6 @@
         margin-top: 0;
         margin-bottom: 43px;
         margin-left: 48px;
-
-        // &__link {
-        //     font-size: 18px;
-        //     line-height: 27px;
-        //     color: $text-color-main;
-        // }
     }
 
     .footer-contacts {
@@ -145,7 +134,6 @@
         }
 
         & .content-container__item {
-            // font-size: 20px;
             max-width: 368px;
 
             &_bold {
@@ -161,13 +149,10 @@
         flex-direction: column;
         max-width: 390px;
         min-width: 390px;
-        // max-height: 557px;
-        margin: 0 auto 0;
+        margin: 0 auto;
     }
 
     .footer-logo {
-        // display: flex;
-        // flex-direction: row;
         max-height: 50px;
         margin-top: 52px;
         margin-bottom: 48px;
@@ -225,4 +210,74 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 320px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        max-width: 390px;
+        min-width: 390px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        max-height: 50px;
+        margin-top: 52px;
+        margin-bottom: 48px;
+        margin-left: 26px;
+
+        &__image {
+            max-width: 208px;
+            min-height: 50px;
+            margin-bottom: 11px;
+        }
+
+        &__text {
+            min-width: 250px;
+        }
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        max-width: 202px;
+        margin-top: 31px;
+        margin-bottom: 24px;
+        margin-left: 26px;
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+
+    .footer-contacts {
+        margin-left: 26px;
+
+        &_top {
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        &_bottom {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 0;
+
+            & .content-container__item {
+
+                &_red {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        & .content-container__item {
+            max-width: 280px;
+
+            &_bold {
+                font-size: 25px;
+            }
+        }
+    } 
 }

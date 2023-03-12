@@ -28,7 +28,6 @@
     .title-container {
 
         &_contacts {
-            margin-top: 21px;
             margin-left: 0;
         }
 
@@ -51,7 +50,6 @@
         line-height: 29px;
 
         &_contacts {
-            margin-top: 21px;
             margin-left: 0;
         }
 
@@ -75,5 +73,38 @@
 
     .convinience .title-container__icon {
         margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-container {
+        max-width: 310px;
+        line-height: 25px;
+
+        &_contacts {
+            margin-left: 0;
+        }
+
+        &__icon,
+        &__title {
+            display: inline-block;
+        }
+
+        &__icon {
+            margin-top: 0;
+            margin-left: -20px;
+            max-width: 88px;
+        }
+
+        &__title {
+            max-width: 210px;
+            margin-top: 50px;
+            margin-left: 15px;
+            font-size: 25px;
+        }
+    }
+
+    .convinience .title-container__icon {
+        margin-bottom: 45px;
     }
 }
