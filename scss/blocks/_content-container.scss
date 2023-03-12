@@ -196,10 +196,11 @@
                 position: absolute;
                 content: '';
                 background-image: url('../../images/block-8_icons/icon_phone.svg');
-                width: 66px;
-                height: 66px;
+                background-size: contain;
+                width: 55px;
+                height: 55px;
                 top: 0px;
-                left: -76px;
+                left: -72px;
             }
         }
 

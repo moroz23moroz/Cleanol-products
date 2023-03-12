@@ -154,14 +154,13 @@
         max-width: 310px;
 
         &_bg-grey {
-            min-height: 1116px;
+            min-height: 1160px;
             margin-top: 30px;
-            padding-top: 814px;
+            padding-top: 920px;
 
             &__image {
                 max-width: 300px;
                 margin-right:auto ;
-                margin-bottom: 26px;
                 margin-left: auto;
             }
         }
@@ -179,8 +178,7 @@
             top: 0;
             left: 0;
             z-index: 1;
-            max-height: 814px;
-            min-height: 814px;
+            max-height: fit-content;
             max-width: 310px;
         }
     }

@@ -527,7 +527,7 @@ body {
   }
   .card-item__slogan {
     max-width: 160px;
-    font-size: 16px;
+    font-size: 19px;
     text-align: center;
   }
 }
@@ -759,14 +759,13 @@ body {
     max-width: 310px;
   }
   .service_bg-grey {
-    min-height: 1116px;
+    min-height: 1160px;
     margin-top: 30px;
-    padding-top: 814px;
+    padding-top: 920px;
   }
   .service_bg-grey__image {
     max-width: 300px;
     margin-right: auto;
-    margin-bottom: 26px;
     margin-left: auto;
   }
   .service_bg-red {
@@ -782,8 +781,8 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    max-height: 814px;
-    min-height: 814px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
     max-width: 310px;
   }
   .service_bg-red__img {
@@ -1552,10 +1551,11 @@ body {
     position: absolute;
     content: "";
     background-image: url("../../images/block-8_icons/icon_phone.svg");
-    width: 66px;
-    height: 66px;
+    background-size: contain;
+    width: 55px;
+    height: 55px;
     top: 0px;
-    left: -76px;
+    left: -72px;
   }
   .content-container_left .content-container__item_bold {
     font-size: 25px;
@@ -1876,7 +1876,7 @@ body {
     position: absolute;
     content: "";
     background-image: url("../../images/arrows/red_arrow.svg");
-    min-width: 32px;
+    min-width: 24px;
     height: 10px;
     top: 17px;
     right: 20px;
