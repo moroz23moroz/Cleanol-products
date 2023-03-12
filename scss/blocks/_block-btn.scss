@@ -34,9 +34,9 @@
             position: absolute;
             content: '';
             background-image: url('../../images/arrows/red_arrow.svg');
-            min-width: 32px;
-            height: 10px;
-            top: 20.5px;
+            min-width: 24px;
+            height: 12px;
+            top: 19.5px;
             right: 22px;
         }
     }
@@ -72,37 +72,11 @@
         min-height: 51px;
         padding-left: 23px;
         font-size: 16px;
-    
-        &_red {
-   
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/white_arrow.svg');
-                width: 32px;
-                height: 10px;
-                top: 20.5px;
-                right: 20px;
-            }
-        }
-    
-        &_white {
-    
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/red_arrow.svg');
-                min-width: 32px;
-                height: 10px;
-                top: 20.5px;
-                right: 20px;
-            }
-        }
-    
+
         &_centered {
             margin-right: 283px;
             margin-left: 283px;
-    
+
             &::after {
                 position: absolute;
                 content: '';
@@ -116,7 +90,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .block-btn {
         position: relative;
         max-width: 183px;
@@ -125,9 +99,9 @@
         min-height: 44px;
         padding-left: 23px;
         font-size: 16px;
-    
+
         &_red {
-   
+
             &::after {
                 position: absolute;
                 content: '';
@@ -138,9 +112,64 @@
                 right: 20px;
             }
         }
-    
+
         &_white {
-    
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/red_arrow.svg');
+                max-width: 24px;
+                height: 12px;
+                top: 17px;
+                right: 20px;
+            }
+        }
+
+        &_centered {
+            margin-right: 104px;
+            margin-left: 104px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/white_arrow.svg');
+                min-width: 32px;
+                height: 10px;
+                top: 17px;
+                right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .block-btn {
+        position: relative;
+        max-width: 183px;
+        min-width: 183px;
+        max-height: 44px;
+        min-height: 44px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 23px;
+        font-size: 16px;
+
+        &_red {
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/arrows/white_arrow.svg');
+                width: 32px;
+                height: 10px;
+                top: 17px;
+                right: 20px;
+            }
+        }
+
+        &_white {
+
             &::after {
                 position: absolute;
                 content: '';
@@ -151,11 +180,11 @@
                 right: 20px;
             }
         }
-    
+
         &_centered {
-            margin-right: 104px;
-            margin-left: 104px;
-    
+            margin-right: 58px;
+            margin-left: 58px;
+
             &::after {
                 position: absolute;
                 content: '';

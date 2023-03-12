@@ -93,3 +93,28 @@
         }
     }
 }
+
+@media screen and (max-width: 320px) {
+    .feedback-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    
+        &_sm {
+            max-width: 300px;
+            min-height: 68px;
+        }
+    
+        &_lg {
+            max-width: 300px;
+            min-height: 130px;
+        }
+    }
+}

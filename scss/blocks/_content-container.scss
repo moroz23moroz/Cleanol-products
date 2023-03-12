@@ -214,3 +214,73 @@
         min-height: 560px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .content-container {
+        max-width: 310px;
+        margin: 30px 22px 26px 26px;
+        line-height: 24px;
+
+        &__item {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        &__icon {
+            max-height: 44px;
+            margin-bottom: 21px;
+        }
+    }
+
+    .content-container_left {
+        max-width: 250px;
+        max-height: fit-content;
+        margin-top: 26px;
+        margin-bottom: 0;
+        margin-left: 80px;
+        line-height: 24px;
+
+        &__item {
+            position: relative;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-size: 16px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/block-8_icons/icon_small_question_mark.svg');
+                width: 33px;
+                height: 33px;
+                top: 10px;
+                left: -60px;
+            }
+        }
+
+        &__item_sp {
+            margin-top: 26px;
+            line-height: 24px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../../images/block-8_icons/icon_phone.svg');
+                background-size: contain;
+                width: 50px;
+                height: 50px;
+                top: 0px;
+                left: -66px;
+            }
+        }
+
+        & .content-container__item_bold {
+            font-size: 20px;
+        }
+    }
+
+    .content-container_right {
+        min-width: 310px;
+        margin: 0 auto;
+        min-height: 560px;
+    }
+}
