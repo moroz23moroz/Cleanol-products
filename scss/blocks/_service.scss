@@ -132,9 +132,9 @@
             display: flex;
             flex-wrap: wrap;
             // grid-template-columns: 1fr 1fr;
-            max-height: 980px;
-            min-height: 980px;
-            z-index: 0;
+            // max-height: 980px;
+            max-height: fit-content;
+            z-index: 0;  
         }
 
         &_bg-white {

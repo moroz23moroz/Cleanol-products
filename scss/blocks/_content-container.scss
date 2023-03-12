@@ -180,10 +180,11 @@
 
     .content-container_left {
         max-width: 250px;
+        max-height: fit-content;
         margin-top: 26px;
         margin-bottom: 0;
         margin-left: 100px;
-        line-height: 27px;
+        line-height: 24px;
 
         &__item {
             position: relative;
@@ -224,5 +225,6 @@
     .content-container_right {
         min-width: 340px;
         margin: 0 auto;
+        min-height: 560px;
     }
 }
