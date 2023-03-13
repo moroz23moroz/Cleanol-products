@@ -1,19 +1,28 @@
 .banner {
+    // * {
+    //     outline: 1px solid palevioletred;
+    // }
 
     &__container {
         max-width: 1920px;
+        font-family: $main-font;
 
         // * {
         //     outline: 1px solid palevioletred;
         // }
     }
 
-    &__slider {}
+    &__slider {
+        max-height: 700px;
+        position: relative;
+    }
 
     &__wrapper {}
 
     &__slide {
-        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        min-height: 36vw;
         background-size: 100%;
         background-repeat: no-repeat;
 
@@ -39,32 +48,65 @@
     }
 
     &__info {
-        width: fit-content;
+        // width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 38%;
+        // min-width: 38%;
+        // max-width: 717px;
+        min-height: 260px;
         margin-left: 47%;
         padding: 45px;
         border-radius: 4px 0 4px 4px;
         background-color: #FFFFFF58;
     }
 
-    &__title {}
+    &__title {
+        width: 100%;
+        @include font-style (600, $title-font-size, 39px);
+    }
 
-    &__text {}
+    &__text {
+        width: 100%;
+        margin: 20px auto;
+        @include font-style (400, $big-text-font-size, 35px);
+    }
 
-    &__button-more {}
+    &__button-more {
+        @include button-main (234px, 15px, $button-font-size);
+        text-transform: uppercase;
+
+        img {
+            display: inline;
+        }
+    }
+
+    &__navigation {
+        position: absolute;
+        z-index: 2;
+        left: 47%;
+        top: 77%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        max-width: 717px;
+        min-width: 42.5%;
+    }
 
     &__pagination {}
 
     &__nav-button {
-        // width: 50px;
-        // height: 50px;
-        // border-radius: 25px;
-        width: calc(100vw * 0.026);
-        height: calc(100vw * 0.026);
+        width: 55px;
+        min-height: 50px;
         border: none;
-        border-radius: calc(100vw * 0.026 / 2);
+        border-radius: 25px;
+        // box-sizing: border-box;
 
         img {
-            // margin: 0 auto;
+            margin: 0 auto;
             max-width: 80%;
         }
 
@@ -73,8 +115,28 @@
         }
 
         &_next {
+            margin-left: 20px;
             background-color: #EA142E;
         }
     }
 
+}
+
+.swiper-scrollbar {
+    background: none;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+    width: 50px;
+    height: 4px;
+    border-radius: 0;
+    background-color: $bg-color-light;
+    opacity: 1;
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: $bg-color-main;
+    opacity: 1;
 }

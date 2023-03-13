@@ -1,0 +1,154 @@
+.products {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-family: $main-font;
+
+    // * {
+    //     outline: 1px solid purple;
+    // }
+
+    &__title-group {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+
+        img {
+            width: 10%;
+        }
+    }
+
+    &__title {
+        margin-left: 20px;
+        @include font-style (600, $title-font-size, 40px);
+        color: $text-color-title;
+    }
+
+    &__shampoo {}
+
+    &__subtitle {
+        width: 85%;
+        margin: 25px auto;
+        @include font-style (500, $subtitle-font-size, 39px);
+    }
+
+    &__visible-wrapper {
+        width: 85%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__collapsible-wrapper {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in;
+    }
+
+    &__wax {}
+
+    &__special {}
+
+    &__product-card {
+        width: 24%;
+        margin-right: 10px;
+        outline: 1.3px solid $bg-color-light;
+    }
+
+    &__card-img {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        min-height: 38%;
+        padding: 20px 50px;
+        border-bottom: 1.3px solid $bg-color-light;
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        min-height: 700px;
+    }
+
+    &__card-title {
+        @include font-style (500, $big-text-font-size, 37.5px);
+    }
+
+    &__card-info {
+        @include font-style (300, $small-text-font-size, 24px);
+    }
+
+    &__button-read-more {
+        width: 60%;
+        padding: 0;
+        margin-bottom: 20px;
+        border: none;
+        @include font-style (300, $small-text-font-size, 16px);
+        font-style: italic;
+        text-align: left;
+        background-color: $bg-color-white;
+        color: $text-color-title;
+    }
+
+    &__ingredients {}
+
+    &__card-subtitle {
+        width: 100%;
+        margin-top: 10px;
+        @include font-style (500, $small-text-font-size, 24px);
+        text-transform: uppercase;
+    }
+
+    &__size {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__size-option {
+        // width: 52px;
+        width: 19%;
+        // max-width: 52px;
+        padding: 6px;
+        margin-right: 6px;
+        @include font-style (300, $small-text-font-size, 24px);
+        text-align: center;
+        background-color: $bg-color-light;
+    }
+
+    &__button-buy {
+        width: 35%;
+        @include button-main (118px, 15px, $button-font-size);
+        text-transform: uppercase;
+        // @include font-style (400, $button-font-size, 24px);
+    }
+
+    &__button-more {
+        width: 15%;
+        margin-top: 40px;
+        margin-left: 42.5%;
+        padding: 7px;
+
+        border: 1px solid $bg-color-main;
+        border-radius: 4px;
+
+        @include font-style (400, $button-font-size, 42px);
+        text-transform: uppercase;
+
+        background-color: $bg-color-white;
+        color: $text-color-title;
+
+        img {
+            display: inline;
+            margin-left: 10px;
+        }
+    }
+}
