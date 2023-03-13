@@ -9,7 +9,6 @@
     &_bg-grey {
         max-height: 537px;
         min-height: 537px;
-        // margin-top: 90px;
         margin-top: 0;
         padding-top: 57px;
         background-color: $bg-color-light;
@@ -66,7 +65,6 @@
         &_bg-grey {
             max-height: 537px;
             min-height: 537px;
-            // margin-top: 90px;   
             margin-top: 0;
             padding-top: 57px;
 
@@ -115,7 +113,6 @@
         &_bg-grey {
             max-height: 537px;
             min-height: 537px;
-            // margin-top: 90px;   
             margin-top: 0;
             padding-top: 100px;
 
@@ -165,7 +162,6 @@
 
         &_bg-grey {
             min-height: 1091px;
-            // margin-top: 47px;
             margin-top: 0;
             padding-top: 647px;
 
@@ -216,7 +212,6 @@
 
         &_bg-grey {
             min-height: 1015px;
-            // margin-top: 47px;
             margin-top: 0;
             padding-top: 713px;
 
@@ -244,7 +239,6 @@
             left: 0;
             z-index: 1;
             max-height: fit-content;
-            // min-height: 814px;
             max-width: 390px;
             margin-top: 0;
             padding-top: 0;
@@ -263,11 +257,12 @@
     .service {
         position: relative;
         max-width: 310px;
+        margin: 50px auto 0;
 
         &_bg-grey {
-            min-height: 1160px;
-            margin-top: 30px;
-            padding-top: 920px;
+            min-height: 1124px;
+            margin-top: 0;
+            padding-top: 852px;
 
             &__image {
                 max-width: 300px;
@@ -281,6 +276,7 @@
             display: flex;
             flex-wrap: wrap;
             max-height: fit-content;
+            margin-top: 0;
             z-index: 0;
         }
 
@@ -291,6 +287,7 @@
             z-index: 1;
             max-height: fit-content;
             max-width: 310px;
+            margin-top: 0;
         }
     }
 

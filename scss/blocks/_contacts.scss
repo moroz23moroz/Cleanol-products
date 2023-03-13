@@ -27,7 +27,6 @@
         flex-direction: column;
         align-items: flex-start;
         max-height: 155px;
-        // margin-top: 65px;
         margin-top: 0;
         padding: 26px;
         background-color: $bg-color-light;
@@ -100,7 +99,6 @@
 
         &_right {
             max-width: 1024px;
-            // max-height: 323px;
             margin: 41px auto 0;
         }
     }
@@ -115,7 +113,6 @@
             flex-direction: column;
             align-items: flex-start;
             max-height: 155px;
-            // margin-top: 35px;
             margin-top: 0;
             padding: 26px;
         }
@@ -162,7 +159,6 @@
             flex-direction: column;
             align-items: flex-start;
             max-height: 155px;
-            // margin-top: 35px;
             margin-top: 0;
             padding: 26px;
         }
@@ -206,8 +202,6 @@
         gap: 10px;
         max-width: 340px;
         margin: 34px auto 0;
-        // margin-left: auto;
-        // margin-right: auto;
 
         &_left,
         &_right {
@@ -319,7 +313,7 @@
         &_left {
             max-height: 100px;
             gap: 0;
-            margin-top: 20px;
+            margin-top: 0;
         }
 
         &_right {
