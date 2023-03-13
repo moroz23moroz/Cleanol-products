@@ -692,7 +692,6 @@ body {
   margin: 90px auto 0;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  border: 1px solid green;
 }
 .service_bg-grey {
   max-height: 537px;
@@ -1676,7 +1675,7 @@ body {
 .content-container_left {
   max-width: 502px;
   margin-top: 213px;
-  margin-left: 300px;
+  margin-left: 397px;
   line-height: 27px;
 }
 .content-container_left__item {
