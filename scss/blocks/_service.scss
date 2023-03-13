@@ -4,6 +4,7 @@
     margin: 90px auto 0;
     font-family: $main-font;
     font-weight: 400;
+    border: 1px solid green;
 
     &_bg-grey {
         max-height: 537px;
@@ -61,13 +62,14 @@
     .service {
         position: relative;
         max-width: 1440px;
-    
+
         &_bg-grey {
             max-height: 537px;
             min-height: 537px;
-            margin-top: 90px;   
+            // margin-top: 90px;   
+            margin-top: 0;
             padding-top: 57px;
-    
+
             &__image {
                 max-height: 423px;
                 margin-right: 306px;
@@ -75,7 +77,7 @@
                 margin-left: 850px;
             }
         }
-    
+
         &_bg-red {
             position: relative;
             display: grid;
@@ -84,7 +86,7 @@
             min-height: 670px;
             z-index: 0;
         }
-    
+
         &_bg-white {
             position: absolute;
             top: 0;
@@ -95,7 +97,7 @@
             max-width: 706px;
         }
     }
-    
+
     .service_bg-red__img {
         position: absolute;
         top: 0;
@@ -108,13 +110,15 @@
     .service {
         position: relative;
         max-width: 1024px;
-    
+        margin: 60px auto 0;
+
         &_bg-grey {
             max-height: 537px;
             min-height: 537px;
-            margin-top: 90px;   
+            // margin-top: 90px;   
+            margin-top: 0;
             padding-top: 100px;
-    
+
             &__image {
                 max-height: 323px;
                 margin-right: 306px;
@@ -122,16 +126,17 @@
                 margin-left: 600px;
             }
         }
-    
+
         &_bg-red {
             position: relative;
             display: grid;
             grid-template-columns: 1fr 1fr;
             max-height: 670px;
             min-height: 670px;
+            margin-top: 0;
             z-index: 0;
         }
-    
+
         &_bg-white {
             position: absolute;
             top: 0;
@@ -140,9 +145,10 @@
             max-height: fit-content;
             min-height: 622px;
             max-width: 610px;
+            margin-top: 0;
         }
     }
-    
+
     .service_bg-red__img {
         position: absolute;
         top: 0;
@@ -155,10 +161,12 @@
     .service {
         position: relative;
         max-width: 750px;
+        margin: 47px auto 0;
 
         &_bg-grey {
             min-height: 1091px;
-            margin-top: 47px;
+            // margin-top: 47px;
+            margin-top: 0;
             padding-top: 647px;
 
             &__image {
@@ -175,6 +183,7 @@
             flex-direction: column;
             max-height: 835px;
             min-height: 835px;
+            margin-top: 0;
             z-index: 0;
         }
 
@@ -186,6 +195,8 @@
             max-height: 622px;
             min-height: 622px;
             max-width: 610px;
+            margin-top: 0;
+            padding-top: 32px;
         }
     }
 
@@ -201,15 +212,18 @@
     .service {
         position: relative;
         max-width: 390px;
+        margin: 75px auto 0;
 
         &_bg-grey {
-            min-height: 1116px;
-            margin-top: 47px;
-            padding-top: 814px;
+            min-height: 1015px;
+            // margin-top: 47px;
+            margin-top: 0;
+            padding-top: 713px;
 
             &__image {
                 max-width: 340px;
-                margin-right:auto ;
+                margin-right: auto;
+                margin-top: 27px;
                 margin-bottom: 26px;
                 margin-left: auto;
             }
@@ -220,7 +234,8 @@
             display: flex;
             flex-wrap: wrap;
             max-height: fit-content;
-            z-index: 0;  
+            margin-top: 0;
+            z-index: 0;
         }
 
         &_bg-white {
@@ -228,9 +243,11 @@
             top: 0;
             left: 0;
             z-index: 1;
-            max-height: 814px;
-            min-height: 814px;
+            max-height: fit-content;
+            // min-height: 814px;
             max-width: 390px;
+            margin-top: 0;
+            padding-top: 0;
         }
     }
 
@@ -254,7 +271,7 @@
 
             &__image {
                 max-width: 300px;
-                margin-right:auto ;
+                margin-right: auto;
                 margin-left: auto;
             }
         }
@@ -264,7 +281,7 @@
             display: flex;
             flex-wrap: wrap;
             max-height: fit-content;
-            z-index: 0;  
+            z-index: 0;
         }
 
         &_bg-white {

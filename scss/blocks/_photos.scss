@@ -57,6 +57,7 @@
         max-width: 1000px;
         min-height: 636px;
         // margin: 128px auto 35px;
+        margin: 0 auto 80px;
     
         &__item {
             min-width: 490px;
@@ -81,6 +82,7 @@
     .photos {
         max-width: 720px;
         min-height: 471px;
+        margin: 0 auto 67px;
 
         &__item {
             max-width: 353px;
@@ -110,6 +112,7 @@
         max-width: 340px;
         gap: 14px;
         // margin: 51px auto 0;
+        margin: 0 auto 51px;
 
         &__item {
             max-width: 340px;
@@ -140,6 +143,7 @@
         min-height: 0;
         gap: 14px;
         // margin: 51px auto 0;
+        margin: 0 auto 51px;
 
         &__item {
             max-width: 300px;
