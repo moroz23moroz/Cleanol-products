@@ -485,6 +485,87 @@
         <!-- footer -->
     </div>
 
+    <!-- popup -->
+    <div class="popup" id="popup">
+        <div class="popup-body">
+            <a href="#header" class="popup__close popup__close_white"><img src="./images/close_icon_white.svg"
+                    alt=""></a>
+            <form class="popup-form" id="form">
+                <a href="#header" class="popup__close popup__close_blue"><img src="./images/close_icon_blue.svg"
+                        alt=""></a>
+                <div class="popup-content">
+                    <h3 class="popup-content__title">
+                        Свяжитесь с нами!
+                    </h3>
+                    <p class="popup-content__text">
+                        Мы проконсультируем вас по любому вопросу относительно создания автомоечного бизнеса, выбора
+                        типа оборудования и нюансам его эксплуатации
+                    </p>
+                    <div class="content-row">
+                        <fieldset class="content-wrapper">
+                            <legend class="input-title">Имя<span class="input-title input-title_sp">*</span>
+                            </legend>
+                            <input type="hidden" name="title" value="from modal">
+                            <input type="text" class="input-field" name="name" id="name">
+                        </fieldset>
+
+                        <fieldset class="content-wrapper">
+                            <legend class="input-title">Телефон<span class="input-title input-title_sp">*</span>
+                            </legend>
+                            <input type="tel" class="input-field" name="tel" id="phone_number">
+                        </fieldset>
+                    </div>
+                    <div class="content-row">
+                        <fieldset class="content-wrapper">
+                            <legend class="input-title">Город<span class="input-title input-title_sp">*</span>
+                            </legend>
+                            <input type="text" class="input-field" name="city" id="city">
+                        </fieldset>
+
+                        <fieldset class="content-wrapper">
+                            <legend class="input-title">E-mail</legend>
+                            <input type="email" class="input-field" name="email" id="email">
+                        </fieldset>
+                    </div>
+
+                    <div class="content-row">
+                        <fieldset class="content-wrapper content-wrapper_lg">
+                            <legend class="input-title">Сообщение</legend>
+                            <textarea name="message" id="message" cols="52" rows="5" class="textarea"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="error_message"></div>
+                    <div class="content-row content-row_personal">
+                        <input type="checkbox" id="personal_data" name="personal_data" required>
+                        <label for="personal_data" class="popup-content__text popup-content__text_sm">Нажимая на
+                            кнопку
+                            “Отправить заявку”, вы соглашаетесь на обработку персональных данных</label>
+                    </div>
+
+                    <button class="popup-button popup__open2 confirm" type="submit" id="#popup_2"
+                        onclick="">Отправить<img src="./images/arrow-white.svg" alt="white arrow"
+                            class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- confirmation -->
+    <div class="popup__tnks popup" id="popup_2">
+        <div class="popup-body">
+            <div class="popup-form popup-parent">
+                <div class="popup-content ">
+                    <a class="close__tnks" href="#">X</a>
+                    <img src="./images/confirmation_icon.svg" alt="" class="popup__confirm-icon">
+                    <div class="popup-content__text popup-content__text_lg"><span
+                            class="info-block__text_bold info-block__text_blue">Спасибо, ваша заявка
+                            принята.</span><br> Специалист свяжется с вами в ближайшее время</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popup -->
+
     <!-- внимание - в API карты - временный ключ! -->
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"

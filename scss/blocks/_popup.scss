@@ -1,0 +1,369 @@
+.popup__tnks {
+    display: none;
+    z-index: 9999;
+}
+
+.popup-parent {
+    position: relative;
+}
+
+.close__tnks {
+    position: absolute;
+    top: 10px;
+    right: 21px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.popup__tnks.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.26);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all;
+    overflow-y: auto;
+    z-index: 5;
+
+    &-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-form {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+        max-width: 480px;
+        padding: 28px 39px 32px 34px;
+        margin-top: 160px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $bg-color-white;
+    }
+
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 26px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+
+        &_white {
+            display: none;
+        }
+    }
+
+    &__confirm-icon {
+        max-width: 58px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s all;
+    }
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 407px;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 700;
+        color: $text-color-title;
+    }
+
+    &__text {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        @include block-text (16px, 22px);
+
+        &_sm {
+            @include block-text (12px, 14px);
+        }
+
+        &_lg {
+            margin-bottom: 0;
+            @include block-text (20px, 27px);
+            text-align: center;
+        }
+    }
+}
+
+.content-row {
+    display: flex;
+    gap: 7px;
+    justify-content: space-between;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.content-wrapper {
+    box-sizing: border-box;
+    min-width: 200px;
+    min-height: 48px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #9ba8c8;
+    border-radius: 4px;
+
+    &_lg {
+        min-width: 407px;
+        min-height: 91px;
+        max-height: fit-content;
+    }
+}
+
+.input-title {
+    @include block-text (14px, 18px);
+    color: #7a8298;
+
+    &_sp {
+        color: red;
+    }
+}
+
+.input-field {
+    border: none;
+}
+
+.textarea {
+    min-width: 395px;
+    min-height: 90px;
+    padding: 5px;
+    resize: vertical;
+    border: none;
+}
+
+.popup-button {
+    max-width: 407px;
+    min-width: 407px;
+    max-height: 54px;
+    min-height: 54px;
+    border: none;
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+    background-color: $bg-color-main;
+    color: $text-color-white;
+}
+
+.error_message {
+    @include block-text (14px, 16px);
+    color: red;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(38, 95, 229, 0.36);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s all;
+        overflow-y: auto;
+        z-index: 5;
+
+        &-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-form {
+            position: relative;
+            max-width: 340px;
+            padding: 20px 17px 18px;
+            margin-top: 50px;
+        }
+
+        &__close {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            text-decoration: none;
+            cursor: pointer;
+
+            &_white {
+                display: block;
+            }
+
+            &_blue {
+                display: none;
+            }
+        }
+
+        &__confirm-icon {
+            max-width: 58px;
+            margin-top: 17px;
+            margin-right: auto;
+            margin-bottom: 13px;
+            margin-left: auto;
+        }
+    }
+
+    .popup-content {
+        max-width: 304px;
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__text {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            @include block-text (14px, 20px);
+
+            &_lg {
+                @include block-text (18px, 24px);
+                text-align: center;
+            }
+        }
+    }
+
+    .content-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+        margin-bottom: 6px;
+
+        &_personal {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    #personal_data {
+        margin-top: 10px;
+    }
+
+    .content-wrapper {
+        max-width: 304px;
+
+        &_lg {
+            min-width: 304px;
+        }
+    }
+
+    .textarea {
+        max-width: 280px;
+        min-width: 280px;
+    }
+  
+    .popup-button {
+        max-width: 304px;
+        min-width: 304px;
+    }
+
+    .error_message {
+        @include block-text (12px, 14px);
+    }
+}
+
+@media screen and (max-width: 320px){
+    .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(38, 95, 229, 0.36);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s all;
+        overflow-y: auto;
+        z-index: 5;
+
+        &-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-form {
+            position: relative;
+            max-width: 290px;
+            padding: 20px 17px 18px;
+            margin-top: 50px;
+        }
+
+        &__close {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            text-decoration: none;
+            cursor: pointer;
+
+            &_white {
+                display: block;
+            }
+
+            &_blue {
+                display: none;
+            }
+        }
+    }
+
+    .popup-content {
+        max-width: 290px;
+    }
+
+    .content-container {
+        max-width: 290px;
+
+        &_lg {
+            min-width: 250px;
+        }
+    }
+
+    .textarea {
+        max-width: 240px;
+        min-width: 240px;
+    }
+  
+    .popup-button {
+        max-width: 250px;
+        min-width: 250px;
+        font-size: 20px;
+    }
+}

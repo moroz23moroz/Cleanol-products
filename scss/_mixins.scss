@@ -1,0 +1,4 @@
+@mixin block-text($font-size: 18px, $line-height: 25px) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
