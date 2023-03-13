@@ -7,9 +7,9 @@
         max-width: 1920px;
         font-family: $main-font;
 
-        * {
-            outline: 1px solid palevioletred;
-        }
+        // * {
+        //     outline: 1px solid palevioletred;
+        // }
     }
 
     &__slider {
@@ -51,7 +51,12 @@
 
     &__info {
         // width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        min-width: 38%;
         max-width: 717px;
+        min-height: 260px;
         margin-left: 47%;
         padding: 45px;
         border-radius: 4px 0 4px 4px;
@@ -59,12 +64,14 @@
     }
 
     &__title {
+        width: 100%;
         @include font-style (600, $title-font-size, 39px);
     }
 
     &__text {
+        width: 100%;
         margin: 20px auto;
-        @include font-style (400, $big-text-font-size, 42px);
+        @include font-style (400, $big-text-font-size, 35px);
     }
 
     &__button-more {
@@ -78,30 +85,29 @@
 
     &__navigation {
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         left: 47%;
-        top: 80%;
+        top: 77%;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         max-width: 717px;
+        min-width: 42.5%;
     }
 
     &__pagination {}
 
     &__nav-button {
-        // width: 50px;
-        // height: 50px;
-        // border-radius: 25px;
-        width: calc(100vw * 0.026);
-        height: calc(100vw * 0.026);
+        width: 55px;
+        min-height: 50px;
         border: none;
-        border-radius: calc(100vw * 0.026 / 2);
+        border-radius: 25px;
+        // box-sizing: border-box;
 
         img {
-            // margin: 0 auto;
+            margin: 0 auto;
             max-width: 80%;
         }
 
@@ -110,20 +116,28 @@
         }
 
         &_next {
+            margin-left: 20px;
             background-color: #EA142E;
         }
     }
 
 }
 
-/* target the active bullet */
-span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: blue;
-    opacity: 1;
+.swiper-scrollbar {
+    background: none;
 }
 
 /* target all bullets */
 .swiper-pagination-bullet {
-    background-color: red;
+    width: 50px;
+    height: 4px;
+    border-radius: 0;
+    background-color: $bg-color-light;
+    opacity: 1;
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: $bg-color-main;
     opacity: 1;
 }
