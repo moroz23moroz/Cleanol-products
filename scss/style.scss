@@ -4,9 +4,19 @@
 @import 'vars';
 @import 'mixins';
 
-
+@import './header';
 @import './blocks/banner';
+@import './blocks/about';
 @import './blocks/products';
-// @import './blocks/service';
-// @import './blocks/contacts';
-// @import './blocks/footer';
+@import './blocks/photos';
+@import './blocks/convinience';
+@import './blocks/service';
+@import './blocks/block-list';
+
+@import './blocks/contacts';
+@import './blocks/footer';
+
+@import './blocks/title-container';
+@import './blocks/content-container';
+@import './blocks/feedback-form';
+@import './blocks/block-btn';
