@@ -1,7 +1,7 @@
 .banner {
-    * {
-        outline: 1px solid palevioletred;
-    }
+    // * {
+    //     outline: 1px solid palevioletred;
+    // }
 
     &__container {
         max-width: 1920px;
@@ -14,7 +14,6 @@
 
     &__slider {
         max-height: 700px;
-        // box-sizing: border-box;
         position: relative;
     }
 
@@ -23,8 +22,7 @@
     &__slide {
         display: flex;
         align-items: center;
-        min-height: 700px;
-        padding-bottom: 20%;
+        min-height: 36vw;
         background-size: 100%;
         background-repeat: no-repeat;
 
@@ -54,8 +52,9 @@
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        min-width: 38%;
-        max-width: 717px;
+        width: 38%;
+        // min-width: 38%;
+        // max-width: 717px;
         min-height: 260px;
         margin-left: 47%;
         padding: 45px;
