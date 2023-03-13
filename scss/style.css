@@ -342,7 +342,7 @@ body {
   align-items: flex-start;
   max-width: 1430px;
   min-height: 936px;
-  margin: 128px auto 35px;
+  margin: 0 auto 98px;
 }
 .photos__item {
   min-width: 700px;
@@ -384,7 +384,6 @@ body {
     align-items: flex-start;
     max-width: 1000px;
     min-height: 636px;
-    margin: 128px auto 35px;
   }
   .photos__item {
     min-width: 490px;
@@ -423,7 +422,6 @@ body {
     flex-direction: column;
     max-width: 340px;
     gap: 14px;
-    margin: 51px auto 0;
   }
   .photos__item {
     max-width: 340px;
@@ -446,7 +444,6 @@ body {
     max-width: 300px;
     min-height: 0;
     gap: 14px;
-    margin: 51px auto 0;
   }
   .photos__item {
     max-width: 300px;
@@ -473,7 +470,7 @@ body {
   display: flex;
   max-width: 100%;
   gap: 23px;
-  margin: 66px auto 54px;
+  margin: 66px auto 42px;
 }
 .card-wrapper :nth-child(3) .card-item__slogan {
   max-width: 300px;
@@ -687,14 +684,14 @@ body {
 .service {
   position: relative;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 90px auto 0;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
 .service_bg-grey {
   max-height: 537px;
   min-height: 537px;
-  margin-top: 90px;
+  margin-top: 0;
   padding-top: 57px;
   background-color: #EEF3FD;
 }
@@ -710,6 +707,7 @@ body {
   grid-template-columns: 1fr 1fr;
   max-height: 670px;
   min-height: 670px;
+  margin-top: 0;
   background-color: #D71635;
   z-index: 0;
 }
@@ -721,6 +719,8 @@ body {
   max-height: 662px;
   min-height: 662px;
   max-width: 706px;
+  margin-top: 0;
+  padding-top: 62px;
   background-color: #FFFFFF;
 }
 
@@ -991,13 +991,14 @@ body {
 
 .contacts-inner {
   display: flex;
+  margin-top: 65px;
 }
 .contacts-inner_left, .contacts-inner_right {
   display: inherit;
   flex-direction: column;
   align-items: flex-start;
   max-height: 155px;
-  margin-top: 65px;
+  margin-top: 0;
   padding: 26px;
   background-color: #EEF3FD;
 }
@@ -1532,12 +1533,12 @@ body {
   }
 }
 .title-container_contacts {
-  margin-top: 21px;
+  margin-top: 83px;
   margin-left: 245px;
 }
 .title-container__icon, .title-container__title {
   display: inline-block;
-  margin-top: 62px;
+  margin-top: 0;
 }
 .title-container__title {
   margin-left: 29px;

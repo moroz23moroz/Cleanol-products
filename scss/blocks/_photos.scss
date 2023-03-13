@@ -6,7 +6,8 @@
     align-items: flex-start;
     max-width: 1430px;
     min-height: 936px;
-    margin: 128px auto 35px;
+    // margin: 128px auto 35px;
+    margin: 0 auto 98px;
 
     &__item {
         min-width: 700px;
@@ -55,7 +56,7 @@
         align-items: flex-start;
         max-width: 1000px;
         min-height: 636px;
-        margin: 128px auto 35px;
+        // margin: 128px auto 35px;
     
         &__item {
             min-width: 490px;
@@ -108,7 +109,7 @@
         flex-direction: column;
         max-width: 340px;
         gap: 14px;
-        margin: 51px auto 0;
+        // margin: 51px auto 0;
 
         &__item {
             max-width: 340px;
@@ -138,7 +139,7 @@
         max-width: 300px;
         min-height: 0;
         gap: 14px;
-        margin: 51px auto 0;
+        // margin: 51px auto 0;
 
         &__item {
             max-width: 300px;

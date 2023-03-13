@@ -19,6 +19,7 @@
 
 .contacts-inner {
     display: flex;
+    margin-top: 65px;
 
     &_left,
     &_right {
@@ -26,7 +27,8 @@
         flex-direction: column;
         align-items: flex-start;
         max-height: 155px;
-        margin-top: 65px;
+        // margin-top: 65px;
+        margin-top: 0;
         padding: 26px;
         background-color: $bg-color-light;
     }

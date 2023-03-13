@@ -1,14 +1,15 @@
 .service {
     position: relative;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 90px auto 0;
     font-family: $main-font;
     font-weight: 400;
 
     &_bg-grey {
         max-height: 537px;
         min-height: 537px;
-        margin-top: 90px;
+        // margin-top: 90px;
+        margin-top: 0;
         padding-top: 57px;
         background-color: $bg-color-light;
 
@@ -26,6 +27,7 @@
         grid-template-columns: 1fr 1fr;
         max-height: 670px;
         min-height: 670px;
+        margin-top: 0;
         background-color: $bg-color-main;
         z-index: 0;
     }
@@ -38,6 +40,8 @@
         max-height: 662px;
         min-height: 662px;
         max-width: 706px;
+        margin-top: 0;
+        padding-top: 62px;
         background-color: $bg-color-white;
     }
 }
