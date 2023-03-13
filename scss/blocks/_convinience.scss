@@ -66,7 +66,44 @@
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .convinience {
+        max-width: 1000px;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+        max-width: 600px;
+    }
+
+    .card-item {
+        max-width: 274px;
+        min-width: 274px;
+        max-height: 271px;
+        min-height: 271px;
+        padding: 16px 15px 34px 15px;
+
+        &__button {
+            align-self: flex-start;
+            max-width: 125px;
+            min-width: 125px;
+            max-height: 34px;
+            min-height: 34px;
+            font-size: 15px;
+        }
+
+        &__image {
+            max-height: 65px;
+            margin-top: 25px;
+        }
+
+        &__slogan {
+            max-width: 160px;
+            font-size: 19px;
+            text-align: center;
+        }
+    }
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .convinience {

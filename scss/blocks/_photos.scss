@@ -46,7 +46,35 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {}
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1000px;
+        min-height: 636px;
+        margin: 128px auto 35px;
+    
+        &__item {
+            min-width: 490px;
+            max-width: 490px;
+            min-height: 310px;
+    
+            &_l-top,
+            &_r-top,
+            &_l-bot,
+            &_r-bot {
+                background-size: contain;
+            }
+        }
+    }
+    
+    .photo-text {
+        font-size: 20px;
+    }
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .photos {

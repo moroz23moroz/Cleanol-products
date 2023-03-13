@@ -375,6 +375,29 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    min-height: 636px;
+    margin: 128px auto 35px;
+  }
+  .photos__item {
+    min-width: 490px;
+    max-width: 490px;
+    min-height: 310px;
+  }
+  .photos__item_l-top, .photos__item_r-top, .photos__item_l-bot, .photos__item_r-bot {
+    background-size: contain;
+  }
+  .photo-text {
+    font-size: 20px;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .photos {
     max-width: 720px;
@@ -499,6 +522,39 @@ body {
   .card-wrapper {
     justify-content: space-around;
     gap: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .convinience {
+    max-width: 1000px;
+  }
+  .card-wrapper {
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+  .card-item {
+    max-width: 274px;
+    min-width: 274px;
+    max-height: 271px;
+    min-height: 271px;
+    padding: 16px 15px 34px 15px;
+  }
+  .card-item__button {
+    align-self: flex-start;
+    max-width: 125px;
+    min-width: 125px;
+    max-height: 34px;
+    min-height: 34px;
+    font-size: 15px;
+  }
+  .card-item__image {
+    max-height: 65px;
+    margin-top: 25px;
+  }
+  .card-item__slogan {
+    max-width: 160px;
+    font-size: 19px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -717,6 +773,48 @@ body {
     position: absolute;
     top: 0;
     left: 582px;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .service {
+    position: relative;
+    max-width: 1024px;
+  }
+  .service_bg-grey {
+    max-height: 537px;
+    min-height: 537px;
+    margin-top: 90px;
+    padding-top: 100px;
+  }
+  .service_bg-grey__image {
+    max-height: 323px;
+    margin-right: 306px;
+    margin-bottom: 57px;
+    margin-left: 600px;
+  }
+  .service_bg-red {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 670px;
+    min-height: 670px;
+    z-index: 0;
+  }
+  .service_bg-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    min-height: 622px;
+    max-width: 610px;
+  }
+  .service_bg-red__img {
+    position: absolute;
+    top: 0;
+    left: 450px;
     z-index: -1;
   }
 }
@@ -940,6 +1038,43 @@ body {
   }
   .contacts-inner_left {
     margin-left: 100px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .contacts_left {
+    min-width: 750px;
+  }
+  .contacts_right {
+    max-width: 1024px;
+    margin: 41px auto 0;
+  }
+  .contacts-inner {
+    display: flex;
+  }
+  .contacts-inner_left, .contacts-inner_right {
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 155px;
+    margin-top: 35px;
+    padding: 26px;
+  }
+  .contacts-inner_left {
+    min-width: 397px;
+    max-width: 397px;
+    margin-left: 48px;
+  }
+  .contacts-inner_right {
+    max-width: 244px;
+    min-width: 244px;
+    margin-left: 14px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1204,6 +1339,31 @@ body {
     margin-left: 100px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    max-width: 1024px;
+    min-width: 1024px;
+  }
+  .footer-logo {
+    margin-top: 81px;
+    margin-left: 50px;
+  }
+  .footer-menu {
+    margin-left: 140px;
+  }
+  .footer-contacts {
+    margin-left: 80px;
+  }
+  .footer-contacts_top {
+    margin-top: 75px;
+    margin-left: 0;
+  }
+  .footer-contacts_bottom {
+    max-width: 280px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .footer {
     display: flex;
@@ -1392,6 +1552,11 @@ body {
     margin-left: 100px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .title-container_contacts {
+    margin-left: -140px;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .title-container_contacts {
     margin-left: 0;
@@ -1557,6 +1722,43 @@ body {
   }
   .content-container_right {
     margin-top: 180px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .content-container_left {
+    max-width: 600px;
+    margin-top: 180px;
+    margin-right: 0;
+    margin-left: 130px;
+  }
+  .content-container_left__item::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/block-8_icons/icon_small_question_mark.svg");
+    width: 33px;
+    height: 33px;
+    top: 0;
+    left: -80px;
+  }
+  .content-container_left__item_sp {
+    margin-top: 55px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .content-container_left__item_sp::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/block-8_icons/icon_phone.svg");
+    width: 66px;
+    height: 66px;
+    top: 0px;
+    left: -96px;
+  }
+  .content-container_right {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin-top: 190px;
+    margin-left: 50px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1892,6 +2094,30 @@ body {
   right: 22px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .block-btn {
+    position: relative;
+    max-width: 183px;
+    min-width: 183px;
+    max-height: 51px;
+    min-height: 51px;
+    padding-left: 23px;
+    font-size: 16px;
+  }
+  .block-btn_centered {
+    margin-right: 408px;
+    margin-left: 408px;
+  }
+  .block-btn_centered::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/arrows/white_arrow.svg");
+    min-width: 32px;
+    height: 10px;
+    top: 20.5px;
+    right: 20px;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .block-btn {
     position: relative;
