@@ -65,7 +65,25 @@
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .contacts {
+        max-width: 1440px;
+    
+        &_left {
+            min-width: 850px;
+        }
+    
+        &_right {
+            max-width: 590px;
+        }
+    }
+    
+    .contacts-inner {
+        &_left {
+            margin-left: 100px;
+        }
+    }
+}
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {}
 

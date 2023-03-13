@@ -20,7 +20,14 @@
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .title-container {
+
+        &_contacts {
+            margin-left: 100px;
+        }
+    }
+}
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {}
 
