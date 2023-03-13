@@ -54,8 +54,8 @@ const displayCards = (data, container, indexStart, indexEnd) => {
         const sizeWrapper = document.createElement('div');
         const sizeTitle = document.createElement('p');
         const size1 = document.createElement('div');
-        const size2 = document.createElement('div');
         const buyButton = document.createElement('button');
+
         productCard.classList.add('products__product-card');
         pictureWrapper.classList.add('products__card-img');
         cardContent.classList.add('products__card-content')
@@ -67,7 +67,6 @@ const displayCards = (data, container, indexStart, indexEnd) => {
         sizeWrapper.classList.add('products__size');
         sizeTitle.classList.add('products__card-subtitle');
         size1.classList.add('products__size-option');
-        size2.classList.add('products__size-option');
         buyButton.classList.add('products__button-buy');
 
         productCard.append(pictureWrapper);
@@ -85,7 +84,6 @@ const displayCards = (data, container, indexStart, indexEnd) => {
 
         sizeWrapper.append(sizeTitle);
         sizeWrapper.append(size1);
-        sizeWrapper.append(size2);
 
         pictureCard.src = data[i].img;
         titleCard.textContent = data[i].name;
@@ -94,8 +92,14 @@ const displayCards = (data, container, indexStart, indexEnd) => {
         listText.textContent = data[i].ingredients;
         sizeTitle.textContent = 'Фасовка:';
         size1.textContent = data[i].size1;
-        size2.textContent = data[i].size2;
         buyButton.textContent = 'Купить';
+
+        if (data[i].size2) {
+            const size2 = document.createElement('div');
+            size2.classList.add('products__size-option');
+            sizeWrapper.append(size2);
+            size2.textContent = data[i].size2;
+        }
 
         if (data[i].size3) {
             const size3 = document.createElement('div');
@@ -149,7 +153,6 @@ document.getElementById('special-button-more').addEventListener('click', () => {
     document.getElementById('special-button-more').style.display = 'none';
     getData('special','special-collapsible');
 });
-// document.querySelector('products__button-read-more').addEventListener('click', () => {});
 
 
 // <!-- <div class="products__product-card">

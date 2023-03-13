@@ -78,6 +78,9 @@ body {
   padding: 0 15px;
 }
 
+.banner * {
+  outline: 1px solid palevioletred;
+}
 .banner__container {
   max-width: 1920px;
   font-family: "Rubik", sans-serif;
@@ -92,6 +95,7 @@ body {
 .banner__slide {
   display: flex;
   align-items: center;
+  min-height: 700px;
   padding-bottom: 20%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -141,6 +145,7 @@ body {
   background-color: #D71635;
   color: #FFFFFF;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .banner__button-more img {
   display: inline;
@@ -230,9 +235,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   outline: 1.3px solid #EEF3FD;
 }
 .products__card-img {
-  width: 100%;
-  max-width: 342px;
-  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  min-height: 38%;
+  padding: 20px 50px;
   border-bottom: 1.3px solid #EEF3FD;
 }
 .products__card-content {
@@ -280,7 +287,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: center;
 }
 .products__size-option {
-  width: 18%;
+  width: 19%;
   padding: 6px;
   margin-right: 6px;
   font-weight: 300;
