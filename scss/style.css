@@ -355,7 +355,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   padding: 145px 45px 80px 45px;
 }
 .about__desc-inner {
-  gap: 90px;
+  gap: 80px;
 }
 .about__desc-row {
   gap: 40px;
@@ -382,8 +382,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: #D71635;
 }
 .about__block {
-  padding: 15px 50px 15px 65px;
-  height: 82px;
+  padding: 10px 75px;
+  height: 70px;
   justify-content: center;
   background-color: white;
   border-radius: 4px;
@@ -395,15 +395,21 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   gap: 15px;
 }
 .about__btn {
-  height: 82px;
+  height: 70px;
   color: white;
   background-color: #D71635;
   border-radius: 4px;
   border: transparent;
+  text-transform: uppercase;
 }
 
 .title span {
   color: #D71635;
+}
+
+.block-first:nth-child(1),
+.block-second:nth-child(2) {
+  font-weight: 500;
 }
 
 .products {

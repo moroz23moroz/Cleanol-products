@@ -94,7 +94,7 @@
     }
 
     &__desc-inner {
-        gap: 90px;
+        gap: 80px;
     }
 
     &__desc-row {
@@ -128,8 +128,8 @@
     }
 
     &__block {
-        padding: 15px 50px 15px 65px;
-        height: 82px;
+        padding: 10px 75px;
+        height: 70px;
         justify-content: center;
         background-color: white;
         border-radius: 4px;
@@ -145,14 +145,20 @@
     }
 
     &__btn {
-        height: 82px;
+        height: 70px;
         color: white;
         background-color: #D71635;
         border-radius: 4px;
         border: transparent;
+        text-transform: uppercase;
     }
 }
 
 .title span {
     color: #D71635;
+}
+
+.block-first:nth-child(1),
+.block-second:nth-child(2) {
+    font-weight: 500;
 }
