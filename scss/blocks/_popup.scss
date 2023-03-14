@@ -36,8 +36,8 @@
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0, 0.26);
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transition: 0.5s all;
     overflow-y: auto;
     z-index: 5;
@@ -55,6 +55,7 @@
 
         position: relative;
         max-width: 480px;
+        min-width: 480px;
         padding: 28px 39px 32px 34px;
         margin-top: 160px;
         margin-right: auto;
@@ -72,10 +73,6 @@
         &:focus,
         &:hover {
             text-decoration: none;
-        }
-
-        &_white {
-            display: none;
         }
     }
 
@@ -102,23 +99,32 @@
         margin-bottom: 0;
         font-family: $main-font;
         font-size: 30px;
-        font-weight: 700;
+        font-weight: 600;
         color: $text-color-title;
     }
 
     &__text {
-        margin-top: 8px;
+        margin-top: 17px;
         margin-bottom: 8px;
         @include block-text (16px, 22px);
+        font-weight: 300;
 
         &_sm {
             @include block-text (12px, 14px);
         }
 
         &_lg {
+            max-width: 326px;
             margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
             @include block-text (20px, 27px);
+            font-weight: 300;
             text-align: center;
+        }
+
+        &_bold {
+            font-weight: 600;
         }
     }
 }
@@ -148,10 +154,12 @@
 }
 
 .input-title {
+    margin-left: 15px;
     @include block-text (14px, 18px);
-    color: #7a8298;
+    color: #55556D;
 
     &_sp {
+        margin-left: 0;
         color: red;
     }
 }
@@ -161,7 +169,7 @@
 }
 
 .textarea {
-    min-width: 395px;
+    max-width: 400px;
     min-height: 90px;
     padding: 5px;
     resize: vertical;
@@ -169,20 +177,31 @@
 }
 
 .popup-button {
+    position: relative;
     max-width: 407px;
     min-width: 407px;
-    max-height: 54px;
-    min-height: 54px;
-    border: none;
-    border-radius: 8px;
-
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+    max-height: 51px;
+    min-height: 51px;
+    padding-left: 93.5px;
+    border: 0;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
 
     background-color: $bg-color-main;
     color: $text-color-white;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../../images/arrows/white_arrow.svg');
+        width: 32px;
+        height: 10px;
+        top: 20.5px;
+        right: 93.5px;
+    }
 }
 
 .error_message {
@@ -213,24 +232,17 @@
         &-form {
             position: relative;
             max-width: 340px;
+            min-width: 340px;
             padding: 20px 17px 18px;
             margin-top: 50px;
         }
 
         &__close {
             position: absolute;
-            top: 30px;
+            top: 13px;
             right: 10px;
             text-decoration: none;
             cursor: pointer;
-
-            &_white {
-                display: block;
-            }
-
-            &_blue {
-                display: none;
-            }
         }
 
         &__confirm-icon {
@@ -247,16 +259,22 @@
 
         &__title {
             font-size: 25px;
+            text-align: center;
         }
 
         &__text {
             margin-top: 6px;
             margin-bottom: 6px;
             @include block-text (14px, 20px);
+            text-align: center;
 
             &_lg {
                 @include block-text (18px, 24px);
                 text-align: center;
+            }
+
+            &_sm {
+                text-align: start;
             }
         }
     }
@@ -289,10 +307,22 @@
         max-width: 280px;
         min-width: 280px;
     }
-  
+
     .popup-button {
         max-width: 304px;
         min-width: 304px;
+        padding-left: 51.5px;
+        font-size: 16px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/arrows/white_arrow.svg');
+            width: 32px;
+            height: 10px;
+            top: 18px;
+            right: 49.5px;
+        }
     }
 
     .error_message {
@@ -300,7 +330,7 @@
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     .popup {
         position: fixed;
         width: 100%;
@@ -333,14 +363,6 @@
             right: 10px;
             text-decoration: none;
             cursor: pointer;
-
-            &_white {
-                display: block;
-            }
-
-            &_blue {
-                display: none;
-            }
         }
     }
 
@@ -360,10 +382,20 @@
         max-width: 240px;
         min-width: 240px;
     }
-  
+
     .popup-button {
         max-width: 250px;
         min-width: 250px;
         font-size: 20px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/arrows/white_arrow.svg');
+            width: 32px;
+            height: 10px;
+            top: 18px;
+            right: 49.5px;
+        }
     }
 }

@@ -57,6 +57,11 @@
     background-color: $bg-color-main;
     border: none;
 
+    &_modal {
+        background-color: $bg-color-white;
+        border: none;
+    }
+
     &::placeholder {
         font-size: 16px;
         color: $text-color-white;
@@ -76,17 +81,17 @@
         max-width: 340px;
         margin: 0 auto;
     }
-    
+
     .input-container {
         display: flex;
         flex-direction: column;
         gap: 11px;
-    
+
         &_sm {
             max-width: 340px;
             min-height: 68px;
         }
-    
+
         &_lg {
             max-width: 340px;
             min-height: 130px;
@@ -101,17 +106,17 @@
         max-width: 300px;
         margin: 0 auto;
     }
-    
+
     .input-container {
         display: flex;
         flex-direction: column;
         gap: 11px;
-    
+
         &_sm {
             max-width: 300px;
             min-height: 68px;
         }
-    
+
         &_lg {
             max-width: 300px;
             min-height: 130px;

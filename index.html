@@ -380,7 +380,7 @@
                     </div>
                 </div>
 
-                <button class="block-btn block-btn_red block-btn_centered" onclick="">Позвонить
+                <button class="block-btn block-btn_red block-btn_centered popup__open" onclick="" id="#popup">Позвонить
                 </button>
             </div>
             <!-- convinience -->
@@ -483,7 +483,7 @@
                                 <textarea id="message" cols="30" rows="10" class="input-field" name="message"
                                     placeholder="Интересует покупка средства Cleanol «Optimal», 5 кг"></textarea>
                             </div>
-                            <button class="block-btn block-btn_white" type="submit" onclick="">Позвонить</button>
+                            <button class="block-btn block-btn_white" type="submit" onclick="" >Позвонить</button>
                         </form>
                     </div>
                 </div>
@@ -567,10 +567,8 @@
     <!-- popup -->
     <div class="popup" id="popup">
         <div class="popup-body">
-            <a href="#header" class="popup__close popup__close_white"><img src="./images/close_icon_white.svg"
-                    alt=""></a>
-            <form class="popup-form" id="form">
-                <a href="#header" class="popup__close popup__close_blue"><img src="./images/close_icon_blue.svg"
+            <form class="popup-form" id="feedback">
+                <a href="#header" class="popup__close"><img src="./images/close_icon.svg"
                         alt=""></a>
                 <div class="popup-content">
                     <h3 class="popup-content__title">
@@ -585,25 +583,25 @@
                             <legend class="input-title">Имя<span class="input-title input-title_sp">*</span>
                             </legend>
                             <input type="hidden" name="title" value="from modal">
-                            <input type="text" class="input-field" name="name" id="name">
+                            <input type="text" class="input-field_modal" name="name" id="name">
                         </fieldset>
 
                         <fieldset class="content-wrapper">
                             <legend class="input-title">Телефон<span class="input-title input-title_sp">*</span>
                             </legend>
-                            <input type="tel" class="input-field" name="tel" id="phone_number">
+                            <input type="tel" class="input-field_modal" name="tel" id="phone_number">
                         </fieldset>
                     </div>
                     <div class="content-row">
                         <fieldset class="content-wrapper">
                             <legend class="input-title">Город<span class="input-title input-title_sp">*</span>
                             </legend>
-                            <input type="text" class="input-field" name="city" id="city">
+                            <input type="text" class="input-field_modal" name="city" id="city">
                         </fieldset>
 
                         <fieldset class="content-wrapper">
                             <legend class="input-title">E-mail</legend>
-                            <input type="email" class="input-field" name="email" id="email">
+                            <input type="email" class="input-field_modal" name="email" id="email">
                         </fieldset>
                     </div>
 
@@ -622,8 +620,7 @@
                     </div>
 
                     <button class="popup-button popup__open2 confirm" type="submit" id="#popup_2"
-                        onclick="">Отправить<img src="./images/arrow-white.svg" alt="white arrow"
-                            class="info-block-btn-arrow info-block-btn-arrow_white"></button>
+                        onclick="" id="#popup_2">Отправить заявку</button>
                 </div>
             </form>
         </div>
@@ -634,10 +631,11 @@
         <div class="popup-body">
             <div class="popup-form popup-parent">
                 <div class="popup-content ">
-                    <a class="close__tnks" href="#">X</a>
+                    <a class="close__tnks" href="#"><img src="./images/close_icon.svg"
+                        alt=""></a>
                     <img src="./images/confirmation_icon.svg" alt="" class="popup__confirm-icon">
                     <div class="popup-content__text popup-content__text_lg"><span
-                            class="info-block__text_bold info-block__text_blue">Спасибо, ваша заявка
+                            class="popup-content__text_bold">Спасибо, ваша заявка
                             принята.</span><br> Специалист свяжется с вами в ближайшее время</div>
                 </div>
             </div>
@@ -651,6 +649,7 @@
         defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
