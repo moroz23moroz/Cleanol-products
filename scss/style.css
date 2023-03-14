@@ -1221,8 +1221,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   flex-direction: column;
 }
 .contacts_right__map {
-  max-width: 898px;
-  max-height: 387px;
+  width: 898px;
+  height: 387px;
 }
 
 .contacts-inner {

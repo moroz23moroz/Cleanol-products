@@ -12,8 +12,8 @@
     }
 
     &_right__map {
-        max-width: 898px;
-        max-height: 387px;
+        width: 898px;
+        height: 387px;
     }
 }
 
@@ -66,20 +66,19 @@
     }
 }
 
-
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     .contacts {
         max-width: 1440px;
-    
+
         &_left {
             min-width: 850px;
         }
-    
+
         &_right {
             max-width: 590px;
         }
     }
-    
+
     .contacts-inner {
         &_left {
             margin-left: 100px;
@@ -273,7 +272,7 @@
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     .contacts {
         display: flex;
         flex-wrap: wrap;
