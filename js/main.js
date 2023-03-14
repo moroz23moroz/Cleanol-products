@@ -68,7 +68,7 @@ const displayCards = (data, container, indexStart, indexEnd) => {
         sizeWrapper.classList.add('products__size');
         sizeTitle.classList.add('products__card-subtitle');
         size1.classList.add('products__size-option');
-        buyButton.classList.add('products__button-buy');
+        buyButton.classList.add('products__button-buy','popup__open');
 
         productCard.append(pictureWrapper);
         productCard.append(cardContent);
