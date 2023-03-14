@@ -2087,33 +2087,36 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .popup-form {
     position: relative;
     max-width: 290px;
-    padding: 20px 17px 18px;
+    min-width: 290px;
+    padding: 30px 17px 18px;
     margin-top: 50px;
   }
   .popup__close {
     position: absolute;
-    top: 30px;
+    top: 15px;
     right: 10px;
+    max-width: 14px;
     text-decoration: none;
     cursor: pointer;
+  }
+  .close__tnks {
+    max-width: 14px;
   }
   .popup-content {
     max-width: 290px;
   }
-  .content-container {
-    max-width: 290px;
-  }
-  .content-container_lg {
+  .content-wrapper_lg {
     min-width: 250px;
   }
   .textarea {
-    max-width: 240px;
-    min-width: 240px;
-  }
-  .popup-button {
     max-width: 250px;
     min-width: 250px;
-    font-size: 20px;
+  }
+  .popup-button {
+    max-width: 100%;
+    min-width: 254px;
+    font-size: 18px;
+    padding-left: 15px;
   }
   .popup-button::after {
     position: absolute;
@@ -2121,8 +2124,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-image: url("../../images/arrows/white_arrow.svg");
     width: 32px;
     height: 10px;
-    top: 18px;
-    right: 49.5px;
+    top: 19.5px;
+    right: 15px;
+  }
+  .input-field_modal {
+    width: 100%;
   }
 }
 .title-container_contacts {
@@ -2580,6 +2586,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .input-field {
+  max-width: 100%;
   margin-left: 17px;
   margin-right: 17px;
   color: #FFFFFF;
