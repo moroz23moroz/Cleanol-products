@@ -137,7 +137,7 @@ const showCollapsible = (container) => {
         container.style.maxHeight = null;
         container.style.overflow = 'hidden';
     } else {
-        container.style.maxHeight = `${container.scrollHeight * 1.5}px`;
+        container.style.maxHeight = container.scrollHeight * 1.5 + 'px';
         container.style.overflow = 'visible';
     }
 }
