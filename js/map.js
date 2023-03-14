@@ -2,10 +2,8 @@ ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [53.926045, 27.614913],
         zoom: 16.5,
-        // controls: ['routePanelControl']
     });
 
-    // Создаём макет содержимого.
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
