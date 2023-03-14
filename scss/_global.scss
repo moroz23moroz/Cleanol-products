@@ -29,4 +29,8 @@ body {
     max-width: 1460px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media screen and (max-width: 1460px) {
+        max-width: 1300px;
+    }
 }
