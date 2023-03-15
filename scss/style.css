@@ -391,6 +391,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   text-transform: uppercase;
   color: #D71635;
 }
+@media screen and (max-width: 1460px) {
+  .about__desc-title {
+    text-align: center;
+  }
+}
 .about__desc-text {
   width: 500px;
 }
@@ -429,6 +434,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: transparent;
   font-weight: 400;
   text-transform: uppercase;
+  padding-right: 40px;
+  position: relative;
+}
+.about__btn::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/arrows/white_arrow.svg);
+  width: 32px;
+  height: 10px;
+  bottom: 32px;
+  left: 190px;
 }
 
 .title {
@@ -455,7 +471,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 55px;
   height: 48px;
   left: 10px;
-  bottom: 10px;
+  bottom: 13px;
 }
 
 .icon__2 {
@@ -468,7 +484,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 45px;
   height: 45px;
   left: 10px;
-  bottom: 10px;
+  bottom: 15px;
+}
+
+.icon__3 {
+  position: relative;
+}
+.icon__3::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/about-icon3.svg);
+  width: 36px;
+  height: 45px;
+  left: 10px;
+  bottom: 13px;
 }
 
 .products {
