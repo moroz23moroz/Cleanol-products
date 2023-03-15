@@ -85,9 +85,19 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1360px) {
   .container {
-    max-width: 1300px;
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1050px;
   }
 }
 
@@ -293,9 +303,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: white;
   border-radius: 0px 0px 4px 4px;
   width: 665px;
-  height: 592px;
+  height: 615px;
   padding: 70px 45px 55px 45px;
   margin-bottom: -65px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1266px) {
+  .about__card {
+    height: 700px;
+  }
 }
 .about__title {
   font-family: "Rubik";
@@ -321,8 +337,18 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .about__info-inner {
   gap: 75px;
 }
+@media screen and (max-width: 1050px) {
+  .about__info-inner {
+    gap: 35px;
+  }
+}
 .about__col {
   gap: 20px;
+}
+@media screen and (max-width: 1050px) {
+  .about__col {
+    gap: 15px;
+  }
 }
 .about__wrapper {
   position: relative;
@@ -347,6 +373,16 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   left: 0;
   bottom: 0;
   border-radius: 4px;
+}
+@media screen and (max-width: 1300px) {
+  .about__background-desc {
+    width: 405px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .about__background-desc {
+    width: 380px;
+  }
 }
 .about__background-desc span {
   font-weight: 500;
@@ -391,13 +427,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   text-transform: uppercase;
   color: #D71635;
 }
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1360px) {
   .about__desc-title {
     text-align: center;
   }
 }
 .about__desc-text {
-  width: 500px;
+  font-size: 18px;
+  width: 590px;
 }
 .about__block {
   padding: 10px 50px 10px 75px;

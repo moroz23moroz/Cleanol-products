@@ -14,9 +14,15 @@
         background-color: white;
         border-radius: 0px 0px 4px 4px;
         width: 665px;
-        height: 592px;
+        height: 615px;
         padding: 70px 45px 55px 45px;
         margin-bottom: -65px;
+        font-size: 18px;
+
+        @media screen and (max-width: 1266px) {
+            height: 700px;
+        }
+
     }
 
     &__title {
@@ -44,10 +50,18 @@
 
     &__info-inner {
         gap: 75px;
+
+        @media screen and (max-width: 1050px) {
+            gap: 35px;
+        }
     }
 
     &__col {
         gap: 20px;
+
+        @media screen and (max-width: 1050px) {
+            gap: 15px;
+        }
     }
 
     &__wrapper {
@@ -78,10 +92,19 @@
         bottom: 0;
         border-radius: 4px;
 
+        @media screen and (max-width: 1300px) {
+            width: 405px;
+        }
+
+        @media screen and (max-width: 1150px) {
+            width: 380px;
+        }
+
         & span {
             font-weight: 500;
             font-size: 18px;
         }
+
     }
 
     &__description {
@@ -130,13 +153,14 @@
         text-transform: uppercase;
         color: #D71635;
 
-        @media screen and (max-width: 1460px) {
+        @media screen and (max-width: 1360px) {
             text-align: center;
         }
     }
 
     &__desc-text {
-        width: 500px;
+        font-size: 18px;
+        width: 590px;
     }
 
     &__block {
