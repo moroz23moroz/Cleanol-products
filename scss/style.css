@@ -771,6 +771,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
   .products__button-read-more {
     margin-bottom: 10px;
+    font-size: 13px;
   }
   .products__size-option {
     box-sizing: border-box;
@@ -783,7 +784,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media screen and (min-width: 1170px) and (max-width: 1534px) and (max-width: 1234px) {
   .products__size-option {
     width: 19%;
-    font-size: 10px;
   }
 }
 @media screen and (min-width: 1170px) and (max-width: 1534px) {
