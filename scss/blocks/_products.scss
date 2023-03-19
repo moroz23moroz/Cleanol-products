@@ -30,6 +30,7 @@
     }
 
     &__visible-wrapper {
+        min-height: 800px;
         display: flex;
         justify-content: space-between;
 
@@ -127,13 +128,13 @@
     }
 
     &__button-buy {
-        width: 35%;
+        // width: 35%;
         @include button-main (118px, 15px, $button-font-size);
         text-transform: uppercase;
     }
 
     &__button-more {
-        width: 15%;
+        width: 20%;
         margin-top: 40px;
         margin-left: 42.5%;
         padding: 7px;
@@ -174,7 +175,7 @@
         }
 
         &__button-buy {
-            width: 32%;
+            // width: 32%;
             padding: 10px;
         }
     }
@@ -214,7 +215,80 @@
         }
 
         &__button-buy {
-            width: 30%;
+            // width: 30%;
+            padding: 8px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1170px) and (max-width: 1534px) {
+    .products {
+        &__visible-wrapper {
+            min-height: 730px;
+        }
+
+        &__card-content {
+            padding: 15px;
+            // 
+            min-height: 480px;
+        }
+
+        &__product-card {
+            margin-right: 8px;
+            padding-bottom: 0;
+        }
+
+        &__card-img {
+            padding: 10px 20px;
+            min-height: 31%;
+
+            img {
+                width: 75%;
+            }
+        }
+
+        &__card-content {
+            padding: 10px;
+        }
+
+        // 
+        &__card-title {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__card-subtitle {
+            margin-top: 5px;
+        }
+
+        // 
+        &__card-info {
+            font-size: 13px;
+            line-height: 17px;
+        }
+
+        // 
+        &__button-read-more {
+            margin-bottom: 10px;
+        }
+
+        &__size-option {
+            box-sizing: border-box;
+            width: 21%;
+            padding: 3px 0;
+            font-size: 12px;
+            margin-right: 0;
+
+            @media screen and (max-width: 1234px) {
+                width: 19%;
+                font-size: 10px;
+            }
+        }
+
+        &__button-buy {
+            // width: 30%;
             padding: 8px;
             font-size: 14px;
         }

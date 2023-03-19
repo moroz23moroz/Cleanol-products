@@ -568,6 +568,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   line-height: 39px;
 }
 .products__visible-wrapper {
+  min-height: 800px;
   display: flex;
   justify-content: space-between;
 }
@@ -655,7 +656,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #EEF3FD;
 }
 .products__button-buy {
-  width: 35%;
   max-width: 118px;
   padding: 15px;
   border: none;
@@ -670,7 +670,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   text-transform: uppercase;
 }
 .products__button-more {
-  width: 15%;
+  width: 20%;
   margin-top: 40px;
   margin-left: 42.5%;
   padding: 7px;
@@ -703,7 +703,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-right: 0;
   }
   .products__button-buy {
-    width: 32%;
     padding: 10px;
   }
 }
@@ -733,7 +732,62 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-right: 0;
   }
   .products__button-buy {
-    width: 30%;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1170px) and (max-width: 1534px) {
+  .products__visible-wrapper {
+    min-height: 730px;
+  }
+  .products__card-content {
+    padding: 15px;
+    min-height: 480px;
+  }
+  .products__product-card {
+    margin-right: 8px;
+    padding-bottom: 0;
+  }
+  .products__card-img {
+    padding: 10px 20px;
+    min-height: 31%;
+  }
+  .products__card-img img {
+    width: 75%;
+  }
+  .products__card-content {
+    padding: 10px;
+  }
+  .products__card-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .products__card-subtitle {
+    margin-top: 5px;
+  }
+  .products__card-info {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .products__button-read-more {
+    margin-bottom: 10px;
+  }
+  .products__size-option {
+    box-sizing: border-box;
+    width: 21%;
+    padding: 3px 0;
+    font-size: 12px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1170px) and (max-width: 1534px) and (max-width: 1234px) {
+  .products__size-option {
+    width: 19%;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1170px) and (max-width: 1534px) {
+  .products__button-buy {
     padding: 8px;
     font-size: 14px;
   }
