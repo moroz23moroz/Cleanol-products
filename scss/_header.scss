@@ -16,11 +16,43 @@
         font-family: 'Rubik';
         font-style: normal;
         font-weight: 400;
+
+        @media (max-width: 1393px) {
+            gap: 10px;
+        }
+
+        @media (max-width: 1280px) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__high {
         justify-content: end;
         gap: 20px;
+
+        & img {
+            display: none;
+
+            @media (max-width: 1280px) {
+                display: block;
+                margin-left: 45px;
+                cursor: pointer;
+            }
+
+            @media (max-width: 1200px) {
+                margin-left: 30px;
+            }
+
+            @media (min-width: 684px) and (max-width: 716px) {
+                margin-left: 0;
+            }
+
+            @media (max-width: 566px) {
+                margin-left: 5px;
+            }
+        }
     }
 
     &__phone-row {
@@ -28,6 +60,10 @@
         gap: 10px;
         font-size: 24px;
         width: 240px;
+
+        @media (max-width: 390px) {
+            gap: 0;
+        }
     }
 
     &__email a,
@@ -37,17 +73,49 @@
         color: #878787;
     }
 
+    &__info {
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__email {
+        @media (max-width: 683px) {
+            display: none;
+        }
+    }
+
     &__phone a {
         width: 700px;
+        font-weight: 700;
         color: #D71635;
+        cursor: pointer;
+
+        @media (max-width: 537px) {
+            font-size: 18px;
+            line-height: 12px;
+        }
     }
 
     &__email a {
         text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &__desc-inner {
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
 
     &__desc {
         text-transform: uppercase;
+
+        @media (max-width: 537px) {
+            font-size: 13px;
+            line-height: 12px;
+        }
     }
 
     &__desc span {
@@ -58,15 +126,52 @@
         gap: 20px;
     }
 
+    &__logo {
+
+        @media (max-width: 750px) {
+            width: 176px;
+            height: 43px;
+        }
+
+        @media (max-width: 475px) {
+            width: 106px;
+            height: 26px;
+        }
+
+        @media (max-width: 400px) {
+            width: auto;
+            height: auto;
+        }
+    }
+
     &__description {
         width: 203px;
         font-size: 14px;
         line-height: 17px;
         color: #525252;
+
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+
+    &__menu {
+
+        @media (max-width: 1280px) {
+            display: none;
+        }
     }
 
     &__menu-list {
         gap: 10px;
+
+        @media (min-width: 1361px) and (max-width: 1386px) {
+            gap: 20px;
+        }
+
+        @media (max-width: 1360px) {
+            text-align: center;
+        }
     }
 
     &__menu-link {
@@ -77,10 +182,20 @@
         font-size: 16px;
         line-height: 16px;
         color: black;
+
+        @media (max-width: 1360px) {
+            font-size: 15px;
+            line-height: 15px;
+            display: block;
+        }
     }
 
     &__menu-link span {
         color: #C5C5C5;
         padding-left: 10px;
+
+        @media (max-width: 1386px) {
+            display: none;
+        }
     }
 }
