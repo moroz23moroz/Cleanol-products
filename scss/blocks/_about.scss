@@ -21,6 +21,19 @@
 
         @media screen and (max-width: 1266px) {
             height: 700px;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 990px) {
+            padding-top: 50px;
+            height: 550px;
+            width: 680px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 750px) {
+            margin-left: -150px;
+            width: 608px;
         }
 
     }
@@ -37,6 +50,12 @@
         margin-bottom: 45px;
         position: relative;
 
+        @media (max-width: 990px) {
+            font-size: 30px;
+            line-height: 29px;
+            margin-bottom: 30px;
+        }
+
         &::before {
             position: absolute;
             content: '';
@@ -51,8 +70,13 @@
     &__info-inner {
         gap: 75px;
 
-        @media screen and (max-width: 1050px) {
+        @media (max-width: 1050px) {
             gap: 35px;
+        }
+
+        @media (max-width: 990px) {
+            flex-direction: column;
+            gap: 50px;
         }
     }
 
@@ -62,10 +86,23 @@
         @media screen and (max-width: 1050px) {
             gap: 15px;
         }
+
+        @media (max-width: 990px) {
+            width: 530px;
+        }
     }
 
     &__wrapper {
         position: relative;
+
+        @media (max-width: 990px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 750px) {
+            font-size: 16px;
+            margin-left: 50px;
+        }
     }
 
     &__logo {
@@ -74,6 +111,14 @@
 
     &__background {
         height: 405px;
+
+        @media (max-width: 990px) {
+            margin-right: -82px;
+        }
+
+        @media (max-width: 750px) {
+            margin-right: 124px;
+        }
 
         & img {
             height: 100%;
@@ -114,6 +159,14 @@
 
     &__description-wrapper {
         padding: 145px 45px 80px 45px;
+
+        @media (max-width: 990px) {
+            padding: 70px 0px 70px 45px;
+        }
+
+        @media (max-width: 750px) {
+            padding: 70px 25px;
+        }
     }
 
     &__desc-inner {
@@ -123,28 +176,61 @@
         @media screen and (max-width: 1460px) {
             gap: 60px;
         }
+
+        @media (max-width: 990px) {
+            flex-direction: column;
+            gap: 45px;
+        }
     }
 
     &__desc-row {
         gap: 40px;
         width: 560px;
+
+        @media (max-width: 990px) {
+            gap: 60px;
+            width: 100%;
+        }
     }
 
     &__desc-col {
         gap: 70px;
 
+        @media (max-width: 990px) {
+            gap: 30px;
+        }
+
         &:nth-child(2) {
             gap: 45px;
+
+            @media (max-width: 990px) {
+                font-size: 16px;
+                width: 100%;
+                gap: 30px;
+            }
         }
 
         &:nth-child(1) {
             width: 500px;
+
+            @media (max-width: 990px) {
+                width: 100%;
+                padding-right: 35px;
+            }
+
+            @media (max-width: 750px) {
+                padding-right: 0;
+            }
         }
     }
 
     &__desc {
         font-size: 18px;
         font-weight: 500;
+
+        @media (max-width: 750px) {
+            padding-right: 35px;
+        }
     }
 
     &__desc-title {
@@ -153,14 +239,23 @@
         text-transform: uppercase;
         color: #D71635;
 
-        @media screen and (max-width: 1360px) {
+        @media (min-width: 991px) and (max-width: 1360px) {
             text-align: center;
+        }
+
+        @media (max-width: 990px) {
+            font-size: 20px;
         }
     }
 
     &__desc-text {
         font-size: 18px;
         width: 590px;
+
+        @media (max-width: 990px) {
+            font-size: 16px;
+            width: 100%;
+        }
     }
 
     &__block {
@@ -184,11 +279,21 @@
         gap: 15px;
     }
 
+    &__block-col {
+        @media (max-width: 990px) {
+            width: 100%;
+        }
+    }
+
     &__block-inner {
         font-size: 18px;
 
         @media screen and (max-width: 1460px) {
             font-size: 16px;
+        }
+
+        @media (max-width: 990px) {
+            justify-content: space-between;
         }
     }
 
@@ -203,6 +308,10 @@
         text-transform: uppercase;
         padding-right: 40px;
         position: relative;
+
+        @media (max-width: 990px) {
+            padding-right: 90px;
+        }
 
         &::after {
             position: absolute;
