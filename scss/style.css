@@ -288,6 +288,12 @@ body {
     text-align: center;
   }
 }
+@media (min-width: 1281px) and (max-width: 1386px) {
+  .header__menu-item {
+    width: 100%;
+    text-align: center;
+  }
+}
 .header__menu-link {
   text-transform: uppercase;
   font-family: "Rubik";
