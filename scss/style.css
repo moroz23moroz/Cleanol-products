@@ -830,14 +830,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .about__description-wrapper {
   padding: 145px 45px 80px 45px;
 }
-@media (max-width: 990px) {
+@media (max-width: 1360px) {
   .about__description-wrapper {
-    padding: 70px 0px 70px 45px;
-  }
-}
-@media (max-width: 750px) {
-  .about__description-wrapper {
-    padding: 70px 25px;
+    padding: 70px 0;
   }
 }
 @media (max-width: 390px) {
@@ -869,10 +864,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   gap: 40px;
   width: 560px;
 }
-@media (max-width: 990px) {
+@media (max-width: 1360px) {
+  .about__desc-row {
+    gap: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 1300px) {
   .about__desc-row {
     gap: 60px;
-    width: 100%;
   }
 }
 @media (max-width: 715px) {
@@ -898,20 +898,30 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .about__desc-col:nth-child(2) {
   gap: 45px;
 }
+@media (max-width: 1300px) {
+  .about__desc-col:nth-child(2) {
+    width: 571px;
+  }
+}
 @media (max-width: 990px) {
   .about__desc-col:nth-child(2) {
-    font-size: 16px;
     width: 100%;
+    font-size: 16px;
     gap: 30px;
   }
 }
 .about__desc-col:nth-child(1) {
   width: 500px;
 }
+@media (max-width: 1300px) {
+  .about__desc-col:nth-child(1) {
+    width: 668px;
+  }
+}
 @media (max-width: 990px) {
   .about__desc-col:nth-child(1) {
-    width: 100%;
     padding-right: 35px;
+    width: 100%;
   }
 }
 @media (max-width: 750px) {
@@ -958,10 +968,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-size: 18px;
   width: 590px;
 }
+@media (max-width: 1360px) {
+  .about__desc-text {
+    width: 100%;
+  }
+}
 @media (max-width: 990px) {
   .about__desc-text {
     font-size: 16px;
-    width: 100%;
   }
 }
 @media (max-width: 380px) {
@@ -973,7 +987,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .about__block {
   padding: 10px 50px 10px 75px;
   height: 70px;
-  justify-content: center;
   background-color: white;
   border-radius: 4px;
 }
@@ -998,7 +1011,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .about__block-inner, .about__block-col {
   gap: 15px;
 }
-@media (max-width: 990px) {
+@media (max-width: 1300px) {
   .about__block-col {
     width: 100%;
   }
@@ -1009,6 +1022,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media screen and (max-width: 1460px) {
   .about__block-inner {
     font-size: 16px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1300px) {
+  .about__block-inner {
+    flex-direction: column;
   }
 }
 @media (max-width: 990px) {

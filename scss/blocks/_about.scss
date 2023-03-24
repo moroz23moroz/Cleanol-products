@@ -213,12 +213,12 @@
     &__description-wrapper {
         padding: 145px 45px 80px 45px;
 
-        @media (max-width: 990px) {
-            padding: 70px 0px 70px 45px;
-        }
+        // @media (max-width: 990px) {
+        //     padding: 70px 0px 70px 45px;
+        // }
 
-        @media (max-width: 750px) {
-            padding: 70px 25px;
+        @media (max-width: 1360px) {
+            padding: 70px 0;
         }
 
         @media (max-width: 390px) {
@@ -248,9 +248,13 @@
         gap: 40px;
         width: 560px;
 
-        @media (max-width: 990px) {
-            gap: 60px;
+        @media (max-width: 1360px) {
+            gap: 20px;
             width: 100%;
+        }
+
+        @media (max-width: 1300px) {
+            gap: 60px;
         }
 
         @media (max-width: 715px) {
@@ -274,9 +278,13 @@
         &:nth-child(2) {
             gap: 45px;
 
+            @media (max-width: 1300px) {
+                width: 571px;
+            }
+
             @media (max-width: 990px) {
-                font-size: 16px;
                 width: 100%;
+                font-size: 16px;
                 gap: 30px;
             }
         }
@@ -284,9 +292,13 @@
         &:nth-child(1) {
             width: 500px;
 
+            @media (max-width: 1300px) {
+                width: 668px;
+            }
+
             @media (max-width: 990px) {
-                width: 100%;
                 padding-right: 35px;
+                width: 100%;
             }
 
             @media (max-width: 750px) {
@@ -331,9 +343,12 @@
         font-size: 18px;
         width: 590px;
 
+        @media (max-width: 1360px) {
+            width: 100%;
+        }
+
         @media (max-width: 990px) {
             font-size: 16px;
-            width: 100%;
         }
 
         @media (max-width: 380px) {
@@ -345,7 +360,6 @@
     &__block {
         padding: 10px 50px 10px 75px;
         height: 70px;
-        justify-content: center;
         background-color: white;
         border-radius: 4px;
 
@@ -372,7 +386,7 @@
     }
 
     &__block-col {
-        @media (max-width: 990px) {
+        @media (max-width: 1300px) {
             width: 100%;
         }
     }
@@ -382,6 +396,10 @@
 
         @media screen and (max-width: 1460px) {
             font-size: 16px;
+        }
+
+        @media (min-width:991px) and (max-width: 1300px) {
+            flex-direction: column;
         }
 
         @media (max-width: 990px) {
