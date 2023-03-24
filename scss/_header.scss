@@ -206,3 +206,157 @@
         }
     }
 }
+
+.container-adaptive {
+    max-width: calc(310px + (1200 - 310) * ((100vw - 375px) / (1280 - 375)));
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.adaptive-menu.action {
+    display: block;
+}
+
+.adaptive-menu {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    top: 0;
+    right: 0;
+    padding: 15px 25px 15px 45px;
+    background-color: white;
+    z-index: 99;
+
+    @media(max-width:595px) {
+        height: 80vh;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__phone a {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 16px;
+        color: #D71635;
+    }
+
+    &__desc {
+        display: flex;
+        gap: 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__email {
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: 400;
+        text-decoration: underline;
+        color: #878787;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        @media(min-width: 391px) and (max-width:595px) {
+            width: 100%;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: black;
+    }
+}
+
+.adaptive {
+
+    &__high,
+    &__low {
+        display: flex;
+        align-items: center;
+    }
+
+    &__high {
+        justify-content: space-between;
+        margin-bottom: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+    }
+
+    &__low {
+        align-items: start;
+        gap: 140px;
+        justify-content: center;
+
+        @media(max-width:696px) {
+            justify-content: space-between;
+            gap: 0;
+        }
+
+        @media(max-width:595px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__phone,
+    &__add {
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone {
+        gap: 10px;
+    }
+
+    &__phone a {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #D71635;
+    }
+
+    &__add {
+        gap: 7px;
+        font-size: 20px;
+        line-height: 27px;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    &__email {
+        font-size: 18px;
+        color: inherit;
+    }
+
+    &__desc {
+        margin-top: 25px;
+        font-size: 15px;
+        line-height: 20px;
+        color: #7D7D7D;
+    }
+
+}
+
+
+.apaptive-logo {
+    @media(max-width:390px) {
+        width: 106px;
+        height: 26px;
+    }
+}
