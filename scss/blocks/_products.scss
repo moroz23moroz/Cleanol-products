@@ -1,6 +1,7 @@
 .products {
-    margin-top: 80px;
-    margin-bottom: 100px;
+    width: 78%;
+    max-width: 1700px;
+    margin: 80px auto 100px;
     font-family: $main-font;
 
     // * {
@@ -9,8 +10,6 @@
 
     &__title-group {
         display: flex;
-        width: 85%;
-        margin: 0 auto;
 
         img {
             width: 10%;
@@ -26,24 +25,24 @@
     &__shampoo {}
 
     &__subtitle {
-        width: 85%;
-        margin: 25px auto;
+        margin: 50px auto 30px;
         @include font-style (500, $subtitle-font-size, 39px);
     }
 
     &__visible-wrapper {
-        width: 85%;
-        margin: 20px auto;
+        min-height: 800px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        &_wax {
+            justify-content: flex-start;
+        }
     }
 
     &__collapsible-wrapper {
-        width: 85%;
-        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
 
         max-height: 0;
         overflow: hidden;
@@ -56,6 +55,7 @@
 
     &__product-card {
         width: 24%;
+        padding-bottom: 20px;
         margin-right: 10px;
         outline: 1.3px solid $bg-color-light;
     }
@@ -63,10 +63,15 @@
     &__card-img {
         display: flex;
         align-items: center;
-        width: 90%;
-        min-height: 38%;
+        width: 100%;
+        min-height: 37%;
         padding: 20px 50px;
         border-bottom: 1.3px solid $bg-color-light;
+
+        img {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     &__card-content {
@@ -74,7 +79,7 @@
         flex-direction: column;
         justify-content: space-around;
         padding: 20px;
-        min-height: 700px;
+        min-height: 600px;
     }
 
     &__card-title {
@@ -114,10 +119,8 @@
     }
 
     &__size-option {
-        // width: 52px;
         width: 19%;
-        // max-width: 52px;
-        padding: 6px;
+        padding: 6px 4px;
         margin-right: 6px;
         @include font-style (300, $small-text-font-size, 24px);
         text-align: center;
@@ -125,14 +128,13 @@
     }
 
     &__button-buy {
-        width: 35%;
+        // width: 35%;
         @include button-main (118px, 15px, $button-font-size);
         text-transform: uppercase;
-        // @include font-style (400, $button-font-size, 24px);
     }
 
     &__button-more {
-        width: 15%;
+        width: 20%;
         margin-top: 40px;
         margin-left: 42.5%;
         padding: 7px;
@@ -149,6 +151,163 @@
         img {
             display: inline;
             margin-left: 10px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1650px) and (max-width: 1917px) {
+    .products {
+        &__product-card {
+            padding-bottom: 15px;
+        }
+
+        &__card-img {
+            min-height: 35%;
+        }
+
+        &__size-option {
+            box-sizing: border-box;
+            width: 21%;
+            padding: 6px 2px;
+            font-size: 14px;
+            margin-right: 0;
+        }
+
+        &__button-buy {
+            padding: 10px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1535px) and (max-width: 1649px) {
+    .products {
+        &__card-content {
+            padding: 15px;
+            min-height: 550px;
+        }
+
+        &__product-card {
+            padding-bottom: 15px;
+        }
+
+        &__card-img {
+            padding: 10px 30px;
+        }
+
+        &__card-info {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__button-read-more {
+            margin-bottom: 10px;
+        }
+
+        &__size-option {
+            box-sizing: border-box;
+            width: 21%;
+            padding: 6px 2px;
+            font-size: 14px;
+            margin-right: 0;
+        }
+
+        &__button-buy {
+            padding: 8px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1170px) and (max-width: 1534px) {
+    .products {
+        &__visible-wrapper {
+            min-height: 730px;
+        }
+
+        &__product-card {
+            margin-right: 8px;
+            padding-bottom: 0;
+            min-height: 750px;
+        }
+
+        &__card-content {
+            padding: 10px;
+            min-height: 500px;
+        }
+
+        &__card-img {
+            padding: 10px 20px;
+            min-height: 31%;
+
+            img {
+                width: 75%;
+            }
+        }
+
+        &__card-title {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__card-subtitle {
+            margin-top: 5px;
+        }
+
+        &__card-info {
+            font-size: 13px;
+            line-height: 17px;
+        }
+
+        &__button-read-more {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        &__size-option {
+            box-sizing: border-box;
+            width: 21%;
+            padding: 3px 0;
+            font-size: 11px;
+            margin-right: 0;
+        }
+
+        &__button-buy {
+            padding: 8px;
+            font-size: 14px;
+        }
+    }
+}
+
+// планшет
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .products {
+        // * {
+        //     outline: 1px solid purple;
+        // }
+
+        &__title {
+            @include font-style (600, $title-font-size-tablet, 30px);
+        }
+
+        &__subtitle {
+            @include font-style (500, $subtitle-font-size-tablet, 30px);
+        }
+
+        &__visible-wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__product-card {
+            width: 45%;
+            margin-right: 0;
+        }
+
+        &__card-img {
+            min-height: 25%;
+            padding: 5px 50px;
         }
     }
 }
