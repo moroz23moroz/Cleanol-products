@@ -30,7 +30,31 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 
-    @media screen and (max-width: 1460px) {
-        max-width: 1300px;
+    @media (max-width: 640px) {
+        padding: 0 10px;
+    }
+
+    @media screen and (max-width: 1360px) {
+        max-width: 1200px;
+    }
+
+    @media screen and (max-width: 1300px) {
+        max-width: 1150px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        max-width: 1050px;
+    }
+
+    @media screen and (max-width: 990px) {
+        max-width: 750px;
+    }
+
+    @media (max-width: 790px) {
+        max-width: 730px;
+    }
+
+    @media (max-width: 740px) {
+        max-width: calc(345px + (710 - 349) * ((100vw - 350px) / (740 - 350)));
     }
 }
