@@ -57,6 +57,7 @@
 
     &__phone-row {
         justify-content: space-around;
+        align-items: center;
         gap: 10px;
         font-size: 24px;
         width: 240px;
@@ -86,8 +87,7 @@
         }
     }
 
-    &__phone a {
-        width: 700px;
+    &__phone {
         font-weight: 700;
         color: #D71635;
         cursor: pointer;
@@ -211,6 +211,10 @@
     max-width: calc(310px + (1200 - 310) * ((100vw - 375px) / (1280 - 375)));
     margin: 0 auto;
     padding: 0 15px;
+
+    @media(max-width:595px) {
+        padding: 0;
+    }
 }
 
 .adaptive-menu.action {
@@ -221,21 +225,27 @@
     display: none;
     position: absolute;
     width: 100vw;
-    height: 60vh;
+    height: auto;
     top: 0;
     right: 0;
-    padding: 15px 25px 15px 45px;
+    padding: 15px 25px 55px 45px;
     background-color: white;
+    box-shadow: 9px 9px 19px 4px rgba(128, 128, 128, 0.3);
     z-index: 99;
 
     @media(max-width:595px) {
-        height: 80vh;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     &__phone {
         display: flex;
         align-items: center;
         gap: 15px;
+
+        @media(max-width:390px) {
+            gap: 5px;
+        }
     }
 
     &__phone a {
@@ -243,13 +253,24 @@
         font-size: 24px;
         line-height: 16px;
         color: #D71635;
+
+        @media(max-width:635px) {
+            font-size: 18px;
+            line-height: 12px;
+        }
     }
 
     &__desc {
         display: flex;
+        align-items: center;
         gap: 10px;
         font-weight: 400;
         text-transform: uppercase;
+
+        @media(max-width:635px) {
+            font-size: 13px;
+            line-height: 12px;
+        }
     }
 
     &__email {
@@ -258,6 +279,17 @@
         font-weight: 400;
         text-decoration: underline;
         color: #878787;
+
+        @media(max-width: 635px) {
+            display: none;
+        }
+    }
+
+    &__close {
+        @media(max-width:715px) {
+            width: 18px;
+            height: 18px;
+        }
     }
 
     &__list {
@@ -289,6 +321,7 @@
 
     &__high {
         justify-content: space-between;
+        align-items: center;
         margin-bottom: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
     }
 
@@ -355,7 +388,7 @@
 
 
 .apaptive-logo {
-    @media(max-width:390px) {
+    @media(max-width:715px) {
         width: 106px;
         height: 26px;
     }
