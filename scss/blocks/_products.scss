@@ -175,7 +175,6 @@
         }
 
         &__button-buy {
-            // width: 32%;
             padding: 10px;
         }
     }
@@ -215,7 +214,6 @@
         }
 
         &__button-buy {
-            // width: 30%;
             padding: 8px;
             font-size: 14px;
         }
@@ -286,160 +284,30 @@
 // планшет
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .products {
-        // width: 78%;
-        // max-width: 1700px;
-        // margin: 80px auto 100px;
-        // font-family: $main-font;
-
-        * {
-            outline: 1px solid purple;
-        }
-
-        // &__title-group {
-        //     display: flex;
-
-        //     img {
-        //         width: 10%;
-        //     }
+        // * {
+        //     outline: 1px solid purple;
         // }
 
         &__title {
-            //     margin-left: 20px;
             @include font-style (600, $title-font-size-tablet, 30px);
-            //     color: $text-color-title;
         }
 
-        // &__shampoo {}
-
         &__subtitle {
-            //     margin: 50px auto 30px;
             @include font-style (500, $subtitle-font-size-tablet, 30px);
         }
 
         &__visible-wrapper {
             flex-wrap: wrap;
-            //     min-height: 800px;
-            //     display: flex;
-            //     justify-content: space-between;
-
-            //     &_wax {
-            //         justify-content: flex-start;
-            //     }
         }
-
-        // &__collapsible-wrapper {
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     justify-content: space-between;
-
-        //     max-height: 0;
-        //     overflow: hidden;
-        //     transition: max-height 0.3s ease-in;
-        // }
-
-        // &__wax {}
-
-        // &__special {}
 
         &__product-card {
             width: 45%;
-            //     padding-bottom: 20px;
             margin-right: 0;
-            //     outline: 1.3px solid $bg-color-light;
         }
 
         &__card-img {
-            //     display: flex;
-            //     align-items: center;
-            //     width: 100%;
             min-height: 25%;
             padding: 5px 50px;
-            //     border-bottom: 1.3px solid $bg-color-light;
-
-            // img {
-            // width: 80%;
-            //         margin: 0 auto;
-            // }
         }
-
-        // &__card-content {
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: space-around;
-        //     padding: 20px;
-        //     min-height: 600px;
-        // }
-
-        // &__card-title {
-        //     @include font-style (500, $big-text-font-size, 37.5px);
-        // }
-
-        // &__card-info {
-        //     @include font-style (300, $small-text-font-size, 24px);
-        // }
-
-        // &__button-read-more {
-        //     width: 60%;
-        //     padding: 0;
-        //     margin-bottom: 20px;
-        //     border: none;
-        //     @include font-style (300, $small-text-font-size, 16px);
-        //     font-style: italic;
-        //     text-align: left;
-        //     background-color: $bg-color-white;
-        //     color: $text-color-title;
-        // }
-
-        // &__ingredients {}
-
-        // &__card-subtitle {
-        //     width: 100%;
-        //     margin-top: 10px;
-        //     @include font-style (500, $small-text-font-size, 24px);
-        //     text-transform: uppercase;
-        // }
-
-        // &__size {
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     justify-content: space-between;
-        //     align-items: center;
-        // }
-
-        // &__size-option {
-        //     width: 19%;
-        //     padding: 6px 4px;
-        //     margin-right: 6px;
-        //     @include font-style (300, $small-text-font-size, 24px);
-        //     text-align: center;
-        //     background-color: $bg-color-light;
-        // }
-
-        // &__button-buy {
-        //     // width: 35%;
-        //     @include button-main (118px, 15px, $button-font-size);
-        //     text-transform: uppercase;
-        // }
-
-        // &__button-more {
-        //     width: 20%;
-        //     margin-top: 40px;
-        //     margin-left: 42.5%;
-        //     padding: 7px;
-
-        //     border: 1px solid $bg-color-main;
-        //     border-radius: 4px;
-
-        //     @include font-style (400, $button-font-size, 42px);
-        //     text-transform: uppercase;
-
-        //     background-color: $bg-color-white;
-        //     color: $text-color-title;
-
-        //     img {
-        //         // display: inline;
-        //         // margin-left: 10px;
-        //     }
-        // }
     }
 }

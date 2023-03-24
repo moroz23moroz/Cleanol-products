@@ -162,9 +162,6 @@ body {
   padding-left: 10px;
 }
 
-.banner * {
-  outline: 1px solid palevioletred;
-}
 .banner__container {
   font-family: "Rubik", sans-serif;
 }
@@ -326,7 +323,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     line-height: 26px;
   }
 }
-@media screen and (min-width: 1000px) and (max-width: 1284px) {
+@media screen and (min-width: 1024px) and (max-width: 1284px) {
   .banner__info {
     width: 43%;
     min-height: 80px;
@@ -350,6 +347,40 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .banner__button-more {
     font-size: 16px;
     padding: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__slide_one {
+    background-image: url("../images/block2_slider/banner1_purple_tablet.png");
+  }
+  .banner__slide_two {
+    background-image: url("../images/block2_slider/banner2_blue_tablet.png");
+  }
+  .banner__slide_three {
+    background-image: url("../images/block2_slider/banner3_red_tablet.png");
+  }
+  .banner__slide_four {
+    background-image: url("../images/block2_slider/banner4_violet_tablet.png");
+  }
+  .banner__slide_five {
+    background-image: url("../images/block2_slider/banner5_girl_tablet.png");
+  }
+}
+@media screen and (min-width: 240px) and (max-width: 767px) {
+  .banner__slide_one {
+    background-image: url("../images/block2_slider/banner1_purple_mobile.png");
+  }
+  .banner__slide_two {
+    background-image: url("../images/block2_slider/banner2_blue_mobile.png");
+  }
+  .banner__slide_three {
+    background-image: url("../images/block2_slider/banner3_red_mobile.png");
+  }
+  .banner__slide_four {
+    background-image: url("../images/block2_slider/banner4_violet_mobile.png");
+  }
+  .banner__slide_five {
+    background-image: url("../images/block2_slider/banner5_girl_mobile.png");
   }
 }
 .about__info {
@@ -784,9 +815,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .products * {
-    outline: 1px solid purple;
-  }
   .products__title {
     font-weight: 600;
     font-size: 30px;

@@ -1,7 +1,7 @@
 .banner {
-    * {
-        outline: 1px solid palevioletred;
-    }
+    // * {
+    //     outline: 1px solid palevioletred;
+    // }
 
     &__container {
         font-family: $main-font;
@@ -148,7 +148,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         }
 
         &__text {
-            // font-size: 22px;
             line-height: 32px;
         }
     }
@@ -186,7 +185,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         }
 
         &__navigation {
-            // width: 44%;
             top: 84%;
         }
 
@@ -201,7 +199,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1284px) {
+@media screen and (min-width: 1024px) and (max-width: 1284px) {
     .banner {
         &__info {
             width: 43%;
@@ -231,6 +229,62 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         &__button-more {
             font-size: 16px;
             padding: 10px;
+        }
+    }
+}
+
+// планшет 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        &__slide {
+
+            &_one {
+                background-image: url('../images/block2_slider/banner1_purple_tablet.png');
+            }
+
+            &_two {
+                background-image: url('../images/block2_slider/banner2_blue_tablet.png');
+            }
+
+            &_three {
+                background-image: url('../images/block2_slider/banner3_red_tablet.png');
+            }
+
+            &_four {
+                background-image: url('../images/block2_slider/banner4_violet_tablet.png');
+            }
+
+            &_five {
+                background-image: url('../images/block2_slider/banner5_girl_tablet.png');
+            }
+        }
+    }
+}
+
+// мобильные
+@media screen and (min-width: 240px) and (max-width: 767px) {
+    .banner {
+        &__slide {
+
+            &_one {
+                background-image: url('../images/block2_slider/banner1_purple_mobile.png');
+            }
+
+            &_two {
+                background-image: url('../images/block2_slider/banner2_blue_mobile.png');
+            }
+
+            &_three {
+                background-image: url('../images/block2_slider/banner3_red_mobile.png');
+            }
+
+            &_four {
+                background-image: url('../images/block2_slider/banner4_violet_mobile.png');
+            }
+
+            &_five {
+                background-image: url('../images/block2_slider/banner5_girl_mobile.png');
+            }
         }
     }
 }
