@@ -15,26 +15,15 @@
         border-radius: 0px 0px 4px 4px;
         width: 665px;
         height: 615px;
-        padding: 70px 45px 55px 45px;
-        margin-bottom: -65px;
+        padding: 70px 45px 35px 45px;
+        margin-bottom: calc(-1 * (30px + (65 - 30) * ((100vw - 991px) / (1920 - 991))));
         font-size: 18px;
-
-        @media (max-width: 1266px) {
-            height: 720px;
-            margin-bottom: 0;
-        }
-
-        @media (max-height: 425px) and (max-width: 990px) {
-            padding-top: 50px;
-            height: 560px;
-            width: 680px;
-            font-size: 16px;
-            margin-bottom: 0;
-        }
+        height: auto;
 
         @media (max-width: 750px) {
             margin-left: calc((-1) * (50px + (150 - 50)*((100vw - 641px) / (750 - 641))));
             width: 608px;
+            font-size: 16px;
         }
 
         @media (max-width: 640px) {
@@ -47,15 +36,11 @@
         }
 
         @media (max-width: 453px) {
-            padding: 0 30px;
+            padding: 0 30px 30px 30px;
         }
 
         @media (max-width: 425px) {
             justify-content: flex-start;
-        }
-
-        @media (max-width: 370px) {
-            height: 770px;
         }
 
     }
