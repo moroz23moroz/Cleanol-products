@@ -153,6 +153,7 @@ body {
 .header__high {
   justify-content: end;
   gap: 20px;
+  width: 100%;
 }
 .header__high img {
   display: none;
@@ -182,14 +183,8 @@ body {
 .header__phone-row {
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
   font-size: 24px;
-  width: 240px;
-}
-@media (max-width: 390px) {
-  .header__phone-row {
-    gap: 0;
-  }
+  width: auto;
 }
 .header__email, .header__info {
   font-size: 15px;
@@ -207,6 +202,7 @@ body {
   }
 }
 .header__phone {
+  padding-right: 5px;
   font-weight: 700;
   color: #D71635;
   cursor: pointer;
