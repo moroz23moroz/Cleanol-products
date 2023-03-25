@@ -58,13 +58,8 @@
     &__phone-row {
         justify-content: space-around;
         align-items: center;
-        gap: 10px;
         font-size: 24px;
-        width: 240px;
-
-        @media (max-width: 390px) {
-            gap: 0;
-        }
+        width: auto;
     }
 
     &__email,
@@ -88,6 +83,7 @@
     }
 
     &__phone {
+        padding-right: 5px;
         font-weight: 700;
         color: #D71635;
         cursor: pointer;
