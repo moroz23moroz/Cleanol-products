@@ -67,7 +67,7 @@
         }
     }
 
-    &__email a,
+    &__email,
     &__info {
         font-size: 15px;
         line-height: 16px;
@@ -98,7 +98,7 @@
         }
     }
 
-    &__email a {
+    &__email {
         text-decoration: underline;
         cursor: pointer;
     }

@@ -191,7 +191,7 @@ body {
     gap: 0;
   }
 }
-.header__email a, .header__info {
+.header__email, .header__info {
   font-size: 15px;
   line-height: 16px;
   color: #878787;
@@ -217,7 +217,7 @@ body {
     line-height: 12px;
   }
 }
-.header__email a {
+.header__email {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -3785,4 +3785,4 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     top: 17px;
     right: 20px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
