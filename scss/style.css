@@ -496,6 +496,9 @@ body {
 .banner__container {
   font-family: "Rubik", sans-serif;
 }
+.banner__container * {
+  outline: 1px solid palevioletred;
+}
 .banner__slider {
   position: relative;
 }
@@ -666,6 +669,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     top: 84%;
     width: 48%;
   }
+  .banner__nav-button {
+    min-height: 45px;
+  }
   .banner__title {
     font-size: 25px;
     line-height: 28px;
@@ -681,6 +687,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__slide {
+    min-height: 55vw;
+  }
   .banner__slide_one {
     background-image: url("../images/block2_slider/banner1_purple_tablet.png");
   }
@@ -696,8 +705,80 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .banner__slide_five {
     background-image: url("../images/block2_slider/banner5_girl_tablet.png");
   }
+  .banner__info {
+    width: 46%;
+    min-height: 180px;
+    margin-left: 40%;
+    padding: 35px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 788px) {
+  .banner__info {
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 888px) {
+  .banner__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__text {
+    margin: 10px auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 888px) {
+  .banner__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__button-more {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__navigation {
+    left: 40%;
+    top: 80%;
+    width: 53%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 830px) {
+  .banner__navigation {
+    top: 83%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__nav-button {
+    width: 45px;
+    min-height: 38px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .swiper-pagination-bullet {
+    width: 37px;
+  }
 }
 @media screen and (min-width: 240px) and (max-width: 767px) {
+  .banner__slide {
+    min-height: 130vw;
+  }
   .banner__slide_one {
     background-image: url("../images/block2_slider/banner1_purple_mobile.png");
   }
@@ -712,6 +793,38 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
   .banner__slide_five {
     background-image: url("../images/block2_slider/banner5_girl_mobile.png");
+  }
+  .banner__info {
+    position: absolute;
+    top: 66%;
+    width: 100%;
+    min-height: 200px;
+    margin-left: 0;
+    padding: 25px;
+    background-color: #FFFFFF;
+  }
+  .banner__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .banner__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .banner__navigation {
+    left: 5%;
+    top: 63%;
+    width: 90%;
+    justify-content: center;
+  }
+  .banner__nav-button {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    width: 18%;
+    height: 5px;
   }
 }
 .about__info {

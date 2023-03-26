@@ -6,9 +6,9 @@
     &__container {
         font-family: $main-font;
 
-        // * {
-        //     outline: 1px solid palevioletred;
-        // }
+        * {
+            outline: 1px solid palevioletred;
+        }
     }
 
     &__slider {
@@ -214,6 +214,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
             width: 48%;
         }
 
+        &__nav-button {
+            min-height: 45px;
+        }
+
         &__title {
             font-size: 25px;
             line-height: 28px;
@@ -237,6 +241,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .banner {
         &__slide {
+            min-height: 55vw;
 
             &_one {
                 background-image: url('../images/block2_slider/banner1_purple_tablet.png');
@@ -258,6 +263,58 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
                 background-image: url('../images/block2_slider/banner5_girl_tablet.png');
             }
         }
+
+        &__info {
+            width: 46%;
+            min-height: 180px;
+            margin-left: 40%;
+            padding: 35px;
+
+            @media screen and (max-width: 788px) {
+                padding: 25px;
+            }
+        }
+
+        &__title {
+            @include font-style (600, $title-font-size-tablet, 35px);
+
+            @media screen and (max-width: 888px) {
+                @include font-style (600, 25px, 30px);
+            }
+        }
+
+        &__text {
+            margin: 10px auto;
+            @include font-style (400, $text-font-size, 25px);
+
+            @media screen and (max-width: 888px) {
+                @include font-style (400, 16px, 20px);
+            }
+        }
+
+        &__button-more {
+            font-size: $small-text-font-size;
+            padding: 12px;
+        }
+
+        &__navigation {
+            left: 40%;
+            top: 80%;
+            width: 53%;
+
+            @media screen and (max-width: 830px) {
+                top: 83%;
+            }
+        }
+
+        &__nav-button {
+            width: 45px;
+            min-height: 38px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 37px;
     }
 }
 
@@ -265,6 +322,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media screen and (min-width: 240px) and (max-width: 767px) {
     .banner {
         &__slide {
+            // display: flex;
+            // align-items: center;
+            min-height: 130vw;
+            // background-size: 100%;
+            // background-repeat: no-repeat;
 
             &_one {
                 background-image: url('../images/block2_slider/banner1_purple_mobile.png');
@@ -286,5 +348,51 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
                 background-image: url('../images/block2_slider/banner5_girl_mobile.png');
             }
         }
+
+        &__info {
+            position: absolute;
+            top: 66%;
+            width: 100%;
+            // max-width: 730px;
+            min-height: 200px;
+            margin-left: 0;
+            padding: 25px;
+
+            // display: flex;
+            // flex-wrap: wrap;
+            // align-content: center;
+
+            // border-radius: 4px 0 4px 4px;
+            background-color: $bg-color-white;
+        }
+
+        &__title {
+            // width: 100%;
+            @include font-style (600, $title-font-size-tablet, 39px);
+        }
+
+        &__text {
+            // width: 100%;
+            // margin: 20px auto;
+            @include font-style (400, $text-font-size, 30px);
+        }
+
+        &__navigation {
+            left: 5%;
+            top: 63%;
+
+            width: 90%;
+
+            justify-content: center;
+        }
+
+        &__nav-button {
+            display: none;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 18%;
+        height: 5px;
     }
 }
