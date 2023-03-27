@@ -25,6 +25,10 @@ body {
     flex: 0 0 auto;
 }
 
+input {
+    outline: none;
+}
+
 .container {
     max-width: 1460px;
     margin: 0 auto;
