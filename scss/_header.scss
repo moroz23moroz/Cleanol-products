@@ -31,6 +31,7 @@
     &__high {
         justify-content: end;
         gap: 20px;
+        width: 100%;
 
         & img {
             display: none;
@@ -58,16 +59,11 @@
     &__phone-row {
         justify-content: space-around;
         align-items: center;
-        gap: 10px;
         font-size: 24px;
-        width: 240px;
-
-        @media (max-width: 390px) {
-            gap: 0;
-        }
+        width: auto;
     }
 
-    &__email a,
+    &__email,
     &__info {
         font-size: 15px;
         line-height: 16px;
@@ -88,6 +84,7 @@
     }
 
     &__phone {
+        padding-right: 5px;
         font-weight: 700;
         color: #D71635;
         cursor: pointer;
@@ -98,7 +95,7 @@
         }
     }
 
-    &__email a {
+    &__email {
         text-decoration: underline;
         cursor: pointer;
     }

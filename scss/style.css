@@ -80,6 +80,10 @@ body {
   flex: 0 0 auto;
 }
 
+input {
+  outline: none;
+}
+
 .container {
   max-width: 1460px;
   margin: 0 auto;
@@ -153,6 +157,7 @@ body {
 .header__high {
   justify-content: end;
   gap: 20px;
+  width: 100%;
 }
 .header__high img {
   display: none;
@@ -182,16 +187,10 @@ body {
 .header__phone-row {
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
   font-size: 24px;
-  width: 240px;
+  width: auto;
 }
-@media (max-width: 390px) {
-  .header__phone-row {
-    gap: 0;
-  }
-}
-.header__email a, .header__info {
+.header__email, .header__info {
   font-size: 15px;
   line-height: 16px;
   color: #878787;
@@ -207,6 +206,7 @@ body {
   }
 }
 .header__phone {
+  padding-right: 5px;
   font-weight: 700;
   color: #D71635;
   cursor: pointer;
@@ -217,7 +217,7 @@ body {
     line-height: 12px;
   }
 }
-.header__email a {
+.header__email {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -3291,6 +3291,30 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: red;
 }
 
+.checkb-lbl::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #F4F7FB;
+  top: 464px;
+  left: 34px;
+}
+
+.checkb-lbl {
+  margin-left: 28px;
+}
+
+.checkb {
+  display: none;
+}
+
+.active .checkb-lbl::before {
+  background-image: url("../../images/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .popup {
     position: fixed;
@@ -3395,6 +3419,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 12px;
     line-height: 14px;
   }
+  .checkb-lbl::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #F4F7FB;
+    top: 548px;
+    left: 20px;
+  }
 }
 @media screen and (max-width: 320px) {
   .popup {
@@ -3460,6 +3493,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
   .input-field_modal {
     width: 100%;
+  }
+  .checkb-lbl::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #F4F7FB;
+    top: 578px;
+    left: 20px;
   }
 }
 .title-container_contacts {
@@ -4167,4 +4209,4 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     top: 17px;
     right: 20px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
