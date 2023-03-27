@@ -2905,6 +2905,30 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: red;
 }
 
+.checkb-lbl::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #F4F7FB;
+  top: 464px;
+  left: 34px;
+}
+
+.checkb-lbl {
+  margin-left: 28px;
+}
+
+.checkb {
+  display: none;
+}
+
+.active .checkb-lbl::before {
+  background-image: url("../../images/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .popup {
     position: fixed;
@@ -3009,6 +3033,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 12px;
     line-height: 14px;
   }
+  .checkb-lbl::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #F4F7FB;
+    top: 548px;
+    left: 20px;
+  }
 }
 @media screen and (max-width: 320px) {
   .popup {
@@ -3074,6 +3107,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
   .input-field_modal {
     width: 100%;
+  }
+  .checkb-lbl::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #F4F7FB;
+    top: 578px;
+    left: 20px;
   }
 }
 .title-container_contacts {

@@ -15,3 +15,19 @@ $(document).ready(function () {
     });
 
 });
+
+$(document).ready(function () {
+    if ($('.checkb').prop('checked') == true) {
+        $('.content-row_personal').addClass('active');
+    }
+
+    $(document).on('click', '.content-row_personal', function (e) {
+        if ($(this).hasClass('active')) {
+            $('.checkb').prop('checked', false);
+        } else {
+            $('.checkb').prop('checked', true);
+        }
+        $(this).toggleClass('active');
+        return false;
+    })
+})
