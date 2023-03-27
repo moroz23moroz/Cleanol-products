@@ -14,6 +14,10 @@ new Swiper('.banner__slider', {
 
 // block products
 
+// if((window.matchMedia('(min-width: 768px)').matches) && (window.matchMedia('(max-width: 1023px)').matches)){
+// 	alert('t');
+// }
+
 const getData = (path, block) => {
     fetch(`../data/${path}.json`)
         .then(response => response.json())
