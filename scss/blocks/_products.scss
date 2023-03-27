@@ -4,10 +4,6 @@
     margin: 80px auto 100px;
     font-family: $main-font;
 
-    // * {
-    //     outline: 1px solid purple;
-    // }
-
     &__title-group {
         display: flex;
 
@@ -134,7 +130,7 @@
     }
 
     &__button-more {
-        width: 20%;
+        min-width: 20%;
         margin-top: 40px;
         margin-left: 42.5%;
         padding: 7px;
@@ -221,21 +217,29 @@
 }
 
 
-@media screen and (min-width: 1170px) and (max-width: 1534px) {
+@media screen and (min-width: 1024px) and (max-width: 1534px) {
     .products {
         &__visible-wrapper {
             min-height: 730px;
         }
 
         &__product-card {
-            margin-right: 8px;
+            margin-right: 7px;
             padding-bottom: 0;
             min-height: 750px;
+
+            @media screen and (max-width: 1077px) {
+                min-height: 820px;
+            }
         }
 
         &__card-content {
             padding: 10px;
             min-height: 500px;
+
+            @media screen and (max-width: 1077px) {
+                height: 577px;
+            }
         }
 
         &__card-img {
@@ -275,14 +279,13 @@
         }
 
         &__button-buy {
-            padding: 8px;
-            font-size: 14px;
+            @include button-main (50px, 5px, 10px);
         }
     }
 }
 
 // планшет
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 612px) and (max-width: 1023px) {
     .products {
         // * {
         //     outline: 1px solid purple;
@@ -303,11 +306,123 @@
         &__product-card {
             width: 45%;
             margin-right: 0;
+
+            @media screen and (max-width: 672px) {
+                width: 49%;
+            }
+        }
+
+        &__card-title {
+            @include font-style (500, 22px, 28px);
+        }
+
+        &__card-info {
+            @include font-style (300, $small-text-font-size, 20px);
+
+            @media screen and (max-width: 740px) {
+                @include font-style (300, 14px, 18px);
+            }
         }
 
         &__card-img {
             min-height: 25%;
-            padding: 5px 50px;
+            padding: 10px 50px;
+
+            img {
+                width: 70%;
+            }
         }
+
+        &__size-option {
+            width: 21%;
+            padding: 3px 0;
+            font-size: 12px;
+            margin-right: 0;
+        }
+
+        &__button-buy {
+            @include button-main (120px, 7px, 12px);
+        }
+    }
+}
+
+// мобильные 
+@media screen and (min-width: 200px) and (max-width: 611px) {
+    .products {
+        &__title {
+            @include font-style (600, $title-font-size-tablet, 30px);
+        }
+
+        &__subtitle {
+            width: 96%;
+            @include font-style (500, $big-text-font-size, 30px);
+        }
+
+        &__visible-wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__product-card {
+            width: 96%;
+            margin: 0 auto;
+
+            @media screen and (max-width: 425px) {
+                min-height: 800px;
+            }
+        }
+
+        &__card-img {
+            min-height: 25%;
+            padding: 20px;
+
+            img {
+                width: 60%;
+
+                @media screen and (max-width: 430px) {
+                    width: 80%;
+                }
+            }
+        }
+
+        &__card-content {
+            padding: 10px;
+        }
+
+        &__card-title {
+            @include font-style (500, $big-text-font-size, 28px);
+
+            @media screen and (max-width: 265px) {
+                @include font-style (500, 20px, 25px);
+            }
+        }
+
+        &__card-info {
+            @include font-style (300, $small-text-font-size, 24px);
+
+            @media screen and (max-width: 425px) {
+                @include font-style (300, 14px, 18px);
+            }
+        }
+
+        &__size-option {
+            @media screen and (max-width: 453px) {
+                width: 21%;
+                padding: 3px 0;
+                font-size: 12px;
+                margin-right: 0;
+            }
+        }
+
+        &__button-buy {
+            @media screen and (max-width: 453px) {
+                @include button-main (120px, 7px, 12px);
+            }
+        }
+
+        &__button-more {
+            min-width: 70%;
+            margin-left: 15%;
+        }
+
     }
 }
