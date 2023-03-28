@@ -447,6 +447,14 @@
             height: 10px;
             bottom: 32px;
             left: 190px;
+
+            @media (min-width:1201px) and (max-width:1300px) {
+                left: 295px;
+            }
+
+            @media (min-width:991px) and (max-width:1200px) {
+                left: 265px;
+            }
         }
     }
 }

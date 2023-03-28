@@ -1373,6 +1373,16 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   bottom: 32px;
   left: 190px;
 }
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .about__btn::after {
+    left: 295px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .about__btn::after {
+    left: 265px;
+  }
+}
 
 .title {
   font-weight: 500;
