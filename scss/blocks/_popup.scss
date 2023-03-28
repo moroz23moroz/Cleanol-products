@@ -214,12 +214,13 @@
     width: 16px;
     height: 16px;
     background-color: #F4F7FB;
-    top: 464px;
-    left: 34px;
+    top: 0;
+    left: 0;
 }
 
 .checkb-lbl {
-    margin-left: 28px;
+    position: relative;
+    padding-left: 28px;
 }
 
 .checkb {
@@ -358,8 +359,6 @@
         width: 16px;
         height: 16px;
         background-color: #F4F7FB;
-        top: 548px;
-        left: 20px;
     }
 }
 
@@ -448,7 +447,5 @@
         width: 16px;
         height: 16px;
         background-color: #F4F7FB;
-        top: 578px;
-        left: 20px;
     }
 }
