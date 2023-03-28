@@ -1068,7 +1068,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-right: 0;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 548px) {
   .about__background {
     height: auto;
   }
@@ -1106,6 +1106,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media (max-width: 460px) {
   .about__background-desc {
     padding: 13px;
+    height: auto;
   }
 }
 @media (max-width: 460px) {
