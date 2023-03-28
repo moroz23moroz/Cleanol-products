@@ -74,6 +74,10 @@ const displayCards = (data, container, indexStart, indexEnd) => {
         sizeTitle.classList.add('products__card-subtitle');
         size1.classList.add('products__size-option');
         buyButton.classList.add('products__button-buy', 'popup__open');
+        buyButton.onclick = function () {
+            const contact = document.querySelector('#popup')
+            contact.classList.toggle("open")
+        }
 
         productCard.append(pictureWrapper);
         productCard.append(cardContent);
