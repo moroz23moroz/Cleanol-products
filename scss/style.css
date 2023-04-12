@@ -1372,11 +1372,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 32px;
   height: 10px;
   bottom: 32px;
-  left: 190px;
+  left: 295px;
 }
-@media (min-width: 1201px) and (max-width: 1300px) {
+@media (min-width: 1301px) and (max-width: 1600px) {
   .about__btn::after {
-    left: 295px;
+    left: 190px;
   }
 }
 @media (min-width: 991px) and (max-width: 1200px) {
@@ -2657,8 +2657,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #EEF3FD;
 }
 .contacts-inner_left {
-  min-width: 397px;
-  max-width: 397px;
+  min-width: 407px;
+  max-width: 407px;
   margin-left: 245px;
 }
 .contacts-inner_right {
