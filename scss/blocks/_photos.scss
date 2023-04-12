@@ -46,6 +46,32 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {}
 
+@media screen and (min-width: 1025px) and (max-width: 1233px) {
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1000px;
+        min-height: 636px;
+        margin: 0 auto 80px;
+    
+        &__item {
+            min-width: 490px;
+            max-width: 490px;
+            min-height: 310px;
+    
+            &_l-top,
+            &_r-top,
+            &_l-bot,
+            &_r-bot {
+                background-size: contain;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .photos {
         display: grid;

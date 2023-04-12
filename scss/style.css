@@ -1932,6 +1932,26 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1233px) {
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    min-height: 636px;
+    margin: 0 auto 80px;
+  }
+  .photos__item {
+    min-width: 490px;
+    max-width: 490px;
+    min-height: 310px;
+  }
+  .photos__item_l-top, .photos__item_r-top, .photos__item_l-bot, .photos__item_r-bot {
+    background-size: contain;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .photos {
     display: grid;
@@ -2076,10 +2096,21 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   text-align: center;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1234px) and (max-width: 1440px) {
   .card-wrapper {
     justify-content: space-around;
     gap: 0;
+  }
+}
+@media screen and (min-width: 1045px) and (max-width: 1233px) {
+  .convinience {
+    max-width: 1000px;
+  }
+  .card-wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 700px;
+    margin: 42px auto;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -2605,7 +2636,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1234px) and (max-width: 1440px) {
   .contacts {
     max-width: 1440px;
   }
@@ -2617,6 +2648,44 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
   .contacts-inner_left {
     margin-left: 100px;
+  }
+}
+@media screen and (min-width: 1045px) and (max-width: 1233px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .contacts_left {
+    min-width: 750px;
+  }
+  .contacts_right {
+    max-width: 1024px;
+    margin: 41px auto 0;
+  }
+  .contacts-inner {
+    display: flex;
+    margin-top: 50px;
+  }
+  .contacts-inner_left, .contacts-inner_right {
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 155px;
+    margin-top: 0;
+    padding: 26px;
+  }
+  .contacts-inner_left {
+    min-width: 397px;
+    max-width: 397px;
+    margin-left: 48px;
+  }
+  .contacts-inner_right {
+    max-width: 244px;
+    min-width: 244px;
+    margin-left: 14px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -2909,13 +2978,38 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-size: 30px;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1234px) and (max-width: 1440px) {
   .footer {
     max-width: 1440px;
     min-width: 1440px;
   }
   .footer-logo {
     margin-left: 100px;
+  }
+}
+@media screen and (min-width: 1045px) and (max-width: 1233px) {
+  .footer {
+    max-width: 1024px;
+    min-width: 1024px;
+  }
+  .footer-logo {
+    margin-top: 81px;
+    margin-left: 50px;
+  }
+  .footer-menu {
+    margin-left: 140px;
+  }
+  .footer-contacts {
+    margin-left: 80px;
+  }
+  .footer-contacts_top {
+    margin-top: 75px;
+    margin-left: 0;
+  }
+  .footer-contacts_bottom {
+    max-width: 280px;
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -2950,7 +3044,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     max-width: 750px;
     min-width: 750px;
     max-height: 383px;
-    margin: 330px auto 0;
+    margin: 400px auto 0;
   }
   .footer-logo {
     display: flex;
@@ -4084,7 +4178,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   right: 22px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1233px) {
   .block-btn {
     position: relative;
     max-width: 183px;

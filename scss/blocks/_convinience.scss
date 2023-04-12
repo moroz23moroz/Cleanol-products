@@ -59,10 +59,23 @@
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1234px) and (max-width: 1440px) {
     .card-wrapper {
         justify-content: space-around;
         gap: 0;
+    }
+}
+
+@media screen and (min-width: 1045px) and (max-width: 1233px){
+    .convinience {
+        max-width: 1000px;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 700px;
+        margin: 42px auto;
     }
 }
 
