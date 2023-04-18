@@ -1,6 +1,8 @@
 .contacts {
     display: flex;
     justify-content: space-between;
+    max-width: 1920px;
+    gap: 20px;
     max-height: 387px;
     margin: 0 auto;
     font-family: $main-font;
