@@ -14,6 +14,15 @@
     & :nth-child(3) .card-item__slogan {
         max-width: 300px;
     }
+
+    @media (min-width: 601px) and (max-width: 768px) {
+        gap: 31px;
+    }
+
+    @media (max-width: 600px) {
+        gap: 15px;
+        justify-content: space-around;
+    }
 }
 
 .card-item {
@@ -29,6 +38,17 @@
     background-color: $bg-color-light;
     border: 1px solid #C4C4C4;
     border-radius: 4px;
+
+    @media (min-width: 1270px) and (max-width: 1415px) {
+        min-width: 307px;
+        min-height: 308px;
+    }
+
+    @media (min-width: 1234px) and (max-width: 1269px) {
+        min-width: 277px;
+        min-height: none;
+    }
+
 
     &__button {
         align-self: flex-start;
@@ -66,7 +86,7 @@
     }
 }
 
-@media screen and (min-width: 1045px) and (max-width: 1233px){
+@media screen and (min-width: 1045px) and (max-width: 1233px) {
     .convinience {
         max-width: 1000px;
     }
@@ -127,7 +147,6 @@
     .card-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 31px;
         max-width: 580px;
         margin: 50px auto 28px;
     }
@@ -212,7 +231,7 @@
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     .convinience {
         max-width: 300px;
     }

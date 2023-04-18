@@ -9,6 +9,10 @@
 
         img {
             width: 10%;
+
+            @media (max-width:750px) {
+                width: auto;
+            }
         }
     }
 
