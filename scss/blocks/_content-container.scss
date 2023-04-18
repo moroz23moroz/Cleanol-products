@@ -207,6 +207,20 @@
     }
 }
 
+@media (min-width: 566px) and (max-width:768px) {
+    .content-container_right {
+        min-width: 640px;
+        margin: 14px 47px 46px 63px;
+    }
+}
+
+@media (min-width: 321px) and (max-width:565px) {
+    .content-container_right {
+        min-width: auto;
+        margin: 0;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .content-container {
         max-width: 530px;
@@ -262,11 +276,6 @@
                 left: -96px;
             }
         }
-    }
-
-    .content-container_right {
-        min-width: 640px;
-        margin: 14px 47px 46px 63px;
     }
 }
 
