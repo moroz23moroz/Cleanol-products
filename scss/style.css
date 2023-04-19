@@ -3716,6 +3716,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-weight: 600;
   color: #D71635;
 }
+@media (max-width: 990px) {
+  .title-container__title {
+    font-size: 30px;
+  }
+}
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .title-container_contacts {

@@ -17,6 +17,10 @@
         font-size: 40px;
         font-weight: 600;
         color: $text-color-title;
+
+        @media (max-width: 990px) {
+            font-size: 30px;
+        }
     }
 }
 
@@ -90,7 +94,8 @@
     .convinience .title-container__icon {
         margin-bottom: 50px;
     }
-    .service_bg-white .title-container{
+
+    .service_bg-white .title-container {
         margin-top: 0;
     }
 }
