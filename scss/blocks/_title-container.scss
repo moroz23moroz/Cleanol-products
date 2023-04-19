@@ -1,14 +1,64 @@
 .title-container {
 
+    @media screen and (max-width: 480px) {
+        max-width: 390px;
+        line-height: 29px;
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width: 320px) {
+        max-width: 310px;
+        line-height: 25px;
+    }
+
     &_contacts {
         margin-top: 83px;
         margin-left: 245px;
+
+        @media screen and (max-width: 1440px) {
+            margin-left: 100px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin-top: 60px;
+            margin-left: -140px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 480px) {
+            margin-top: 39px;
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 320px) {
+            margin-left: 0;
+        }
     }
 
     &__icon,
     &__title {
         display: inline-block;
         margin-top: 0;
+
+        @media screen and (max-width: 768px) {
+            display: inline-block;
+        }
+    }
+
+    &__icon {
+        @media screen and (max-width: 480px) {
+            margin-top: 0;
+            margin-left: -22px;
+        }
+
+        @media screen and (max-width: 320px) {
+            margin-top: 0;
+            margin-left: -20px;
+            max-width: 88px;
+        }
     }
 
     &__title {
@@ -21,76 +71,26 @@
         @media (max-width: 990px) {
             font-size: 30px;
         }
-    }
-}
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    .title-container {
-
-        &_contacts {
-            margin-left: 100px;
-        }
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .title-container {
-
-        &_contacts {
-            margin-top: 60px;
-            margin-left: -140px;
-        }
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .title-container {
-
-        &_contacts {
-            margin-left: 0;
-        }
-
-        &__icon,
-        &__title {
-            display: inline-block;
-        }
-
-        &__title {
+        @media screen and (max-width: 768px) {
             margin-left: 21px;
-            font-size: 30px;
-        }
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .title-container {
-        max-width: 390px;
-        line-height: 29px;
-        margin-top: 50px;
-
-        &_contacts {
-            margin-top: 39px;
-            margin-left: 0;
         }
 
-        &__icon,
-        &__title {
-            display: inline-block;
-        }
-
-        &__icon {
-            margin-top: 0;
-            margin-left: -22px;
-        }
-
-        &__title {
+        @media screen and (max-width: 480px) {
             max-width: 250px;
             margin-top: 0;
-            margin-left: 21px;
-            font-size: 30px;
+        }
+
+        @media screen and (max-width: 320px) {
+            max-width: 210px;
+            margin-top: 0;
+            margin-left: 15px;
+            font-size: 25px;
         }
     }
+}
 
+@media screen and (max-width: 480px) {
     .convinience .title-container__icon {
         margin-bottom: 50px;
     }
@@ -101,33 +101,6 @@
 }
 
 @media screen and (max-width: 320px) {
-    .title-container {
-        max-width: 310px;
-        line-height: 25px;
-
-        &_contacts {
-            margin-left: 0;
-        }
-
-        &__icon,
-        &__title {
-            display: inline-block;
-        }
-
-        &__icon {
-            margin-top: 0;
-            margin-left: -20px;
-            max-width: 88px;
-        }
-
-        &__title {
-            max-width: 210px;
-            margin-top: 0;
-            margin-left: 15px;
-            font-size: 25px;
-        }
-    }
-
     .convinience .title-container__icon {
         margin-bottom: 45px;
     }
