@@ -30,11 +30,6 @@
 
         @media screen and (max-width: 480px) {
             margin-top: 39px;
-            margin-left: 0;
-        }
-
-        @media screen and (max-width: 320px) {
-            margin-left: 0;
         }
     }
 
@@ -50,14 +45,12 @@
 
     &__icon {
         @media screen and (max-width: 480px) {
-            margin-top: 0;
             margin-left: -22px;
         }
 
         @media screen and (max-width: 320px) {
-            margin-top: 0;
-            margin-left: -20px;
             max-width: 88px;
+            margin-left: -20px;
         }
     }
 
@@ -78,12 +71,10 @@
 
         @media screen and (max-width: 480px) {
             max-width: 250px;
-            margin-top: 0;
         }
 
         @media screen and (max-width: 320px) {
             max-width: 210px;
-            margin-top: 0;
             margin-left: 15px;
             font-size: 25px;
         }

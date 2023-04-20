@@ -11,6 +11,22 @@
     text-align: left;
     font-size: 18px;
 
+    @media screen and (max-width: 1233px) {
+        max-width: 183px;
+        min-width: 183px;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 480px) {
+        max-height: 44px;
+        min-height: 44px;
+    }
+
+    @media screen and (max-width: 320px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     &_red {
         background-color: $bg-color-main;
         color: $text-color-white;
@@ -23,6 +39,11 @@
             height: 10px;
             top: 20.5px;
             right: 22px;
+
+            @media screen and (max-width: 480px) {
+                top: 17px;
+                right: 20px;
+            }
         }
     }
 
@@ -38,6 +59,15 @@
             height: 12px;
             top: 19.5px;
             right: 22px;
+
+            @media screen and (max-width: 480px) {
+                top: 17px;
+                right: 20px;
+            }
+
+            @media screen and (max-width: 320px) {
+                height: 10px;
+            }
         }
     }
 
@@ -47,6 +77,26 @@
         margin-right: 594px;
         margin-left: 594px;
 
+        @media screen and (max-width: 1233px) {
+            margin-right: 408px;
+            margin-left: 408px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-right: 283px;
+            margin-left: 283px;
+        }
+
+        @media screen and (max-width: 480px) {
+            margin-right: 104px;
+            margin-left: 104px;
+        }
+
+        @media screen and (max-width: 320px) {
+            margin-right: 58px;
+            margin-left: 58px;
+        }
+
         &::after {
             position: absolute;
             content: '';
@@ -55,168 +105,10 @@
             height: 10px;
             top: 20.5px;
             right: 22px;
-        }
-    }
-}
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {}
-
-@media screen and (min-width: 769px) and (max-width: 1233px) {
-    .block-btn {
-        position: relative;
-        max-width: 183px;
-        min-width: 183px;
-        max-height: 51px;
-        min-height: 51px;
-        padding-left: 23px;
-        font-size: 16px;
-
-        &_centered {
-            margin-right: 408px;
-            margin-left: 408px;
-
-            &::after {
-                position: absolute;
-                content: '';
+            @media screen and (max-width: 1233px) {
                 background-image: url('../../images/arrows/white_arrow.svg');
                 min-width: 32px;
-                height: 10px;
-                top: 20.5px;
-                right: 20px;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .block-btn {
-        position: relative;
-        max-width: 183px;
-        min-width: 183px;
-        max-height: 51px;
-        min-height: 51px;
-        padding-left: 23px;
-        font-size: 16px;
-
-        &_centered {
-            margin-right: 283px;
-            margin-left: 283px;
-
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/white_arrow.svg');
-                min-width: 32px;
-                height: 10px;
-                top: 20.5px;
-                right: 20px;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .block-btn {
-        position: relative;
-        max-width: 183px;
-        min-width: 183px;
-        max-height: 44px;
-        min-height: 44px;
-        padding-left: 23px;
-        font-size: 16px;
-
-        &_red {
-
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/white_arrow.svg');
-                width: 32px;
-                height: 10px;
-                top: 17px;
-                right: 20px;
-            }
-        }
-
-        &_white {
-
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/red_arrow.svg');
-                max-width: 24px;
-                height: 12px;
-                top: 17px;
-                right: 20px;
-            }
-        }
-
-        &_centered {
-            margin-right: 104px;
-            margin-left: 104px;
-
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/white_arrow.svg');
-                min-width: 32px;
-                height: 10px;
-                top: 17px;
-                right: 20px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .block-btn {
-        position: relative;
-        max-width: 183px;
-        min-width: 183px;
-        max-height: 44px;
-        min-height: 44px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 23px;
-        font-size: 16px;
-
-        &_red {
-
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/white_arrow.svg');
-                width: 32px;
-                height: 10px;
-                top: 17px;
-                right: 20px;
-            }
-        }
-
-        &_white {
-
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/red_arrow.svg');
-                min-width: 24px;
-                height: 10px;
-                top: 17px;
-                right: 20px;
-            }
-        }
-
-        &_centered {
-            margin-right: 58px;
-            margin-left: 58px;
-
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url('../../images/arrows/white_arrow.svg');
-                min-width: 32px;
-                height: 10px;
-                top: 17px;
                 right: 20px;
             }
         }
