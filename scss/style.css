@@ -2924,7 +2924,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   font-size: 30px;
 }
 
-@media screen and (min-width: 1234px) and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .footer {
     max-width: 1440px;
     min-width: 1440px;
@@ -2933,7 +2933,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-left: 100px;
   }
 }
-@media screen and (min-width: 1045px) and (max-width: 1233px) {
+@media screen and (max-width: 1233px) {
   .footer {
     max-width: 1024px;
     min-width: 1024px;
@@ -2949,7 +2949,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-left: 80px;
   }
   .footer-contacts_top {
-    margin-top: 75px;
     margin-left: 0;
   }
   .footer-contacts_bottom {
@@ -2958,32 +2957,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .footer {
-    max-width: 1024px;
-    min-width: 1024px;
-  }
-  .footer-logo {
-    margin-top: 81px;
-    margin-left: 50px;
-  }
-  .footer-menu {
-    margin-left: 140px;
-  }
-  .footer-contacts {
-    margin-left: 80px;
-  }
+@media screen and (max-width: 1024px) {
   .footer-contacts_top {
-    margin-top: 75px;
     margin-left: 0;
   }
   .footer-contacts_bottom {
-    max-width: 280px;
-    margin-top: 20px;
     margin-left: 0;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer {
     display: flex;
     flex-wrap: wrap;
@@ -2993,7 +2975,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin: 400px auto 0;
   }
   .footer-logo {
-    display: flex;
     flex-direction: row;
     max-height: 50px;
     margin-top: 52px;
@@ -3010,9 +2991,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-left: 42px;
   }
   .footer-menu {
-    display: flex;
-    flex-direction: column;
-    max-width: 202px;
     margin-top: 0;
     margin-bottom: 43px;
     margin-left: 48px;
@@ -3020,7 +2998,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .footer-contacts {
     display: flex;
     flex-direction: column;
-    margin-left: 48px;
+    margin-left: 26px;
   }
   .footer-contacts_top {
     margin-top: 0;
@@ -3041,32 +3019,28 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .footer {
-    display: flex;
     flex-direction: column;
     max-width: 390px;
     min-width: 390px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
     margin: 0 auto;
   }
   .footer-logo {
+    flex-direction: column;
     max-height: 50px;
     margin-top: 35px;
-    margin-bottom: 48px;
     margin-left: 26px;
   }
   .footer-logo__image {
-    max-width: 208px;
-    min-height: 50px;
     margin-bottom: 11px;
   }
   .footer-logo__text {
-    min-width: 250px;
+    margin-left: 0;
   }
   .footer-menu {
-    display: flex;
-    flex-direction: column;
-    max-width: 202px;
     margin-top: 31px;
     margin-bottom: 24px;
     margin-left: 26px;
@@ -3085,49 +3059,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-top: 22px;
     margin-left: 0;
   }
-  .footer-contacts_bottom .content-container__item_red {
-    font-size: 18px;
-  }
   .footer-contacts .content-container__item {
     max-width: 368px;
   }
-  .footer-contacts .content-container__item_bold {
-    font-size: 30px;
-  }
 }
 @media screen and (max-width: 320px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    max-width: 390px;
-    min-width: 390px;
-    margin: 0 auto;
-  }
-  .footer-logo {
-    max-height: 50px;
-    margin-top: 35px;
-    margin-bottom: 48px;
-    margin-left: 26px;
-  }
-  .footer-logo__image {
-    max-width: 208px;
-    min-height: 50px;
-    margin-bottom: 11px;
-  }
-  .footer-logo__text {
-    min-width: 250px;
-  }
-  .footer-menu {
-    display: flex;
-    flex-direction: column;
-    max-width: 202px;
-    margin-top: 31px;
-    margin-bottom: 24px;
-    margin-left: 26px;
-  }
-  .footer-menu__link {
-    font-size: 16px;
-  }
   .footer-contacts {
     margin-left: 26px;
   }
@@ -3139,9 +3075,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 0;
-  }
-  .footer-contacts_bottom .content-container__item_red {
-    font-size: 18px;
   }
   .footer-contacts .content-container__item {
     max-width: 280px;
