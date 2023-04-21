@@ -13,6 +13,10 @@
     right: 21px;
     font-size: 22px;
     cursor: pointer;
+
+    @media screen and (max-width: 320px) {
+        max-width: 14px;
+    }
 }
 
 .popup__tnks.open {
@@ -34,7 +38,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0, 0.26);
+    background-color: rgb(38, 95, 229, 0.36);
     opacity: 0;
     visibility: hidden;
     transition: 0.5s all;
@@ -60,6 +64,19 @@
         margin-right: auto;
         margin-left: auto;
         background-color: $bg-color-white;
+
+        @media screen and (max-width: 480px) {
+            max-width: 340px;
+            min-width: 340px;
+            padding: 20px 17px 18px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 320px) {
+            max-width: 290px;
+            min-width: 290px;
+            padding: 30px 17px 18px;
+        }
     }
 
     &__close {
@@ -73,12 +90,28 @@
         &:hover {
             text-decoration: none;
         }
+
+        @media screen and (max-width: 480px) {
+            top: 13px;
+            right: 10px;
+        }
+
+        @media screen and (max-width: 320px) {
+            top: 15px;
+            right: 10px;
+            max-width: 14px;
+        }
     }
 
     &__confirm-icon {
         max-width: 58px;
         margin-right: auto;
         margin-left: auto;
+
+        @media screen and (max-width: 480px) {
+            margin-top: 17px;
+            margin-bottom: 13px;
+        }
     }
 
     &.open {
@@ -93,6 +126,14 @@
     flex-direction: column;
     max-width: 407px;
 
+    @media screen and (max-width: 480px) {
+        max-width: 304px;
+    }
+
+    @media screen and (max-width: 320px) {
+        max-width: 290px;
+    }
+
     &__title {
         margin-top: 0;
         margin-bottom: 0;
@@ -100,6 +141,11 @@
         font-size: 30px;
         font-weight: 600;
         color: $text-color-title;
+
+        @media screen and (max-width: 480px) {
+            font-size: 25px;
+            text-align: center;
+        }
     }
 
     &__text {
@@ -108,8 +154,19 @@
         @include block-text (16px, 22px);
         font-weight: 300;
 
+        @media screen and (max-width: 480px) {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            @include block-text (14px, 20px);
+            text-align: center;
+        }
+
         &_sm {
             @include block-text (12px, 14px);
+
+            @media screen and (max-width: 480px) {
+                text-align: start;
+            }
         }
 
         &_lg {
@@ -120,6 +177,10 @@
             @include block-text (20px, 27px);
             font-weight: 300;
             text-align: center;
+
+            @media screen and (max-width: 480px) {
+                @include block-text (18px, 24px);
+            }
         }
 
         &_bold {
@@ -134,6 +195,19 @@
     justify-content: space-between;
     margin-top: 4px;
     margin-bottom: 4px;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    &_personal {
+        @media screen and (max-width: 480px) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
 }
 
 .content-wrapper {
@@ -145,10 +219,22 @@
     border: 1px solid #9ba8c8;
     border-radius: 4px;
 
+    @media screen and (max-width: 480px) {
+        max-width: 304px;
+    }
+
     &_lg {
         min-width: 407px;
         min-height: 91px;
         max-height: fit-content;
+
+        @media screen and (max-width: 480px) {
+            min-width: 304px;
+        }
+
+        @media screen and (max-width: 320px) {
+            min-width: 250px;
+        }
     }
 }
 
@@ -173,6 +259,16 @@
     padding: 5px;
     resize: vertical;
     border: none;
+
+    @media screen and (max-width: 480px) {
+        max-width: 280px;
+        min-width: 280px;
+    }
+
+    @media screen and (max-width: 320px) {
+        max-width: 250px;
+        min-width: 250px;
+    }
 }
 
 .popup-button {
@@ -192,6 +288,20 @@
     background-color: $bg-color-main;
     color: $text-color-white;
 
+    @media screen and (max-width: 480px) {
+        max-width: 304px;
+        min-width: 304px;
+        padding-left: 51.5px;
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 320px) {
+        max-width: 100%;
+        min-width: 254px;
+        font-size: 18px;
+        padding-left: 15px;
+    }
+
     &::after {
         position: absolute;
         content: '';
@@ -200,31 +310,45 @@
         height: 10px;
         top: 20.5px;
         right: 93.5px;
+
+        @media screen and (max-width: 480px) {
+            top: 18px;
+            right: 49.5px;
+        }
+
+        @media screen and (max-width: 320px) {
+            top: 19.5px;
+            right: 15px;
+        }
     }
 }
 
 .error_message {
     @include block-text (14px, 16px);
     color: red;
+
+    @media screen and (max-width: 480px) {
+        @include block-text (12px, 14px);
+    }
 }
 
-.checkb-lbl::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: #F4F7FB;
-    top: 0;
-    left: 0;
+.checkb {
+    display: none;
 }
 
 .checkb-lbl {
     position: relative;
     padding-left: 28px;
-}
 
-.checkb {
-    display: none;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #F4F7FB;
+        top: 0;
+        left: 0;
+    }
 }
 
 .active .checkb-lbl::before {
@@ -233,219 +357,15 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .popup {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgb(38, 95, 229, 0.36);
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.5s all;
-        overflow-y: auto;
-        z-index: 5;
 
-        &-body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        &-form {
-            position: relative;
-            max-width: 340px;
-            min-width: 340px;
-            padding: 20px 17px 18px;
-            margin-top: 50px;
-        }
-
-        &__close {
-            position: absolute;
-            top: 13px;
-            right: 10px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        &__confirm-icon {
-            max-width: 58px;
-            margin-top: 17px;
-            margin-right: auto;
-            margin-bottom: 13px;
-            margin-left: auto;
-        }
-    }
-
-    .popup-content {
-        max-width: 304px;
-
-        &__title {
-            font-size: 25px;
-            text-align: center;
-        }
-
-        &__text {
-            margin-top: 6px;
-            margin-bottom: 6px;
-            @include block-text (14px, 20px);
-            text-align: center;
-
-            &_lg {
-                @include block-text (18px, 24px);
-                text-align: center;
-            }
-
-            &_sm {
-                text-align: start;
-            }
-        }
-    }
-
-    .content-row {
-        display: flex;
-        flex-direction: column;
-        margin-top: 6px;
-        margin-bottom: 6px;
-
-        &_personal {
-            flex-direction: row;
-            align-items: flex-start;
-        }
-    }
-
-    #personal_data {
+#personal_data {
+    @media screen and (max-width: 480px) {
         margin-top: 10px;
-    }
-
-    .content-wrapper {
-        max-width: 304px;
-
-        &_lg {
-            min-width: 304px;
-        }
-    }
-
-    .textarea {
-        max-width: 280px;
-        min-width: 280px;
-    }
-
-    .popup-button {
-        max-width: 304px;
-        min-width: 304px;
-        padding-left: 51.5px;
-        font-size: 16px;
-
-        &::after {
-            position: absolute;
-            content: '';
-            background-image: url('../../images/arrows/white_arrow.svg');
-            width: 32px;
-            height: 10px;
-            top: 18px;
-            right: 49.5px;
-        }
-    }
-
-    .error_message {
-        @include block-text (12px, 14px);
-    }
-
-    .checkb-lbl::before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        background-color: #F4F7FB;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .popup {
-        position: fixed;
+.input-field_modal {
+    @media screen and (max-width: 320px) {
         width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgb(38, 95, 229, 0.36);
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.5s all;
-        overflow-y: auto;
-        z-index: 5;
-
-        &-body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        &-form {
-            position: relative;
-            max-width: 290px;
-            min-width: 290px;
-            padding: 30px 17px 18px;
-            margin-top: 50px;
-        }
-
-        &__close {
-            position: absolute;
-            top: 15px;
-            right: 10px;
-            max-width: 14px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    }
-
-    .close__tnks {
-        max-width: 14px;
-    }
-
-    .popup-content {
-        max-width: 290px;
-    }
-
-    .content-wrapper {
-
-        &_lg {
-            min-width: 250px;
-        }
-    }
-
-    .textarea {
-        max-width: 250px;
-        min-width: 250px;
-    }
-
-    .popup-button {
-        max-width: 100%;
-        min-width: 254px;
-        font-size: 18px;
-        padding-left: 15px;
-
-        &::after {
-            position: absolute;
-            content: '';
-            background-image: url('../../images/arrows/white_arrow.svg');
-            width: 32px;
-            height: 10px;
-            top: 19.5px;
-            right: 15px;
-        }
-    }
-
-    .input-field_modal {
-        width: 100%;
-    }
-
-    .checkb-lbl::before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        background-color: #F4F7FB;
     }
 }

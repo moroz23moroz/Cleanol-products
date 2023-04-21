@@ -6,6 +6,17 @@
     max-width: 615px;
     max-height: 360px;
 
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 320px) {
+        max-width: 300px;
+    }
+
     &__input {
         background-color: $bg-color-main;
         border: none;
@@ -19,15 +30,43 @@
     border-radius: 4px;
     color: $text-color-white;
 
+    @media screen and (max-width: 480px) {
+        gap: 11px;
+    }
+
+    @media screen and (max-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+
     &_sm {
         max-width: 298px;
         min-height: 66px;
+
+        @media screen and (max-width: 480px) {
+            max-width: 340px;
+            min-height: 68px;
+        }
+
+        @media screen and (max-width: 320px) {
+            max-width: 300px;
+        }
     }
 
     &_lg {
         max-width: 605px;
         min-height: 128px;
         grid-column: 1/3;
+
+        @media screen and (max-width: 480px) {
+            max-width: 340px;
+            min-height: 130px;
+        }
+
+        @media screen and (max-width: 320px) {
+            max-width: 300px;
+        }
     }
 
     &_sm,
@@ -66,61 +105,5 @@
     &::placeholder {
         font-size: 16px;
         color: $text-color-white;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .feedback-form {
-        display: flex;
-        flex-direction: column;
-        max-width: 340px;
-        margin: 0 auto;
-    }
-
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
-
-        &_sm {
-            max-width: 340px;
-            min-height: 68px;
-        }
-
-        &_lg {
-            max-width: 340px;
-            min-height: 130px;
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .feedback-form {
-        display: flex;
-        flex-direction: column;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
-
-        &_sm {
-            max-width: 300px;
-            min-height: 68px;
-        }
-
-        &_lg {
-            max-width: 300px;
-            min-height: 130px;
-        }
     }
 }
