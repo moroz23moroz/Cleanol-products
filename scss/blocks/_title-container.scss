@@ -1,5 +1,4 @@
 .title-container {
-
     @media screen and (max-width: 480px) {
         max-width: 390px;
         line-height: 29px;
@@ -19,17 +18,27 @@
             margin-left: 100px;
         }
 
+        @media screen and (max-width: 1233px) {
+            margin-top: 50px;
+            margin-left: 0;
+        }
+
         @media screen and (max-width: 1024px) {
             margin-top: 60px;
-            margin-left: -140px;
+            margin-left: 0;
         }
 
         @media screen and (max-width: 768px) {
-            margin-left: 0;
+            margin-left: -75px;
+        }
+
+        @media screen and (max-width: 610px) {
+            margin-left: -50px;
         }
 
         @media screen and (max-width: 480px) {
             margin-top: 39px;
+            margin-left: 0;
         }
     }
 
@@ -61,12 +70,17 @@
         font-weight: 600;
         color: $text-color-title;
 
-        @media (max-width: 990px) {
+        @media (max-width: 1024px) {
             font-size: 30px;
         }
 
         @media screen and (max-width: 768px) {
             margin-left: 21px;
+        }
+
+        @media screen and (max-width: 650px) {
+            max-width: 350px;
+            font-size: 28px;
         }
 
         @media screen and (max-width: 480px) {
@@ -81,18 +95,22 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .convinience .title-container__icon {
+.convinience .title-container__icon {
+    @media screen and (max-width: 650px) {
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 480px) {
         margin-bottom: 50px;
     }
 
-    .service_bg-white .title-container {
-        margin-top: 0;
+    @media screen and (max-width: 320px) {
+        margin-bottom: 45px;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .convinience .title-container__icon {
-        margin-bottom: 45px;
+@media screen and (max-width: 480px) {
+    .service_bg-white .title-container {
+        margin-top: 0;
     }
 }
