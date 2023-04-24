@@ -2661,6 +2661,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .contacts-inner {
     flex-direction: row;
     margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2985,7 +2987,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     max-width: 750px;
     min-width: 750px;
     max-height: 383px;
-    margin: 350px auto 0;
+    margin: 400px auto 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -3597,11 +3599,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .title-container_contacts {
     margin-top: 60px;
     margin-left: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .title-container_contacts {
-    margin-left: -75px;
   }
 }
 @media screen and (max-width: 610px) {
