@@ -135,149 +135,16 @@
     line-height: 130%;
     color: $text-color-white;
 
-<<<<<<< HEAD
-@media screen and (min-width: 1025px) and (max-width: 1440px) {}
-
-@media screen and (min-width: 1025px) and (max-width: 1233px) {
-    .photos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 1000px;
-        min-height: 636px;
-        margin: 0 auto 80px;
-
-        &__item {
-            min-width: 490px;
-            max-width: 490px;
-            min-height: 310px;
-
-            &_l-top,
-            &_r-top,
-            &_l-bot,
-            &_r-bot {
-                background-size: contain;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .photos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 1000px;
-        min-height: 636px;
-        margin: 0 auto 80px;
-
-        &__item {
-            min-width: 490px;
-            max-width: 490px;
-            min-height: 310px;
-
-            &_l-top,
-            &_r-top,
-            &_l-bot,
-            &_r-bot {
-                background-size: contain;
-            }
-        }
-    }
-
-    .photo-text {
-=======
     @media screen and (max-width: 1440px) {
->>>>>>> last_ver
         font-size: 20px;
     }
 
-<<<<<<< HEAD
-@media screen and (min-width: 481px) and (max-width: 1016px) {
-    .photos {
-        max-width: 720px;
-        min-height: 471px;
-        margin: 0 auto 67px;
-
-        &__item {
-            max-width: 353px;
-            min-width: 353px;
-            min-height: 228px;
-
-            &_l-top,
-            &_r-top,
-            &_l-bot,
-            &_r-bot {
-                background-size: contain;
-            }
-        }
-    }
-
-    .photo-text {
-=======
     @media screen and (max-width: 900px) {
->>>>>>> last_ver
         max-width: 300px;
         margin: 15px auto;
         font-size: 18px;
     }
 
-<<<<<<< HEAD
-@media screen and (min-width: 320px) and (max-width: 732px) {
-    .photos {
-        display: flex;
-        flex-direction: column;
-        max-width: 340px;
-        gap: 14px;
-        margin: 0 auto 51px;
-
-        &__item {
-            max-width: 340px;
-            min-width: 340px;
-            min-height: 219px;
-
-            &_l-top,
-            &_r-top,
-            &_l-bot,
-            &_r-bot {
-                background-size: contain;
-            }
-        }
-    }
-
-    .photo-text {
-        max-width: 300px;
-        margin: 15px auto;
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .photos {
-        display: flex;
-        flex-direction: column;
-        max-width: 300px;
-        min-height: 0;
-        gap: 14px;
-        margin: 0 auto 51px;
-
-        &__item {
-            max-width: 300px;
-            min-width: 300px;
-            min-height: 190px;
-
-            &_l-top,
-            &_r-top,
-            &_l-bot,
-            &_r-bot {
-                background-size: contain;
-            }
-        }
-=======
     @media screen and (max-width: 650px) {
         max-width: 290px;
         font-size: 16px;
@@ -287,7 +154,6 @@
         max-width: 400px;
         margin: 25px auto;
         font-size: 20px;
->>>>>>> last_ver
     }
 
     @media screen and (max-width: 480px) {
