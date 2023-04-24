@@ -20,7 +20,7 @@ Site for the company Cleanol - Russian manufacturer of auto chemicals, auto cosm
 
 
 ## Result
-<a href="http://robot.aqts.by/">Click here</a>
+<a href="https://cleanol.by/">Click here</a>
 
 
 ## Authors
