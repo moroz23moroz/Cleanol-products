@@ -50,26 +50,35 @@
 
 .content-container_left {
     max-width: 502px;
-    margin-top: 213px;
-    margin-left: 397px;
+    margin-top: 200px;
+    // margin-left: 397px;
+    margin-left: 41%;
     line-height: 27px;
 
     @media screen and (max-width: 1440px) {
-        margin-top: 180px;
-        margin-left: 250px;
+        margin-top: 150px;
+        // margin-left: 250px;
     }
 
     @media screen and (max-width: 1233px) {
         max-width: 600px;
         margin-top: 180px;
         margin-right: 0;
-        margin-left: 130px;
+        // margin-left: 130px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-left: 150px;
     }
 
     @media screen and (max-width: 768px) {
         max-width: 502px;
         margin-top: 47px;
         margin-left: 162px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-bottom: 20px;
     }
 
     @media screen and (max-width: 480px) {
@@ -91,6 +100,10 @@
         margin-bottom: 15px;
         font-size: 20px;
         color: $text-color-white;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+        }
 
         @media screen and (max-width: 768px) {
             margin-top: 20px;
@@ -194,11 +207,11 @@
 
 .content-container_right {
     max-width: 615px;
-    margin-top: 213px;
+    margin-top: 200px;
     margin-left: 119px;
 
     @media screen and (max-width: 1440px) {
-        margin-top: 180px;
+        margin-top: 150px;
     }
 
     @media screen and (max-width: 1233px) {
@@ -207,9 +220,17 @@
         margin-left: 50px;
     }
 
+    @media screen and (max-width: 1024px) {
+        max-width: 100%;
+    }
+
     @media screen and (max-width: 768px) {
         min-width: 640px;
         margin: 14px 47px 46px 63px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-top: 0;
     }
 
     @media screen and (max-width: 480px) {

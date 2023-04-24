@@ -79,6 +79,14 @@
     border: 1px solid #C4C4C4;
     border-radius: 4px;
 
+    @media screen and (max-width: 1380px) {
+        max-width: 300px;
+        min-width: 300px;
+        max-height: 290px;
+        min-height: 290px;
+        padding: 16px 15px 34px 15px;
+    }
+
     @media screen and (max-width: 1024px) {
         max-width: 274px;
         min-width: 274px;
