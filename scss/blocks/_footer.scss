@@ -8,12 +8,36 @@
     font-weight: 400;
     background-color: $bg-color-white;
 
+<<<<<<< HEAD
     @media (max-width:768px) {
         margin-top: 450px;
     }
 
     @media (max-width:480px) {
         margin: 0 auto;
+=======
+    @media screen and (max-width: 1440px) {
+        max-width: 1440px;
+    }
+
+    @media screen and (max-width: 1233px) {
+        max-width: 1024px;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        max-width: 750px;
+        min-width: 750px;
+        max-height: 383px;
+        margin: 350px auto 0;
+    }
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        max-width: 390px;
+        max-height: fit-content;
+        margin: 0;
+>>>>>>> last_ver
     }
 }
 
@@ -25,15 +49,56 @@
     margin-bottom: 116px;
     margin-left: 245px;
 
+    @media screen and (max-width: 1440px) {
+        margin-left: 100px;
+    }
+
+    @media screen and (max-width: 1233px) {
+        margin-top: 81px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: row;
+        max-height: 50px;
+        margin-top: 52px;
+        margin-bottom: 48px;
+        margin-left: 48px;
+    }
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        margin-top: 35px;
+        margin-left: 26px;
+    }
+
     &__image {
         max-width: 208px;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+            min-height: 50px;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 480px) {
+            margin-bottom: 11px;
+        }
     }
 
     &__text {
         max-width: 245px;
         font-size: 17px;
         color: $text-color-dark;
+
+        @media screen and (max-width: 768px) {
+            min-width: 250px;
+            margin-left: 42px;
+        }
+
+        @media screen and (max-width: 480px) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -44,10 +109,34 @@
     margin-top: 75px;
     margin-left: 253px;
 
+    @media screen and (max-width: 1233px) {
+        margin-left: 140px;
+    }
+
+    @media screen and (max-width: 980px) {
+        margin-left: 70px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 43px;
+        margin-left: 48px;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 31px;
+        margin-bottom: 24px;
+        margin-left: 26px;
+    }
+
     &__link {
         font-size: 18px;
         line-height: 27px;
         color: $text-color-main;
+
+        @media screen and (max-width: 480px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -56,25 +145,69 @@
     flex-direction: column;
     margin-left: 166px;
 
+    @media screen and (max-width: 1233px) {
+        margin-left: 80px;
+    }
+
+    @media screen and (max-width: 980px) {
+        margin-left: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 26px;
+    }
+
     &_top {
         margin-top: 75px;
         margin-left: 0;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 0;
+        }
     }
 
     &_bottom {
         max-width: 368px;
         margin-top: 45px;
         margin-left: 0;
+
+        @media screen and (max-width: 1233px) {
+            max-width: 280px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 368px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 640px) {
+            max-width: 250px;
+        }
+
+        @media screen and (max-width: 480px) {
+            margin-top: 22px;
+        }
+
+        @media screen and (max-width: 320px) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
     }
 
     & .content-container__item {
+        @media screen and (max-width: 768px) {
+            max-width: 368px;
+        }
+
+        @media screen and (max-width: 320px) {
+            max-width: 280px;
+        }
 
         &_bold {
             font-size: 30px;
-        }
-    }
-}
 
+<<<<<<< HEAD
 @media screen and (min-width: 1234px) and (max-width: 1440px) {
     .footer {
         max-width: 1440px;
@@ -327,6 +460,9 @@
             max-width: 280px;
 
             &_bold {
+=======
+            @media screen and (max-width: 480px) {
+>>>>>>> last_ver
                 font-size: 25px;
             }
         }
